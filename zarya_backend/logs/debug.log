@@ -1,0 +1,1340 @@
+2025-08-25 19:40:11 [ERROR]: Application Error logger.logInfo is not a function {"service":"zarya-backend","context":"NotificationService.initializeServices"}
+TypeError: logger.logInfo is not a function
+    at NotificationService.initializeServices (/Users/srs/Desktop/zarya/zarya_backend/src/services/notificationService.js:26:14)
+    at new NotificationService (/Users/srs/Desktop/zarya/zarya_backend/src/services/notificationService.js:8:10)
+    at Object.<anonymous> (/Users/srs/Desktop/zarya/zarya_backend/src/services/notificationService.js:331:18)
+    at Module._compile (node:internal/modules/cjs/loader:1688:14)
+    at Object..js (node:internal/modules/cjs/loader:1820:10)
+    at Module.load (node:internal/modules/cjs/loader:1423:32)
+    at Function._load (node:internal/modules/cjs/loader:1246:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+    at Module.require (node:internal/modules/cjs/loader:1445:12)
+2025-08-25 19:40:11 [INFO]: Scheduled cron job: subscription-expiry-check with schedule: 0 9 * * * {"service":"zarya-backend"}
+2025-08-25 19:40:11 [INFO]: Scheduled cron job: appointment-reminders with schedule: 0 * * * * {"service":"zarya-backend"}
+2025-08-25 19:40:11 [INFO]: Scheduled cron job: weekly-analytics with schedule: 0 8 * * 1 {"service":"zarya-backend"}
+2025-08-25 19:40:11 [INFO]: Scheduled cron job: daily-backup with schedule: 0 2 * * * {"service":"zarya-backend"}
+2025-08-25 19:40:11 [INFO]: Scheduled cron job: monthly-renewal-reminders with schedule: 0 10 1 * * {"service":"zarya-backend"}
+2025-08-25 19:40:11 [INFO]: Scheduled cron job: cleanup-notifications with schedule: 0 3 * * * {"service":"zarya-backend"}
+2025-08-25 19:40:11 [INFO]: Scheduled cron job: health-check with schedule: */30 * * * * {"service":"zarya-backend"}
+2025-08-25 19:40:11 [INFO]: Cron jobs initialized successfully {"service":"zarya-backend"}
+2025-08-25 19:40:11 [INFO]: Using mock Firebase for development {"service":"zarya-backend"}
+2025-08-25 19:40:11 [INFO]: Firebase initialized successfully {"service":"zarya-backend"}
+2025-08-25 19:40:11 [INFO]: Firebase initialized successfully {"service":"zarya-backend"}
+2025-08-25 19:40:11 [INFO]: Cloudinary initialized successfully {"service":"zarya-backend"}
+2025-08-25 19:40:11 [INFO]: Cloudinary initialized successfully {"service":"zarya-backend"}
+2025-08-25 19:40:11 [ERROR]: Application Error logger.logInfo is not a function {"service":"zarya-backend","context":"NotificationService.initializeServices"}
+TypeError: logger.logInfo is not a function
+    at NotificationService.initializeServices (/Users/srs/Desktop/zarya/zarya_backend/src/services/notificationService.js:26:14)
+    at initializeServices (/Users/srs/Desktop/zarya/zarya_backend/src/server.js:157:31)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async startServer (/Users/srs/Desktop/zarya/zarya_backend/src/server.js:203:5)
+2025-08-25 19:40:11 [INFO]: Notification service initialized successfully {"service":"zarya-backend"}
+2025-08-25 19:40:11 [INFO]: Cron jobs initialized successfully {"service":"zarya-backend"}
+2025-08-25 19:40:11 [INFO]: 🚀 Zarya Backend Server running on port 3000 {"service":"zarya-backend"}
+2025-08-25 19:40:11 [INFO]: 📊 Environment: development {"service":"zarya-backend"}
+2025-08-25 19:40:11 [INFO]: 🔗 Health check: http://localhost:3000/health {"service":"zarya-backend"}
+2025-08-25 19:40:11 [INFO]: 📚 API Documentation: http://localhost:3000/api/v1/docs {"service":"zarya-backend"}
+2025-08-25 19:44:18 [INFO]: Received SIGINT. Starting graceful shutdown... {"service":"zarya-backend"}
+2025-08-25 19:45:59 [INFO]: Notification services initialized {"service":"zarya-backend"}
+2025-08-25 19:45:59 [INFO]: Scheduled cron job: subscription-expiry-check with schedule: 0 9 * * * {"service":"zarya-backend"}
+2025-08-25 19:45:59 [INFO]: Scheduled cron job: appointment-reminders with schedule: 0 * * * * {"service":"zarya-backend"}
+2025-08-25 19:45:59 [INFO]: Scheduled cron job: weekly-analytics with schedule: 0 8 * * 1 {"service":"zarya-backend"}
+2025-08-25 19:45:59 [INFO]: Scheduled cron job: daily-backup with schedule: 0 2 * * * {"service":"zarya-backend"}
+2025-08-25 19:45:59 [INFO]: Scheduled cron job: monthly-renewal-reminders with schedule: 0 10 1 * * {"service":"zarya-backend"}
+2025-08-25 19:45:59 [INFO]: Scheduled cron job: cleanup-notifications with schedule: 0 3 * * * {"service":"zarya-backend"}
+2025-08-25 19:45:59 [INFO]: Scheduled cron job: health-check with schedule: */30 * * * * {"service":"zarya-backend"}
+2025-08-25 19:45:59 [INFO]: Cron jobs initialized successfully {"service":"zarya-backend"}
+2025-08-25 19:45:59 [INFO]: Using mock Firebase for development {"service":"zarya-backend"}
+2025-08-25 19:45:59 [INFO]: Firebase initialized successfully {"service":"zarya-backend"}
+2025-08-25 19:45:59 [INFO]: Firebase initialized successfully {"service":"zarya-backend"}
+2025-08-25 19:45:59 [INFO]: Cloudinary initialized successfully {"service":"zarya-backend"}
+2025-08-25 19:45:59 [INFO]: Cloudinary initialized successfully {"service":"zarya-backend"}
+2025-08-25 19:45:59 [INFO]: Notification services initialized {"service":"zarya-backend"}
+2025-08-25 19:45:59 [INFO]: Notification service initialized successfully {"service":"zarya-backend"}
+2025-08-25 19:45:59 [INFO]: Cron jobs initialized successfully {"service":"zarya-backend"}
+2025-08-25 19:45:59 [INFO]: 🚀 Zarya Backend Server running on port 3000 {"service":"zarya-backend"}
+2025-08-25 19:45:59 [INFO]: 📊 Environment: development {"service":"zarya-backend"}
+2025-08-25 19:45:59 [INFO]: 🔗 Health check: http://localhost:3000/health {"service":"zarya-backend"}
+2025-08-25 19:45:59 [INFO]: 📚 API Documentation: http://localhost:3000/api/v1/docs {"service":"zarya-backend"}
+2025-08-25 19:46:15 [INFO]: ::1 - - [25/Aug/2025:14:16:15 +0000] "GET /health HTTP/1.1" 200 104 "-" "curl/8.7.1" {"service":"zarya-backend"}
+2025-08-25 19:46:24 [INFO]: ::1 - - [25/Aug/2025:14:16:24 +0000] "GET /api/v1/merchants HTTP/1.1" 401 33 "-" "curl/8.7.1" {"service":"zarya-backend"}
+2025-08-25 19:46:31 [INFO]: ::1 - - [25/Aug/2025:14:16:31 +0000] "GET /api/v1/analytics/overview HTTP/1.1" 401 33 "-" "curl/8.7.1" {"service":"zarya-backend"}
+2025-08-25 19:46:42 [INFO]: Received SIGTERM. Starting graceful shutdown... {"service":"zarya-backend"}
+2025-08-25 20:08:39 [INFO]: Notification services initialized {"service":"zarya-backend"}
+2025-08-25 20:08:39 [INFO]: Scheduled cron job: subscription-expiry-check with schedule: 0 9 * * * {"service":"zarya-backend"}
+2025-08-25 20:08:39 [INFO]: Scheduled cron job: appointment-reminders with schedule: 0 * * * * {"service":"zarya-backend"}
+2025-08-25 20:08:39 [INFO]: Scheduled cron job: weekly-analytics with schedule: 0 8 * * 1 {"service":"zarya-backend"}
+2025-08-25 20:08:39 [INFO]: Scheduled cron job: daily-backup with schedule: 0 2 * * * {"service":"zarya-backend"}
+2025-08-25 20:08:39 [INFO]: Scheduled cron job: monthly-renewal-reminders with schedule: 0 10 1 * * {"service":"zarya-backend"}
+2025-08-25 20:08:39 [INFO]: Scheduled cron job: cleanup-notifications with schedule: 0 3 * * * {"service":"zarya-backend"}
+2025-08-25 20:08:39 [INFO]: Scheduled cron job: health-check with schedule: */30 * * * * {"service":"zarya-backend"}
+2025-08-25 20:08:39 [INFO]: Cron jobs initialized successfully {"service":"zarya-backend"}
+2025-08-25 20:08:39 [INFO]: Firebase initialized successfully {"service":"zarya-backend"}
+2025-08-25 20:08:39 [INFO]: Firebase initialized successfully {"service":"zarya-backend"}
+2025-08-25 20:08:39 [INFO]: Cloudinary initialized successfully {"service":"zarya-backend"}
+2025-08-25 20:08:39 [INFO]: Cloudinary initialized successfully {"service":"zarya-backend"}
+2025-08-25 20:08:39 [INFO]: Notification services initialized {"service":"zarya-backend"}
+2025-08-25 20:08:39 [INFO]: Notification service initialized successfully {"service":"zarya-backend"}
+2025-08-25 20:08:39 [INFO]: Cron jobs initialized successfully {"service":"zarya-backend"}
+2025-08-25 20:08:39 [INFO]: 🚀 Zarya Backend Server running on port 3000 {"service":"zarya-backend"}
+2025-08-25 20:08:39 [INFO]: 📊 Environment: development {"service":"zarya-backend"}
+2025-08-25 20:08:39 [INFO]: 🔗 Health check: http://localhost:3000/health {"service":"zarya-backend"}
+2025-08-25 20:08:39 [INFO]: 📚 API Documentation: http://localhost:3000/api/v1/docs {"service":"zarya-backend"}
+2025-08-25 20:09:06 [INFO]: Received SIGINT. Starting graceful shutdown... {"service":"zarya-backend"}
+2025-08-25 20:12:14 [INFO]: Notification services initialized {"service":"zarya-backend"}
+2025-08-25 20:12:14 [INFO]: Scheduled cron job: subscription-expiry-check with schedule: 0 9 * * * {"service":"zarya-backend"}
+2025-08-25 20:12:14 [INFO]: Scheduled cron job: appointment-reminders with schedule: 0 * * * * {"service":"zarya-backend"}
+2025-08-25 20:12:14 [INFO]: Scheduled cron job: weekly-analytics with schedule: 0 8 * * 1 {"service":"zarya-backend"}
+2025-08-25 20:12:14 [INFO]: Scheduled cron job: daily-backup with schedule: 0 2 * * * {"service":"zarya-backend"}
+2025-08-25 20:12:14 [INFO]: Scheduled cron job: monthly-renewal-reminders with schedule: 0 10 1 * * {"service":"zarya-backend"}
+2025-08-25 20:12:14 [INFO]: Scheduled cron job: cleanup-notifications with schedule: 0 3 * * * {"service":"zarya-backend"}
+2025-08-25 20:12:14 [INFO]: Scheduled cron job: health-check with schedule: */30 * * * * {"service":"zarya-backend"}
+2025-08-25 20:12:14 [INFO]: Cron jobs initialized successfully {"service":"zarya-backend"}
+2025-08-25 20:12:15 [INFO]: Firebase initialized successfully {"service":"zarya-backend"}
+2025-08-25 20:12:15 [INFO]: Firebase initialized successfully {"service":"zarya-backend"}
+2025-08-25 20:12:15 [INFO]: Cloudinary initialized successfully {"service":"zarya-backend"}
+2025-08-25 20:12:15 [INFO]: Cloudinary initialized successfully {"service":"zarya-backend"}
+2025-08-25 20:12:15 [INFO]: Notification services initialized {"service":"zarya-backend"}
+2025-08-25 20:12:15 [INFO]: Notification service initialized successfully {"service":"zarya-backend"}
+2025-08-25 20:12:15 [INFO]: Cron jobs initialized successfully {"service":"zarya-backend"}
+2025-08-25 20:12:15 [INFO]: 🚀 Zarya Backend Server running on port 3000 {"service":"zarya-backend"}
+2025-08-25 20:12:15 [INFO]: 📊 Environment: development {"service":"zarya-backend"}
+2025-08-25 20:12:15 [INFO]: 🔗 Health check: http://localhost:3000/health {"service":"zarya-backend"}
+2025-08-25 20:12:15 [INFO]: 📚 API Documentation: http://localhost:3000/api/v1/docs {"service":"zarya-backend"}
+2025-08-25 20:14:03 [INFO]: Received SIGINT. Starting graceful shutdown... {"service":"zarya-backend"}
+2025-08-25 20:15:01 [INFO]: Notification services initialized {"service":"zarya-backend"}
+2025-08-25 20:15:01 [INFO]: Scheduled cron job: subscription-expiry-check with schedule: 0 9 * * * {"service":"zarya-backend"}
+2025-08-25 20:15:01 [INFO]: Scheduled cron job: appointment-reminders with schedule: 0 * * * * {"service":"zarya-backend"}
+2025-08-25 20:15:01 [INFO]: Scheduled cron job: weekly-analytics with schedule: 0 8 * * 1 {"service":"zarya-backend"}
+2025-08-25 20:15:01 [INFO]: Scheduled cron job: daily-backup with schedule: 0 2 * * * {"service":"zarya-backend"}
+2025-08-25 20:15:01 [INFO]: Scheduled cron job: monthly-renewal-reminders with schedule: 0 10 1 * * {"service":"zarya-backend"}
+2025-08-25 20:15:01 [INFO]: Scheduled cron job: cleanup-notifications with schedule: 0 3 * * * {"service":"zarya-backend"}
+2025-08-25 20:15:01 [INFO]: Scheduled cron job: health-check with schedule: */30 * * * * {"service":"zarya-backend"}
+2025-08-25 20:15:01 [INFO]: Cron jobs initialized successfully {"service":"zarya-backend"}
+2025-08-25 20:15:01 [INFO]: Firebase initialized successfully {"service":"zarya-backend"}
+2025-08-25 20:15:01 [INFO]: Firebase initialized successfully {"service":"zarya-backend"}
+2025-08-25 20:15:01 [INFO]: Cloudinary initialized successfully {"service":"zarya-backend"}
+2025-08-25 20:15:01 [INFO]: Cloudinary initialized successfully {"service":"zarya-backend"}
+2025-08-25 20:15:01 [INFO]: Notification services initialized {"service":"zarya-backend"}
+2025-08-25 20:15:01 [INFO]: Notification service initialized successfully {"service":"zarya-backend"}
+2025-08-25 20:15:01 [INFO]: Cron jobs initialized successfully {"service":"zarya-backend"}
+2025-08-25 20:15:01 [INFO]: 🚀 Zarya Backend Server running on port 3000 {"service":"zarya-backend"}
+2025-08-25 20:15:01 [INFO]: 📊 Environment: development {"service":"zarya-backend"}
+2025-08-25 20:15:01 [INFO]: 🔗 Health check: http://localhost:3000/health {"service":"zarya-backend"}
+2025-08-25 20:15:01 [INFO]: 📚 API Documentation: http://localhost:3000/api/v1/docs {"service":"zarya-backend"}
+2025-08-25 20:15:10 [INFO]: ::1 - - [25/Aug/2025:14:45:10 +0000] "GET /health HTTP/1.1" 200 103 "-" "curl/8.7.1" {"service":"zarya-backend"}
+2025-08-25 20:35:56 [INFO]: ::1 - - [25/Aug/2025:15:05:56 +0000] "GET /health HTTP/1.1" 200 106 "-" "curl/8.7.1" {"service":"zarya-backend"}
+2025-08-25 20:37:45 [INFO]: ::1 - - [25/Aug/2025:15:07:45 +0000] "GET /api/v1/merchants HTTP/1.1" 401 33 "-" "curl/8.7.1" {"service":"zarya-backend"}
+2025-08-25 20:37:51 [INFO]: ::1 - - [25/Aug/2025:15:07:51 +0000] "POST /api/v1/auth/login HTTP/1.1" 404 71 "-" "curl/8.7.1" {"service":"zarya-backend"}
+2025-08-25 20:38:08 [WARN]: Security Event {"service":"zarya-backend","event":"Failed login attempt - merchant not found","email":"test@merchant.com"}
+2025-08-25 20:38:08 [INFO]: ::1 - - [25/Aug/2025:15:08:08 +0000] "POST /api/v1/auth/merchant/login HTTP/1.1" 401 31 "-" "curl/8.7.1" {"service":"zarya-backend"}
+2025-08-25 20:38:14 [WARN]: Security Event {"service":"zarya-backend","event":"Failed admin login attempt - admin not found","email":"admin@zarya.com"}
+2025-08-25 20:38:14 [INFO]: ::1 - - [25/Aug/2025:15:08:14 +0000] "POST /api/v1/auth/admin/login HTTP/1.1" 401 31 "-" "curl/8.7.1" {"service":"zarya-backend"}
+2025-08-25 20:38:23 [ERROR]: Application Error Cannot read properties of undefined (reading 'serverTimestamp') {"service":"zarya-backend","route":"/merchant/register"}
+TypeError: Cannot read properties of undefined (reading 'serverTimestamp')
+    at /Users/srs/Desktop/zarya/zarya_backend/src/routes/auth.js:168:58
+2025-08-25 20:38:23 [INFO]: ::1 - - [25/Aug/2025:15:08:23 +0000] "POST /api/v1/auth/merchant/register HTTP/1.1" 500 33 "-" "curl/8.7.1" {"service":"zarya-backend"}
+2025-08-25 20:38:55 [ERROR]: Application Error Cannot read properties of undefined (reading 'serverTimestamp') {"service":"zarya-backend","route":"/merchant/register"}
+TypeError: Cannot read properties of undefined (reading 'serverTimestamp')
+    at /Users/srs/Desktop/zarya/zarya_backend/src/routes/auth.js:168:58
+2025-08-25 20:38:55 [INFO]: ::1 - - [25/Aug/2025:15:08:55 +0000] "POST /api/v1/auth/merchant/register HTTP/1.1" 500 33 "-" "curl/8.7.1" {"service":"zarya-backend"}
+2025-08-25 20:41:10 [ERROR]: Application Error Cannot read properties of undefined (reading 'serverTimestamp') {"service":"zarya-backend","route":"/merchant/register"}
+TypeError: Cannot read properties of undefined (reading 'serverTimestamp')
+    at /Users/srs/Desktop/zarya/zarya_backend/src/routes/auth.js:168:58
+2025-08-25 20:41:10 [INFO]: ::1 - - [25/Aug/2025:15:11:10 +0000] "POST /api/v1/auth/merchant/register HTTP/1.1" 500 33 "-" "curl/8.7.1" {"service":"zarya-backend"}
+2025-08-25 20:42:01 [ERROR]: Application Error Cannot read properties of undefined (reading 'serverTimestamp') {"service":"zarya-backend","route":"/merchant/register"}
+TypeError: Cannot read properties of undefined (reading 'serverTimestamp')
+    at /Users/srs/Desktop/zarya/zarya_backend/src/routes/auth.js:168:58
+2025-08-25 20:42:01 [INFO]: ::1 - - [25/Aug/2025:15:12:01 +0000] "POST /api/v1/auth/merchant/register HTTP/1.1" 500 33 "-" "curl/8.7.1" {"service":"zarya-backend"}
+2025-08-25 20:42:08 [INFO]: Received SIGTERM. Starting graceful shutdown... {"service":"zarya-backend"}
+2025-08-25 20:42:17 [INFO]: Notification services initialized {"service":"zarya-backend"}
+2025-08-25 20:42:17 [INFO]: Scheduled cron job: subscription-expiry-check with schedule: 0 9 * * * {"service":"zarya-backend"}
+2025-08-25 20:42:17 [INFO]: Scheduled cron job: appointment-reminders with schedule: 0 * * * * {"service":"zarya-backend"}
+2025-08-25 20:42:17 [INFO]: Scheduled cron job: weekly-analytics with schedule: 0 8 * * 1 {"service":"zarya-backend"}
+2025-08-25 20:42:17 [INFO]: Scheduled cron job: daily-backup with schedule: 0 2 * * * {"service":"zarya-backend"}
+2025-08-25 20:42:17 [INFO]: Scheduled cron job: monthly-renewal-reminders with schedule: 0 10 1 * * {"service":"zarya-backend"}
+2025-08-25 20:42:17 [INFO]: Scheduled cron job: cleanup-notifications with schedule: 0 3 * * * {"service":"zarya-backend"}
+2025-08-25 20:42:17 [INFO]: Scheduled cron job: health-check with schedule: */30 * * * * {"service":"zarya-backend"}
+2025-08-25 20:42:17 [INFO]: Cron jobs initialized successfully {"service":"zarya-backend"}
+2025-08-25 20:42:17 [INFO]: Firebase initialized successfully {"service":"zarya-backend"}
+2025-08-25 20:42:17 [INFO]: Firebase initialized successfully {"service":"zarya-backend"}
+2025-08-25 20:42:17 [INFO]: Cloudinary initialized successfully {"service":"zarya-backend"}
+2025-08-25 20:42:17 [INFO]: Cloudinary initialized successfully {"service":"zarya-backend"}
+2025-08-25 20:42:17 [INFO]: Notification services initialized {"service":"zarya-backend"}
+2025-08-25 20:42:17 [INFO]: Notification service initialized successfully {"service":"zarya-backend"}
+2025-08-25 20:42:17 [INFO]: Cron jobs initialized successfully {"service":"zarya-backend"}
+2025-08-25 20:42:17 [INFO]: 🚀 Zarya Backend Server running on port 3000 {"service":"zarya-backend"}
+2025-08-25 20:42:17 [INFO]: 📊 Environment: development {"service":"zarya-backend"}
+2025-08-25 20:42:17 [INFO]: 🔗 Health check: http://localhost:3000/health {"service":"zarya-backend"}
+2025-08-25 20:42:17 [INFO]: 📚 API Documentation: http://localhost:3000/api/v1/docs {"service":"zarya-backend"}
+2025-08-25 20:42:30 [WARN]: Security Event {"service":"zarya-backend","event":"Merchant registration","email":"newmerchant@test.com","merchantId":"R1dobJA1CfAPoAeTl59m"}
+2025-08-25 20:42:30 [INFO]: ::1 - - [25/Aug/2025:15:12:30 +0000] "POST /api/v1/auth/merchant/register HTTP/1.1" 201 443 "-" "curl/8.7.1" {"service":"zarya-backend"}
+2025-08-25 20:42:39 [WARN]: Security Event {"service":"zarya-backend","event":"Failed login attempt - inactive merchant","email":"newmerchant@test.com","merchantId":"R1dobJA1CfAPoAeTl59m"}
+2025-08-25 20:42:39 [INFO]: ::1 - - [25/Aug/2025:15:12:39 +0000] "POST /api/v1/auth/merchant/login HTTP/1.1" 401 59 "-" "curl/8.7.1" {"service":"zarya-backend"}
+2025-08-25 20:42:47 [INFO]: ::1 - - [25/Aug/2025:15:12:47 +0000] "GET /api/v1/admin/dashboard HTTP/1.1" 401 33 "-" "curl/8.7.1" {"service":"zarya-backend"}
+2025-08-25 20:42:52 [INFO]: ::1 - - [25/Aug/2025:15:12:52 +0000] "GET /api/v1/analytics/overview HTTP/1.1" 401 33 "-" "curl/8.7.1" {"service":"zarya-backend"}
+2025-08-25 20:43:01 [ERROR]: Application Error logger.logInfo is not a function {"service":"zarya-backend","route":"/webhooks/cloudinary"}
+TypeError: logger.logInfo is not a function
+    at /Users/srs/Desktop/zarya/zarya_backend/src/routes/webhooks.js:14:12
+    at /Users/srs/Desktop/zarya/zarya_backend/src/middleware/errorHandler.js:128:21
+    at Layer.handle [as handle_request] (/Users/srs/Desktop/zarya/zarya_backend/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/srs/Desktop/zarya/zarya_backend/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/Users/srs/Desktop/zarya/zarya_backend/node_modules/express/lib/router/route.js:119:3)
+    at Layer.handle [as handle_request] (/Users/srs/Desktop/zarya/zarya_backend/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/srs/Desktop/zarya/zarya_backend/node_modules/express/lib/router/index.js:284:15
+    at Function.process_params (/Users/srs/Desktop/zarya/zarya_backend/node_modules/express/lib/router/index.js:346:12)
+    at next (/Users/srs/Desktop/zarya/zarya_backend/node_modules/express/lib/router/index.js:280:10)
+    at Function.handle (/Users/srs/Desktop/zarya/zarya_backend/node_modules/express/lib/router/index.js:175:3)
+2025-08-25 20:43:01 [INFO]: ::1 - - [25/Aug/2025:15:13:01 +0000] "POST /api/v1/webhooks/cloudinary HTTP/1.1" 500 37 "-" "curl/8.7.1" {"service":"zarya-backend"}
+2025-08-25 20:43:31 [ERROR]: Application Error logger.logInfo is not a function {"service":"zarya-backend","route":"/webhooks/cloudinary"}
+TypeError: logger.logInfo is not a function
+    at /Users/srs/Desktop/zarya/zarya_backend/src/routes/webhooks.js:14:12
+    at /Users/srs/Desktop/zarya/zarya_backend/src/middleware/errorHandler.js:128:21
+    at Layer.handle [as handle_request] (/Users/srs/Desktop/zarya/zarya_backend/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/srs/Desktop/zarya/zarya_backend/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/Users/srs/Desktop/zarya/zarya_backend/node_modules/express/lib/router/route.js:119:3)
+    at Layer.handle [as handle_request] (/Users/srs/Desktop/zarya/zarya_backend/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/srs/Desktop/zarya/zarya_backend/node_modules/express/lib/router/index.js:284:15
+    at Function.process_params (/Users/srs/Desktop/zarya/zarya_backend/node_modules/express/lib/router/index.js:346:12)
+    at next (/Users/srs/Desktop/zarya/zarya_backend/node_modules/express/lib/router/index.js:280:10)
+    at Function.handle (/Users/srs/Desktop/zarya/zarya_backend/node_modules/express/lib/router/index.js:175:3)
+2025-08-25 20:43:31 [INFO]: ::1 - - [25/Aug/2025:15:13:31 +0000] "POST /api/v1/webhooks/cloudinary HTTP/1.1" 500 37 "-" "curl/8.7.1" {"service":"zarya-backend"}
+2025-08-25 20:43:45 [ERROR]: Application Error logger.logInfo is not a function {"service":"zarya-backend","route":"/webhooks/cloudinary"}
+TypeError: logger.logInfo is not a function
+    at /Users/srs/Desktop/zarya/zarya_backend/src/routes/webhooks.js:14:12
+    at /Users/srs/Desktop/zarya/zarya_backend/src/middleware/errorHandler.js:128:21
+    at Layer.handle [as handle_request] (/Users/srs/Desktop/zarya/zarya_backend/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/srs/Desktop/zarya/zarya_backend/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/Users/srs/Desktop/zarya/zarya_backend/node_modules/express/lib/router/route.js:119:3)
+    at Layer.handle [as handle_request] (/Users/srs/Desktop/zarya/zarya_backend/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/srs/Desktop/zarya/zarya_backend/node_modules/express/lib/router/index.js:284:15
+    at Function.process_params (/Users/srs/Desktop/zarya/zarya_backend/node_modules/express/lib/router/index.js:346:12)
+    at next (/Users/srs/Desktop/zarya/zarya_backend/node_modules/express/lib/router/index.js:280:10)
+    at Function.handle (/Users/srs/Desktop/zarya/zarya_backend/node_modules/express/lib/router/index.js:175:3)
+2025-08-25 20:43:45 [INFO]: ::1 - - [25/Aug/2025:15:13:45 +0000] "POST /api/v1/webhooks/cloudinary HTTP/1.1" 500 37 "-" "curl/8.7.1" {"service":"zarya-backend"}
+2025-08-25 20:43:50 [INFO]: Received SIGTERM. Starting graceful shutdown... {"service":"zarya-backend"}
+2025-08-25 20:43:52 [INFO]: Notification services initialized {"service":"zarya-backend"}
+2025-08-25 20:43:52 [INFO]: Scheduled cron job: subscription-expiry-check with schedule: 0 9 * * * {"service":"zarya-backend"}
+2025-08-25 20:43:52 [INFO]: Scheduled cron job: appointment-reminders with schedule: 0 * * * * {"service":"zarya-backend"}
+2025-08-25 20:43:52 [INFO]: Scheduled cron job: weekly-analytics with schedule: 0 8 * * 1 {"service":"zarya-backend"}
+2025-08-25 20:43:52 [INFO]: Scheduled cron job: daily-backup with schedule: 0 2 * * * {"service":"zarya-backend"}
+2025-08-25 20:43:52 [INFO]: Scheduled cron job: monthly-renewal-reminders with schedule: 0 10 1 * * {"service":"zarya-backend"}
+2025-08-25 20:43:52 [INFO]: Scheduled cron job: cleanup-notifications with schedule: 0 3 * * * {"service":"zarya-backend"}
+2025-08-25 20:43:52 [INFO]: Scheduled cron job: health-check with schedule: */30 * * * * {"service":"zarya-backend"}
+2025-08-25 20:43:52 [INFO]: Cron jobs initialized successfully {"service":"zarya-backend"}
+2025-08-25 20:43:52 [INFO]: Firebase initialized successfully {"service":"zarya-backend"}
+2025-08-25 20:43:52 [INFO]: Firebase initialized successfully {"service":"zarya-backend"}
+2025-08-25 20:43:52 [INFO]: Cloudinary initialized successfully {"service":"zarya-backend"}
+2025-08-25 20:43:52 [INFO]: Cloudinary initialized successfully {"service":"zarya-backend"}
+2025-08-25 20:43:52 [INFO]: Notification services initialized {"service":"zarya-backend"}
+2025-08-25 20:43:52 [INFO]: Notification service initialized successfully {"service":"zarya-backend"}
+2025-08-25 20:43:52 [INFO]: Cron jobs initialized successfully {"service":"zarya-backend"}
+2025-08-25 20:43:52 [INFO]: 🚀 Zarya Backend Server running on port 3000 {"service":"zarya-backend"}
+2025-08-25 20:43:52 [INFO]: 📊 Environment: development {"service":"zarya-backend"}
+2025-08-25 20:43:52 [INFO]: 🔗 Health check: http://localhost:3000/health {"service":"zarya-backend"}
+2025-08-25 20:43:52 [INFO]: 📚 API Documentation: http://localhost:3000/api/v1/docs {"service":"zarya-backend"}
+2025-08-25 20:44:00 [INFO]: Cloudinary webhook received {"service":"zarya-backend"}
+2025-08-25 20:44:00 [INFO]: Unhandled Cloudinary notification type {"service":"zarya-backend"}
+2025-08-25 20:44:00 [INFO]: ::1 - - [25/Aug/2025:15:14:00 +0000] "POST /api/v1/webhooks/cloudinary HTTP/1.1" 200 16 "-" "curl/8.7.1" {"service":"zarya-backend"}
+2025-08-25 20:44:07 [INFO]: ::1 - - [25/Aug/2025:15:14:07 +0000] "GET /api/v1/merchants HTTP/1.1" 401 33 "-" "curl/8.7.1" {"service":"zarya-backend"}
+2025-08-25 20:44:15 [INFO]: ::1 - - [25/Aug/2025:15:14:15 +0000] "GET /api/v1/subscriptions HTTP/1.1" 401 33 "-" "curl/8.7.1" {"service":"zarya-backend"}
+2025-08-25 20:44:21 [INFO]: Stripe webhook received {"service":"zarya-backend","type":"payment_intent.succeeded"}
+2025-08-25 20:44:21 [ERROR]: Application Error Cannot read properties of undefined (reading 'object') {"service":"zarya-backend","route":"/webhooks/stripe"}
+TypeError: Cannot read properties of undefined (reading 'object')
+    at /Users/srs/Desktop/zarya/zarya_backend/src/routes/webhooks.js:60:49
+    at /Users/srs/Desktop/zarya/zarya_backend/src/middleware/errorHandler.js:128:21
+    at Layer.handle [as handle_request] (/Users/srs/Desktop/zarya/zarya_backend/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/srs/Desktop/zarya/zarya_backend/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/Users/srs/Desktop/zarya/zarya_backend/node_modules/express/lib/router/route.js:119:3)
+    at Layer.handle [as handle_request] (/Users/srs/Desktop/zarya/zarya_backend/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/srs/Desktop/zarya/zarya_backend/node_modules/express/lib/router/index.js:284:15
+    at Function.process_params (/Users/srs/Desktop/zarya/zarya_backend/node_modules/express/lib/router/index.js:346:12)
+    at next (/Users/srs/Desktop/zarya/zarya_backend/node_modules/express/lib/router/index.js:280:10)
+    at Function.handle (/Users/srs/Desktop/zarya/zarya_backend/node_modules/express/lib/router/index.js:175:3)
+2025-08-25 20:44:21 [INFO]: ::1 - - [25/Aug/2025:15:14:21 +0000] "POST /api/v1/webhooks/stripe HTTP/1.1" 400 37 "-" "curl/8.7.1" {"service":"zarya-backend"}
+2025-08-25 20:44:31 [INFO]: Real-time sync webhook received {"service":"zarya-backend","type":"merchant_update","merchantId":"test123"}
+2025-08-25 20:44:31 [INFO]: Unhandled sync type {"service":"zarya-backend","type":"merchant_update"}
+2025-08-25 20:44:31 [INFO]: ::1 - - [25/Aug/2025:15:14:31 +0000] "POST /api/v1/webhooks/realtime-sync HTTP/1.1" 200 16 "-" "curl/8.7.1" {"service":"zarya-backend"}
+2025-08-25 20:44:37 [INFO]: ::1 - - [25/Aug/2025:15:14:37 +0000] "GET /health HTTP/1.1" 200 104 "-" "curl/8.7.1" {"service":"zarya-backend"}
+2025-08-25 20:49:52 [INFO]: ::1 - - [25/Aug/2025:15:19:52 +0000] "POST /api/v1/auth/admin/register HTTP/1.1" 404 80 "-" "curl/8.7.1" {"service":"zarya-backend"}
+2025-08-25 20:50:25 [INFO]: ::1 - - [25/Aug/2025:15:20:25 +0000] "POST /api/v1/auth/admin/register HTTP/1.1" 404 80 "-" "curl/8.7.1" {"service":"zarya-backend"}
+2025-08-25 20:50:32 [INFO]: Received SIGTERM. Starting graceful shutdown... {"service":"zarya-backend"}
+2025-08-25 20:50:35 [INFO]: Notification services initialized {"service":"zarya-backend"}
+2025-08-25 20:50:35 [INFO]: Scheduled cron job: subscription-expiry-check with schedule: 0 9 * * * {"service":"zarya-backend"}
+2025-08-25 20:50:35 [INFO]: Scheduled cron job: appointment-reminders with schedule: 0 * * * * {"service":"zarya-backend"}
+2025-08-25 20:50:35 [INFO]: Scheduled cron job: weekly-analytics with schedule: 0 8 * * 1 {"service":"zarya-backend"}
+2025-08-25 20:50:35 [INFO]: Scheduled cron job: daily-backup with schedule: 0 2 * * * {"service":"zarya-backend"}
+2025-08-25 20:50:35 [INFO]: Scheduled cron job: monthly-renewal-reminders with schedule: 0 10 1 * * {"service":"zarya-backend"}
+2025-08-25 20:50:35 [INFO]: Scheduled cron job: cleanup-notifications with schedule: 0 3 * * * {"service":"zarya-backend"}
+2025-08-25 20:50:35 [INFO]: Scheduled cron job: health-check with schedule: */30 * * * * {"service":"zarya-backend"}
+2025-08-25 20:50:35 [INFO]: Cron jobs initialized successfully {"service":"zarya-backend"}
+2025-08-25 20:50:35 [INFO]: Firebase initialized successfully {"service":"zarya-backend"}
+2025-08-25 20:50:35 [INFO]: Firebase initialized successfully {"service":"zarya-backend"}
+2025-08-25 20:50:35 [INFO]: Cloudinary initialized successfully {"service":"zarya-backend"}
+2025-08-25 20:50:35 [INFO]: Cloudinary initialized successfully {"service":"zarya-backend"}
+2025-08-25 20:50:35 [INFO]: Notification services initialized {"service":"zarya-backend"}
+2025-08-25 20:50:35 [INFO]: Notification service initialized successfully {"service":"zarya-backend"}
+2025-08-25 20:50:35 [INFO]: Cron jobs initialized successfully {"service":"zarya-backend"}
+2025-08-25 20:50:35 [INFO]: 🚀 Zarya Backend Server running on port 3000 {"service":"zarya-backend"}
+2025-08-25 20:50:35 [INFO]: 📊 Environment: development {"service":"zarya-backend"}
+2025-08-25 20:50:35 [INFO]: 🔗 Health check: http://localhost:3000/health {"service":"zarya-backend"}
+2025-08-25 20:50:35 [INFO]: 📚 API Documentation: http://localhost:3000/api/v1/docs {"service":"zarya-backend"}
+2025-08-25 20:50:48 [WARN]: Security Event {"service":"zarya-backend","event":"Admin registration","email":"admin@zarya.com","adminId":"rz39SL36u6qMpKfsuPgZ"}
+2025-08-25 20:50:48 [INFO]: ::1 - - [25/Aug/2025:15:20:48 +0000] "POST /api/v1/auth/admin/register HTTP/1.1" 201 670 "-" "curl/8.7.1" {"service":"zarya-backend"}
+2025-08-25 20:50:58 [WARN]: Security Event {"service":"zarya-backend","event":"Admin login successful","email":"admin@zarya.com","adminId":"rz39SL36u6qMpKfsuPgZ"}
+2025-08-25 20:50:58 [INFO]: ::1 - - [25/Aug/2025:15:20:58 +0000] "POST /api/v1/auth/admin/login HTTP/1.1" 200 701 "-" "curl/8.7.1" {"service":"zarya-backend"}
+2025-08-25 20:51:12 [INFO]: ::1 - - [25/Aug/2025:15:21:12 +0000] "GET /api/v1/admin/dashboard HTTP/1.1" 200 192 "-" "curl/8.7.1" {"service":"zarya-backend"}
+2025-08-25 20:57:07 [INFO]: ::1 - - [25/Aug/2025:15:27:07 +0000] "OPTIONS /health HTTP/1.1" 204 0 "http://localhost:65078/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36" {"service":"zarya-backend"}
+2025-08-25 20:57:22 [INFO]: ::1 - - [25/Aug/2025:15:27:22 +0000] "OPTIONS /api/v1/auth/admin/login HTTP/1.1" 204 0 "http://localhost:65078/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36" {"service":"zarya-backend"}
+2025-08-25 20:57:30 [INFO]: ::1 - - [25/Aug/2025:15:27:30 +0000] "OPTIONS /api/v1/auth/admin/login HTTP/1.1" 204 0 "http://localhost:65078/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36" {"service":"zarya-backend"}
+2025-08-25 20:57:43 [INFO]: ::1 - - [25/Aug/2025:15:27:43 +0000] "OPTIONS /api/v1/auth/admin/login HTTP/1.1" 204 0 "http://localhost:65078/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36" {"service":"zarya-backend"}
+2025-08-25 20:57:50 [INFO]: ::1 - - [25/Aug/2025:15:27:50 +0000] "OPTIONS /api/v1/auth/admin/login HTTP/1.1" 204 0 "http://localhost:65078/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36" {"service":"zarya-backend"}
+2025-08-25 23:00:00 [INFO]: Starting cron job: health-check {"service":"zarya-backend"}
+2025-08-25 23:00:00 [INFO]: Completed cron job: health-check {"service":"zarya-backend"}
+2025-08-25 23:00:03 [ERROR]: Application Error {"service":"zarya-backend","unhealthyServices":["sms"]}
+2025-08-25 23:16:31 [INFO]: ::1 - - [25/Aug/2025:17:46:31 +0000] "OPTIONS /api/v1/auth/admin/login HTTP/1.1" 204 0 "http://localhost:49600/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36" {"service":"zarya-backend"}
+2025-08-25 23:19:05 [INFO]: ::1 - - [25/Aug/2025:17:49:05 +0000] "OPTIONS /api/v1/admin/dashboard HTTP/1.1" 204 0 "http://localhost:49743/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36" {"service":"zarya-backend"}
+2025-08-25 23:19:05 [INFO]: ::1 - - [25/Aug/2025:17:49:05 +0000] "OPTIONS /api/v1/merchants?page=1&limit=10 HTTP/1.1" 204 0 "http://localhost:49743/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36" {"service":"zarya-backend"}
+2025-08-25 23:19:05 [INFO]: ::1 - - [25/Aug/2025:17:49:05 +0000] "OPTIONS /api/v1/subscriptions?page=1&limit=10 HTTP/1.1" 204 0 "http://localhost:49743/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36" {"service":"zarya-backend"}
+2025-08-25 23:19:05 [INFO]: ::1 - - [25/Aug/2025:17:49:05 +0000] "OPTIONS /api/v1/analytics/overview? HTTP/1.1" 204 0 "http://localhost:49743/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36" {"service":"zarya-backend"}
+2025-08-25 23:20:49 [INFO]: ::1 - - [25/Aug/2025:17:50:49 +0000] "OPTIONS /api/v1/merchants HTTP/1.1" 204 0 "http://localhost:49743/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36" {"service":"zarya-backend"}
+2025-08-25 23:20:55 [INFO]: ::1 - - [25/Aug/2025:17:50:55 +0000] "OPTIONS /api/v1/merchants HTTP/1.1" 204 0 "http://localhost:49743/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36" {"service":"zarya-backend"}
+2025-08-25 23:30:00 [INFO]: Starting cron job: appointment-reminders {"service":"zarya-backend"}
+2025-08-25 23:30:00 [INFO]: Completed cron job: appointment-reminders {"service":"zarya-backend"}
+2025-08-25 23:30:00 [INFO]: Starting cron job: health-check {"service":"zarya-backend"}
+2025-08-25 23:30:00 [INFO]: Completed cron job: health-check {"service":"zarya-backend"}
+2025-08-25 23:30:02 [ERROR]: Application Error 9 FAILED_PRECONDITION: The query requires an index. You can create it here: https://console.firebase.google.com/v1/r/project/zarya-merchant-app/firestore/indexes?create_composite=Cldwcm9qZWN0cy96YXJ5YS1tZXJjaGFudC1hcHAvZGF0YWJhc2VzLyhkZWZhdWx0KS9jb2xsZWN0aW9uR3JvdXBzL2FwcG9pbnRtZW50cy9pbmRleGVzL18QARoKCgZzdGF0dXMQARoICgRkYXRlEAEaDAoIX19uYW1lX18QAQ {"service":"zarya-backend","context":"sendAppointmentReminders"}
+Error: 9 FAILED_PRECONDITION: The query requires an index. You can create it here: https://console.firebase.google.com/v1/r/project/zarya-merchant-app/firestore/indexes?create_composite=Cldwcm9qZWN0cy96YXJ5YS1tZXJjaGFudC1hcHAvZGF0YWJhc2VzLyhkZWZhdWx0KS9jb2xsZWN0aW9uR3JvdXBzL2FwcG9pbnRtZW50cy9pbmRleGVzL18QARoKCgZzdGF0dXMQARoICgRkYXRlEAEaDAoIX19uYW1lX18QAQ
+    at callErrorFromStatus (/Users/srs/Desktop/zarya/zarya_backend/node_modules/@grpc/grpc-js/build/src/call.js:32:19)
+    at Object.onReceiveStatus (/Users/srs/Desktop/zarya/zarya_backend/node_modules/@grpc/grpc-js/build/src/client.js:359:73)
+    at Object.onReceiveStatus (/Users/srs/Desktop/zarya/zarya_backend/node_modules/@grpc/grpc-js/build/src/client-interceptors.js:324:181)
+    at /Users/srs/Desktop/zarya/zarya_backend/node_modules/@grpc/grpc-js/build/src/resolving-call.js:135:78
+    at process.processTicksAndRejections (node:internal/process/task_queues:85:11)
+for call at
+    at ServiceClientImpl.makeServerStreamRequest (/Users/srs/Desktop/zarya/zarya_backend/node_modules/@grpc/grpc-js/build/src/client.js:342:32)
+    at ServiceClientImpl.<anonymous> (/Users/srs/Desktop/zarya/zarya_backend/node_modules/@grpc/grpc-js/build/src/make-client.js:105:19)
+    at /Users/srs/Desktop/zarya/zarya_backend/node_modules/@google-cloud/firestore/build/src/v1/firestore_client.js:242:33
+    at /Users/srs/Desktop/zarya/zarya_backend/node_modules/google-gax/build/src/streamingCalls/streamingApiCaller.js:38:28
+    at /Users/srs/Desktop/zarya/zarya_backend/node_modules/google-gax/build/src/normalCalls/timeout.js:44:16
+    at Object.request (/Users/srs/Desktop/zarya/zarya_backend/node_modules/google-gax/build/src/streamingCalls/streaming.js:234:40)
+    at makeRequest (/Users/srs/Desktop/zarya/zarya_backend/node_modules/retry-request/index.js:159:28)
+    at retryRequest (/Users/srs/Desktop/zarya/zarya_backend/node_modules/retry-request/index.js:119:5)
+    at StreamProxy.setStream (/Users/srs/Desktop/zarya/zarya_backend/node_modules/google-gax/build/src/streamingCalls/streaming.js:225:37)
+    at StreamingApiCaller.call (/Users/srs/Desktop/zarya/zarya_backend/node_modules/google-gax/build/src/streamingCalls/streamingApiCaller.js:54:16)
+Caused by: Error
+    at QueryUtil._getResponse (/Users/srs/Desktop/zarya/zarya_backend/node_modules/@google-cloud/firestore/build/src/reference/query-util.js:44:23)
+    at Query._getResponse (/Users/srs/Desktop/zarya/zarya_backend/node_modules/@google-cloud/firestore/build/src/reference/query.js:784:32)
+    at Query._get (/Users/srs/Desktop/zarya/zarya_backend/node_modules/@google-cloud/firestore/build/src/reference/query.js:777:35)
+    at /Users/srs/Desktop/zarya/zarya_backend/node_modules/@google-cloud/firestore/build/src/reference/query.js:745:43
+    at /Users/srs/Desktop/zarya/zarya_backend/node_modules/@google-cloud/firestore/build/src/telemetry/enabled-trace-util.js:110:30
+    at NoopContextManager.with (/Users/srs/Desktop/zarya/zarya_backend/node_modules/@opentelemetry/api/build/src/context/NoopContextManager.js:25:19)
+    at ContextAPI.with (/Users/srs/Desktop/zarya/zarya_backend/node_modules/@opentelemetry/api/build/src/api/context.js:60:46)
+    at NoopTracer.startActiveSpan (/Users/srs/Desktop/zarya/zarya_backend/node_modules/@opentelemetry/api/build/src/trace/NoopTracer.js:65:31)
+    at ProxyTracer.startActiveSpan (/Users/srs/Desktop/zarya/zarya_backend/node_modules/@opentelemetry/api/build/src/trace/ProxyTracer.js:36:24)
+    at EnabledTraceUtil.startActiveSpan (/Users/srs/Desktop/zarya/zarya_backend/node_modules/@google-cloud/firestore/build/src/telemetry/enabled-trace-util.js:102:28)
+2025-08-25 23:30:02 [ERROR]: Application Error {"service":"zarya-backend","unhealthyServices":["sms"]}
+2025-08-26 00:00:00 [INFO]: Starting cron job: health-check {"service":"zarya-backend"}
+2025-08-26 00:00:00 [INFO]: Completed cron job: health-check {"service":"zarya-backend"}
+2025-08-26 00:00:03 [ERROR]: Application Error {"service":"zarya-backend","unhealthyServices":["sms"]}
+2025-08-26 04:00:00 [INFO]: Starting cron job: health-check {"service":"zarya-backend"}
+2025-08-26 04:00:00 [INFO]: Completed cron job: health-check {"service":"zarya-backend"}
+2025-08-26 04:00:03 [ERROR]: Application Error {"service":"zarya-backend","unhealthyServices":["sms"]}
+2025-08-26 09:30:00 [INFO]: Starting cron job: appointment-reminders {"service":"zarya-backend"}
+2025-08-26 09:30:00 [INFO]: Completed cron job: appointment-reminders {"service":"zarya-backend"}
+2025-08-26 09:30:00 [INFO]: Starting cron job: health-check {"service":"zarya-backend"}
+2025-08-26 09:30:00 [INFO]: Completed cron job: health-check {"service":"zarya-backend"}
+2025-08-26 09:30:01 [ERROR]: Application Error 9 FAILED_PRECONDITION: The query requires an index. You can create it here: https://console.firebase.google.com/v1/r/project/zarya-merchant-app/firestore/indexes?create_composite=Cldwcm9qZWN0cy96YXJ5YS1tZXJjaGFudC1hcHAvZGF0YWJhc2VzLyhkZWZhdWx0KS9jb2xsZWN0aW9uR3JvdXBzL2FwcG9pbnRtZW50cy9pbmRleGVzL18QARoKCgZzdGF0dXMQARoICgRkYXRlEAEaDAoIX19uYW1lX18QAQ {"service":"zarya-backend","context":"sendAppointmentReminders"}
+Error: 9 FAILED_PRECONDITION: The query requires an index. You can create it here: https://console.firebase.google.com/v1/r/project/zarya-merchant-app/firestore/indexes?create_composite=Cldwcm9qZWN0cy96YXJ5YS1tZXJjaGFudC1hcHAvZGF0YWJhc2VzLyhkZWZhdWx0KS9jb2xsZWN0aW9uR3JvdXBzL2FwcG9pbnRtZW50cy9pbmRleGVzL18QARoKCgZzdGF0dXMQARoICgRkYXRlEAEaDAoIX19uYW1lX18QAQ
+    at callErrorFromStatus (/Users/srs/Desktop/zarya/zarya_backend/node_modules/@grpc/grpc-js/build/src/call.js:32:19)
+    at Object.onReceiveStatus (/Users/srs/Desktop/zarya/zarya_backend/node_modules/@grpc/grpc-js/build/src/client.js:359:73)
+    at Object.onReceiveStatus (/Users/srs/Desktop/zarya/zarya_backend/node_modules/@grpc/grpc-js/build/src/client-interceptors.js:324:181)
+    at /Users/srs/Desktop/zarya/zarya_backend/node_modules/@grpc/grpc-js/build/src/resolving-call.js:135:78
+    at process.processTicksAndRejections (node:internal/process/task_queues:85:11)
+for call at
+    at ServiceClientImpl.makeServerStreamRequest (/Users/srs/Desktop/zarya/zarya_backend/node_modules/@grpc/grpc-js/build/src/client.js:342:32)
+    at ServiceClientImpl.<anonymous> (/Users/srs/Desktop/zarya/zarya_backend/node_modules/@grpc/grpc-js/build/src/make-client.js:105:19)
+    at /Users/srs/Desktop/zarya/zarya_backend/node_modules/@google-cloud/firestore/build/src/v1/firestore_client.js:242:33
+    at /Users/srs/Desktop/zarya/zarya_backend/node_modules/google-gax/build/src/streamingCalls/streamingApiCaller.js:38:28
+    at /Users/srs/Desktop/zarya/zarya_backend/node_modules/google-gax/build/src/normalCalls/timeout.js:44:16
+    at Object.request (/Users/srs/Desktop/zarya/zarya_backend/node_modules/google-gax/build/src/streamingCalls/streaming.js:234:40)
+    at makeRequest (/Users/srs/Desktop/zarya/zarya_backend/node_modules/retry-request/index.js:159:28)
+    at retryRequest (/Users/srs/Desktop/zarya/zarya_backend/node_modules/retry-request/index.js:119:5)
+    at StreamProxy.setStream (/Users/srs/Desktop/zarya/zarya_backend/node_modules/google-gax/build/src/streamingCalls/streaming.js:225:37)
+    at StreamingApiCaller.call (/Users/srs/Desktop/zarya/zarya_backend/node_modules/google-gax/build/src/streamingCalls/streamingApiCaller.js:54:16)
+Caused by: Error
+    at QueryUtil._getResponse (/Users/srs/Desktop/zarya/zarya_backend/node_modules/@google-cloud/firestore/build/src/reference/query-util.js:44:23)
+    at Query._getResponse (/Users/srs/Desktop/zarya/zarya_backend/node_modules/@google-cloud/firestore/build/src/reference/query.js:784:32)
+    at Query._get (/Users/srs/Desktop/zarya/zarya_backend/node_modules/@google-cloud/firestore/build/src/reference/query.js:777:35)
+    at /Users/srs/Desktop/zarya/zarya_backend/node_modules/@google-cloud/firestore/build/src/reference/query.js:745:43
+    at /Users/srs/Desktop/zarya/zarya_backend/node_modules/@google-cloud/firestore/build/src/telemetry/enabled-trace-util.js:110:30
+    at NoopContextManager.with (/Users/srs/Desktop/zarya/zarya_backend/node_modules/@opentelemetry/api/build/src/context/NoopContextManager.js:25:19)
+    at ContextAPI.with (/Users/srs/Desktop/zarya/zarya_backend/node_modules/@opentelemetry/api/build/src/api/context.js:60:46)
+    at NoopTracer.startActiveSpan (/Users/srs/Desktop/zarya/zarya_backend/node_modules/@opentelemetry/api/build/src/trace/NoopTracer.js:65:31)
+    at ProxyTracer.startActiveSpan (/Users/srs/Desktop/zarya/zarya_backend/node_modules/@opentelemetry/api/build/src/trace/ProxyTracer.js:36:24)
+    at EnabledTraceUtil.startActiveSpan (/Users/srs/Desktop/zarya/zarya_backend/node_modules/@google-cloud/firestore/build/src/telemetry/enabled-trace-util.js:102:28)
+2025-08-26 09:30:01 [ERROR]: Application Error {"service":"zarya-backend","unhealthyServices":["sms"]}
+2025-08-26 11:00:00 [INFO]: Starting cron job: health-check {"service":"zarya-backend"}
+2025-08-26 11:00:00 [INFO]: Completed cron job: health-check {"service":"zarya-backend"}
+2025-08-26 11:00:02 [ERROR]: Application Error {"service":"zarya-backend","unhealthyServices":["sms"]}
+2025-08-26 11:38:55 [INFO]: Notification services initialized {"service":"zarya-backend"}
+2025-08-26 11:38:55 [INFO]: Scheduled cron job: subscription-expiry-check with schedule: 0 9 * * * {"service":"zarya-backend"}
+2025-08-26 11:38:55 [INFO]: Scheduled cron job: appointment-reminders with schedule: 0 * * * * {"service":"zarya-backend"}
+2025-08-26 11:38:55 [INFO]: Scheduled cron job: weekly-analytics with schedule: 0 8 * * 1 {"service":"zarya-backend"}
+2025-08-26 11:38:55 [INFO]: Scheduled cron job: daily-backup with schedule: 0 2 * * * {"service":"zarya-backend"}
+2025-08-26 11:38:55 [INFO]: Scheduled cron job: monthly-renewal-reminders with schedule: 0 10 1 * * {"service":"zarya-backend"}
+2025-08-26 11:38:55 [INFO]: Scheduled cron job: cleanup-notifications with schedule: 0 3 * * * {"service":"zarya-backend"}
+2025-08-26 11:38:55 [INFO]: Scheduled cron job: health-check with schedule: */30 * * * * {"service":"zarya-backend"}
+2025-08-26 11:38:55 [INFO]: Cron jobs initialized successfully {"service":"zarya-backend"}
+2025-08-26 11:38:55 [INFO]: Firebase initialized successfully {"service":"zarya-backend"}
+2025-08-26 11:38:55 [INFO]: Firebase initialized successfully {"service":"zarya-backend"}
+2025-08-26 11:38:55 [INFO]: Cloudinary initialized successfully {"service":"zarya-backend"}
+2025-08-26 11:38:55 [INFO]: Cloudinary initialized successfully {"service":"zarya-backend"}
+2025-08-26 11:38:55 [INFO]: Notification services initialized {"service":"zarya-backend"}
+2025-08-26 11:38:55 [INFO]: Notification service initialized successfully {"service":"zarya-backend"}
+2025-08-26 11:38:55 [INFO]: Cron jobs initialized successfully {"service":"zarya-backend"}
+2025-08-26 11:38:55 [INFO]: 🚀 Zarya Backend Server running on port 3000 {"service":"zarya-backend"}
+2025-08-26 11:38:55 [INFO]: 📊 Environment: development {"service":"zarya-backend"}
+2025-08-26 11:38:55 [INFO]: 🔗 Health check: http://localhost:3000/health {"service":"zarya-backend"}
+2025-08-26 11:38:55 [INFO]: 📚 API Documentation: http://localhost:3000/api/v1/docs {"service":"zarya-backend"}
+2025-08-26 11:45:13 [INFO]: Received SIGINT. Starting graceful shutdown... {"service":"zarya-backend"}
+2025-08-26 11:45:23 [INFO]: Notification services initialized {"service":"zarya-backend"}
+2025-08-26 11:45:23 [INFO]: Scheduled cron job: subscription-expiry-check with schedule: 0 9 * * * {"service":"zarya-backend"}
+2025-08-26 11:45:23 [INFO]: Scheduled cron job: appointment-reminders with schedule: 0 * * * * {"service":"zarya-backend"}
+2025-08-26 11:45:23 [INFO]: Scheduled cron job: weekly-analytics with schedule: 0 8 * * 1 {"service":"zarya-backend"}
+2025-08-26 11:45:23 [INFO]: Scheduled cron job: daily-backup with schedule: 0 2 * * * {"service":"zarya-backend"}
+2025-08-26 11:45:23 [INFO]: Scheduled cron job: monthly-renewal-reminders with schedule: 0 10 1 * * {"service":"zarya-backend"}
+2025-08-26 11:45:23 [INFO]: Scheduled cron job: cleanup-notifications with schedule: 0 3 * * * {"service":"zarya-backend"}
+2025-08-26 11:45:23 [INFO]: Scheduled cron job: health-check with schedule: */30 * * * * {"service":"zarya-backend"}
+2025-08-26 11:45:23 [INFO]: Cron jobs initialized successfully {"service":"zarya-backend"}
+2025-08-26 11:45:23 [INFO]: Firebase initialized successfully {"service":"zarya-backend"}
+2025-08-26 11:45:23 [INFO]: Firebase initialized successfully {"service":"zarya-backend"}
+2025-08-26 11:45:23 [INFO]: Cloudinary initialized successfully {"service":"zarya-backend"}
+2025-08-26 11:45:23 [INFO]: Cloudinary initialized successfully {"service":"zarya-backend"}
+2025-08-26 11:45:23 [INFO]: Notification services initialized {"service":"zarya-backend"}
+2025-08-26 11:45:23 [INFO]: Notification service initialized successfully {"service":"zarya-backend"}
+2025-08-26 11:45:23 [INFO]: Cron jobs initialized successfully {"service":"zarya-backend"}
+2025-08-26 11:45:23 [INFO]: 🚀 Zarya Backend Server running on port 3000 {"service":"zarya-backend"}
+2025-08-26 11:45:23 [INFO]: 📊 Environment: development {"service":"zarya-backend"}
+2025-08-26 11:45:23 [INFO]: 🔗 Health check: http://localhost:3000/health {"service":"zarya-backend"}
+2025-08-26 11:45:23 [INFO]: 📚 API Documentation: http://localhost:3000/api/v1/docs {"service":"zarya-backend"}
+2025-08-26 11:45:29 [INFO]: ::1 - - [26/Aug/2025:06:15:29 +0000] "GET /health HTTP/1.1" 200 103 "-" "curl/8.7.1" {"service":"zarya-backend"}
+2025-08-26 11:45:35 [WARN]: Security Event {"service":"zarya-backend","event":"Failed login attempt - merchant not found","email":"test@example.com"}
+2025-08-26 11:45:35 [INFO]: ::1 - - [26/Aug/2025:06:15:35 +0000] "POST /api/v1/auth/merchant/login HTTP/1.1" 401 31 "-" "curl/8.7.1" {"service":"zarya-backend"}
+2025-08-26 11:48:26 [INFO]: Received SIGTERM. Starting graceful shutdown... {"service":"zarya-backend"}
+2025-08-26 11:48:28 [INFO]: Notification services initialized {"service":"zarya-backend"}
+2025-08-26 11:48:28 [INFO]: Scheduled cron job: subscription-expiry-check with schedule: 0 9 * * * {"service":"zarya-backend"}
+2025-08-26 11:48:28 [INFO]: Scheduled cron job: appointment-reminders with schedule: 0 * * * * {"service":"zarya-backend"}
+2025-08-26 11:48:28 [INFO]: Scheduled cron job: weekly-analytics with schedule: 0 8 * * 1 {"service":"zarya-backend"}
+2025-08-26 11:48:28 [INFO]: Scheduled cron job: daily-backup with schedule: 0 2 * * * {"service":"zarya-backend"}
+2025-08-26 11:48:28 [INFO]: Scheduled cron job: monthly-renewal-reminders with schedule: 0 10 1 * * {"service":"zarya-backend"}
+2025-08-26 11:48:28 [INFO]: Scheduled cron job: cleanup-notifications with schedule: 0 3 * * * {"service":"zarya-backend"}
+2025-08-26 11:48:28 [INFO]: Scheduled cron job: health-check with schedule: */30 * * * * {"service":"zarya-backend"}
+2025-08-26 11:48:28 [INFO]: Cron jobs initialized successfully {"service":"zarya-backend"}
+2025-08-26 11:48:28 [INFO]: Firebase initialized successfully {"service":"zarya-backend"}
+2025-08-26 11:48:28 [INFO]: Firebase initialized successfully {"service":"zarya-backend"}
+2025-08-26 11:48:28 [INFO]: Cloudinary initialized successfully {"service":"zarya-backend"}
+2025-08-26 11:48:28 [INFO]: Cloudinary initialized successfully {"service":"zarya-backend"}
+2025-08-26 11:48:28 [INFO]: Initializing sample data in memory... {"service":"zarya-backend"}
+2025-08-26 11:48:29 [INFO]: Initialized 3 merchants and 1 admins {"service":"zarya-backend"}
+2025-08-26 11:48:29 [INFO]: In-memory database initialized with sample data {"service":"zarya-backend"}
+2025-08-26 11:48:29 [INFO]: Notification services initialized {"service":"zarya-backend"}
+2025-08-26 11:48:29 [INFO]: Notification service initialized successfully {"service":"zarya-backend"}
+2025-08-26 11:48:29 [INFO]: Cron jobs initialized successfully {"service":"zarya-backend"}
+2025-08-26 11:48:29 [INFO]: 🚀 Zarya Backend Server running on port 3000 {"service":"zarya-backend"}
+2025-08-26 11:48:29 [INFO]: 📊 Environment: development {"service":"zarya-backend"}
+2025-08-26 11:48:29 [INFO]: 🔗 Health check: http://localhost:3000/health {"service":"zarya-backend"}
+2025-08-26 11:48:29 [INFO]: 📚 API Documentation: http://localhost:3000/api/v1/docs {"service":"zarya-backend"}
+2025-08-26 11:48:35 [INFO]: Notification services initialized {"service":"zarya-backend"}
+2025-08-26 11:48:35 [INFO]: Scheduled cron job: subscription-expiry-check with schedule: 0 9 * * * {"service":"zarya-backend"}
+2025-08-26 11:48:35 [INFO]: Scheduled cron job: appointment-reminders with schedule: 0 * * * * {"service":"zarya-backend"}
+2025-08-26 11:48:35 [INFO]: Scheduled cron job: weekly-analytics with schedule: 0 8 * * 1 {"service":"zarya-backend"}
+2025-08-26 11:48:35 [INFO]: Scheduled cron job: daily-backup with schedule: 0 2 * * * {"service":"zarya-backend"}
+2025-08-26 11:48:35 [INFO]: Scheduled cron job: monthly-renewal-reminders with schedule: 0 10 1 * * {"service":"zarya-backend"}
+2025-08-26 11:48:35 [INFO]: Scheduled cron job: cleanup-notifications with schedule: 0 3 * * * {"service":"zarya-backend"}
+2025-08-26 11:48:35 [INFO]: Scheduled cron job: health-check with schedule: */30 * * * * {"service":"zarya-backend"}
+2025-08-26 11:48:35 [INFO]: Cron jobs initialized successfully {"service":"zarya-backend"}
+2025-08-26 11:48:35 [INFO]: Firebase initialized successfully {"service":"zarya-backend"}
+2025-08-26 11:48:35 [INFO]: Firebase initialized successfully {"service":"zarya-backend"}
+2025-08-26 11:48:35 [INFO]: Cloudinary initialized successfully {"service":"zarya-backend"}
+2025-08-26 11:48:35 [INFO]: Cloudinary initialized successfully {"service":"zarya-backend"}
+2025-08-26 11:48:35 [INFO]: Initializing sample data in memory... {"service":"zarya-backend"}
+2025-08-26 11:48:35 [INFO]: Initialized 3 merchants and 1 admins {"service":"zarya-backend"}
+2025-08-26 11:49:01 [INFO]: Notification services initialized {"service":"zarya-backend"}
+2025-08-26 11:49:01 [INFO]: Scheduled cron job: subscription-expiry-check with schedule: 0 9 * * * {"service":"zarya-backend"}
+2025-08-26 11:49:01 [INFO]: Scheduled cron job: appointment-reminders with schedule: 0 * * * * {"service":"zarya-backend"}
+2025-08-26 11:49:01 [INFO]: Scheduled cron job: weekly-analytics with schedule: 0 8 * * 1 {"service":"zarya-backend"}
+2025-08-26 11:49:01 [INFO]: Scheduled cron job: daily-backup with schedule: 0 2 * * * {"service":"zarya-backend"}
+2025-08-26 11:49:01 [INFO]: Scheduled cron job: monthly-renewal-reminders with schedule: 0 10 1 * * {"service":"zarya-backend"}
+2025-08-26 11:49:01 [INFO]: Scheduled cron job: cleanup-notifications with schedule: 0 3 * * * {"service":"zarya-backend"}
+2025-08-26 11:49:01 [INFO]: Scheduled cron job: health-check with schedule: */30 * * * * {"service":"zarya-backend"}
+2025-08-26 11:49:01 [INFO]: Cron jobs initialized successfully {"service":"zarya-backend"}
+2025-08-26 11:49:01 [INFO]: Firebase initialized successfully {"service":"zarya-backend"}
+2025-08-26 11:49:01 [INFO]: Firebase initialized successfully {"service":"zarya-backend"}
+2025-08-26 11:49:01 [INFO]: Cloudinary initialized successfully {"service":"zarya-backend"}
+2025-08-26 11:49:01 [INFO]: Cloudinary initialized successfully {"service":"zarya-backend"}
+2025-08-26 11:49:01 [INFO]: Initializing sample data in memory... {"service":"zarya-backend"}
+2025-08-26 11:49:01 [INFO]: Initialized 3 merchants and 1 admins {"service":"zarya-backend"}
+2025-08-26 11:49:01 [INFO]: In-memory database initialized with sample data {"service":"zarya-backend"}
+2025-08-26 11:49:01 [INFO]: Notification services initialized {"service":"zarya-backend"}
+2025-08-26 11:49:01 [INFO]: Notification service initialized successfully {"service":"zarya-backend"}
+2025-08-26 11:49:01 [INFO]: Cron jobs initialized successfully {"service":"zarya-backend"}
+2025-08-26 11:49:01 [INFO]: 🚀 Zarya Backend Server running on port 3000 {"service":"zarya-backend"}
+2025-08-26 11:49:01 [INFO]: 📊 Environment: development {"service":"zarya-backend"}
+2025-08-26 11:49:01 [INFO]: 🔗 Health check: http://localhost:3000/health {"service":"zarya-backend"}
+2025-08-26 11:49:01 [INFO]: 📚 API Documentation: http://localhost:3000/api/v1/docs {"service":"zarya-backend"}
+2025-08-26 11:49:07 [ERROR]: Application Error merchantDoc is not defined {"service":"zarya-backend","route":"/merchant/login"}
+ReferenceError: merchantDoc is not defined
+    at /Users/srs/Desktop/zarya/zarya_backend/src/routes/auth.js:89:5
+2025-08-26 11:49:07 [INFO]: ::1 - - [26/Aug/2025:06:19:07 +0000] "POST /api/v1/auth/merchant/login HTTP/1.1" 500 33 "-" "curl/8.7.1" {"service":"zarya-backend"}
+2025-08-26 11:49:28 [ERROR]: Application Error merchantDoc is not defined {"service":"zarya-backend","route":"/merchant/login"}
+ReferenceError: merchantDoc is not defined
+    at /Users/srs/Desktop/zarya/zarya_backend/src/routes/auth.js:89:5
+2025-08-26 11:49:28 [INFO]: ::1 - - [26/Aug/2025:06:19:28 +0000] "POST /api/v1/auth/merchant/login HTTP/1.1" 500 33 "-" "curl/8.7.1" {"service":"zarya-backend"}
+2025-08-26 11:50:42 [ERROR]: Application Error merchantDoc is not defined {"service":"zarya-backend","route":"/merchant/login"}
+ReferenceError: merchantDoc is not defined
+    at /Users/srs/Desktop/zarya/zarya_backend/src/routes/auth.js:89:5
+2025-08-26 11:50:42 [INFO]: ::1 - - [26/Aug/2025:06:20:42 +0000] "POST /api/v1/auth/merchant/login HTTP/1.1" 500 33 "-" "curl/8.7.1" {"service":"zarya-backend"}
+2025-08-26 11:51:14 [INFO]: Received SIGTERM. Starting graceful shutdown... {"service":"zarya-backend"}
+2025-08-26 11:51:16 [INFO]: Notification services initialized {"service":"zarya-backend"}
+2025-08-26 11:51:16 [INFO]: Scheduled cron job: subscription-expiry-check with schedule: 0 9 * * * {"service":"zarya-backend"}
+2025-08-26 11:51:16 [INFO]: Scheduled cron job: appointment-reminders with schedule: 0 * * * * {"service":"zarya-backend"}
+2025-08-26 11:51:16 [INFO]: Scheduled cron job: weekly-analytics with schedule: 0 8 * * 1 {"service":"zarya-backend"}
+2025-08-26 11:51:16 [INFO]: Scheduled cron job: daily-backup with schedule: 0 2 * * * {"service":"zarya-backend"}
+2025-08-26 11:51:16 [INFO]: Scheduled cron job: monthly-renewal-reminders with schedule: 0 10 1 * * {"service":"zarya-backend"}
+2025-08-26 11:51:16 [INFO]: Scheduled cron job: cleanup-notifications with schedule: 0 3 * * * {"service":"zarya-backend"}
+2025-08-26 11:51:16 [INFO]: Scheduled cron job: health-check with schedule: */30 * * * * {"service":"zarya-backend"}
+2025-08-26 11:51:16 [INFO]: Cron jobs initialized successfully {"service":"zarya-backend"}
+2025-08-26 11:51:16 [INFO]: Firebase initialized successfully {"service":"zarya-backend"}
+2025-08-26 11:51:16 [INFO]: Firebase initialized successfully {"service":"zarya-backend"}
+2025-08-26 11:51:16 [INFO]: Cloudinary initialized successfully {"service":"zarya-backend"}
+2025-08-26 11:51:16 [INFO]: Cloudinary initialized successfully {"service":"zarya-backend"}
+2025-08-26 11:51:16 [INFO]: Initializing sample data in memory... {"service":"zarya-backend"}
+2025-08-26 11:51:17 [INFO]: Initialized 3 merchants and 1 admins {"service":"zarya-backend"}
+2025-08-26 11:51:17 [INFO]: In-memory database initialized with sample data {"service":"zarya-backend"}
+2025-08-26 11:51:17 [INFO]: Notification services initialized {"service":"zarya-backend"}
+2025-08-26 11:51:17 [INFO]: Notification service initialized successfully {"service":"zarya-backend"}
+2025-08-26 11:51:17 [INFO]: Cron jobs initialized successfully {"service":"zarya-backend"}
+2025-08-26 11:51:17 [INFO]: 🚀 Zarya Backend Server running on port 3000 {"service":"zarya-backend"}
+2025-08-26 11:51:17 [INFO]: 📊 Environment: development {"service":"zarya-backend"}
+2025-08-26 11:51:17 [INFO]: 🔗 Health check: http://localhost:3000/health {"service":"zarya-backend"}
+2025-08-26 11:51:17 [INFO]: 📚 API Documentation: http://localhost:3000/api/v1/docs {"service":"zarya-backend"}
+2025-08-26 11:51:21 [INFO]: Notification services initialized {"service":"zarya-backend"}
+2025-08-26 11:51:21 [INFO]: Scheduled cron job: subscription-expiry-check with schedule: 0 9 * * * {"service":"zarya-backend"}
+2025-08-26 11:51:21 [INFO]: Scheduled cron job: appointment-reminders with schedule: 0 * * * * {"service":"zarya-backend"}
+2025-08-26 11:51:21 [INFO]: Scheduled cron job: weekly-analytics with schedule: 0 8 * * 1 {"service":"zarya-backend"}
+2025-08-26 11:51:21 [INFO]: Scheduled cron job: daily-backup with schedule: 0 2 * * * {"service":"zarya-backend"}
+2025-08-26 11:51:21 [INFO]: Scheduled cron job: monthly-renewal-reminders with schedule: 0 10 1 * * {"service":"zarya-backend"}
+2025-08-26 11:51:21 [INFO]: Scheduled cron job: cleanup-notifications with schedule: 0 3 * * * {"service":"zarya-backend"}
+2025-08-26 11:51:21 [INFO]: Scheduled cron job: health-check with schedule: */30 * * * * {"service":"zarya-backend"}
+2025-08-26 11:51:21 [INFO]: Cron jobs initialized successfully {"service":"zarya-backend"}
+2025-08-26 11:51:21 [INFO]: Firebase initialized successfully {"service":"zarya-backend"}
+2025-08-26 11:51:21 [INFO]: Firebase initialized successfully {"service":"zarya-backend"}
+2025-08-26 11:51:21 [INFO]: Cloudinary initialized successfully {"service":"zarya-backend"}
+2025-08-26 11:51:21 [INFO]: Cloudinary initialized successfully {"service":"zarya-backend"}
+2025-08-26 11:51:21 [INFO]: Initializing sample data in memory... {"service":"zarya-backend"}
+2025-08-26 11:51:21 [INFO]: Initialized 3 merchants and 1 admins {"service":"zarya-backend"}
+2025-08-26 11:51:31 [INFO]: Notification services initialized {"service":"zarya-backend"}
+2025-08-26 11:51:31 [INFO]: Scheduled cron job: subscription-expiry-check with schedule: 0 9 * * * {"service":"zarya-backend"}
+2025-08-26 11:51:31 [INFO]: Scheduled cron job: appointment-reminders with schedule: 0 * * * * {"service":"zarya-backend"}
+2025-08-26 11:51:31 [INFO]: Scheduled cron job: weekly-analytics with schedule: 0 8 * * 1 {"service":"zarya-backend"}
+2025-08-26 11:51:31 [INFO]: Scheduled cron job: daily-backup with schedule: 0 2 * * * {"service":"zarya-backend"}
+2025-08-26 11:51:31 [INFO]: Scheduled cron job: monthly-renewal-reminders with schedule: 0 10 1 * * {"service":"zarya-backend"}
+2025-08-26 11:51:31 [INFO]: Scheduled cron job: cleanup-notifications with schedule: 0 3 * * * {"service":"zarya-backend"}
+2025-08-26 11:51:31 [INFO]: Scheduled cron job: health-check with schedule: */30 * * * * {"service":"zarya-backend"}
+2025-08-26 11:51:31 [INFO]: Cron jobs initialized successfully {"service":"zarya-backend"}
+2025-08-26 11:51:31 [INFO]: Firebase initialized successfully {"service":"zarya-backend"}
+2025-08-26 11:51:31 [INFO]: Firebase initialized successfully {"service":"zarya-backend"}
+2025-08-26 11:51:31 [INFO]: Cloudinary initialized successfully {"service":"zarya-backend"}
+2025-08-26 11:51:31 [INFO]: Cloudinary initialized successfully {"service":"zarya-backend"}
+2025-08-26 11:51:31 [INFO]: Initializing sample data in memory... {"service":"zarya-backend"}
+2025-08-26 11:51:31 [INFO]: Initialized 3 merchants and 1 admins {"service":"zarya-backend"}
+2025-08-26 11:51:31 [INFO]: In-memory database initialized with sample data {"service":"zarya-backend"}
+2025-08-26 11:51:31 [INFO]: Notification services initialized {"service":"zarya-backend"}
+2025-08-26 11:51:31 [INFO]: Notification service initialized successfully {"service":"zarya-backend"}
+2025-08-26 11:51:31 [INFO]: Cron jobs initialized successfully {"service":"zarya-backend"}
+2025-08-26 11:51:31 [INFO]: 🚀 Zarya Backend Server running on port 3000 {"service":"zarya-backend"}
+2025-08-26 11:51:31 [INFO]: 📊 Environment: development {"service":"zarya-backend"}
+2025-08-26 11:51:31 [INFO]: 🔗 Health check: http://localhost:3000/health {"service":"zarya-backend"}
+2025-08-26 11:51:31 [INFO]: 📚 API Documentation: http://localhost:3000/api/v1/docs {"service":"zarya-backend"}
+2025-08-26 11:51:42 [WARN]: Security Event {"service":"zarya-backend","event":"Merchant login successful","email":"sarah@beautysalonpro.com","merchantId":"merchant_1"}
+2025-08-26 11:51:42 [INFO]: ::1 - - [26/Aug/2025:06:21:42 +0000] "POST /api/v1/auth/merchant/login HTTP/1.1" 200 747 "-" "curl/8.7.1" {"service":"zarya-backend"}
+2025-08-26 11:51:50 [ERROR]: Application Error adminDoc is not defined {"service":"zarya-backend","route":"/admin/login"}
+ReferenceError: adminDoc is not defined
+    at /Users/srs/Desktop/zarya/zarya_backend/src/routes/auth.js:246:5
+2025-08-26 11:51:50 [INFO]: ::1 - - [26/Aug/2025:06:21:50 +0000] "POST /api/v1/auth/admin/login HTTP/1.1" 500 33 "-" "curl/8.7.1" {"service":"zarya-backend"}
+2025-08-26 11:52:10 [ERROR]: Application Error adminDoc is not defined {"service":"zarya-backend","route":"/admin/login"}
+ReferenceError: adminDoc is not defined
+    at /Users/srs/Desktop/zarya/zarya_backend/src/routes/auth.js:246:5
+2025-08-26 11:52:10 [INFO]: ::1 - - [26/Aug/2025:06:22:10 +0000] "POST /api/v1/auth/admin/login HTTP/1.1" 500 33 "-" "curl/8.7.1" {"service":"zarya-backend"}
+2025-08-26 11:52:18 [INFO]: Received SIGTERM. Starting graceful shutdown... {"service":"zarya-backend"}
+2025-08-26 11:52:20 [INFO]: Notification services initialized {"service":"zarya-backend"}
+2025-08-26 11:52:20 [INFO]: Scheduled cron job: subscription-expiry-check with schedule: 0 9 * * * {"service":"zarya-backend"}
+2025-08-26 11:52:20 [INFO]: Scheduled cron job: appointment-reminders with schedule: 0 * * * * {"service":"zarya-backend"}
+2025-08-26 11:52:20 [INFO]: Scheduled cron job: weekly-analytics with schedule: 0 8 * * 1 {"service":"zarya-backend"}
+2025-08-26 11:52:20 [INFO]: Scheduled cron job: daily-backup with schedule: 0 2 * * * {"service":"zarya-backend"}
+2025-08-26 11:52:20 [INFO]: Scheduled cron job: monthly-renewal-reminders with schedule: 0 10 1 * * {"service":"zarya-backend"}
+2025-08-26 11:52:20 [INFO]: Scheduled cron job: cleanup-notifications with schedule: 0 3 * * * {"service":"zarya-backend"}
+2025-08-26 11:52:20 [INFO]: Scheduled cron job: health-check with schedule: */30 * * * * {"service":"zarya-backend"}
+2025-08-26 11:52:20 [INFO]: Cron jobs initialized successfully {"service":"zarya-backend"}
+2025-08-26 11:52:20 [INFO]: Firebase initialized successfully {"service":"zarya-backend"}
+2025-08-26 11:52:20 [INFO]: Firebase initialized successfully {"service":"zarya-backend"}
+2025-08-26 11:52:20 [INFO]: Cloudinary initialized successfully {"service":"zarya-backend"}
+2025-08-26 11:52:20 [INFO]: Cloudinary initialized successfully {"service":"zarya-backend"}
+2025-08-26 11:52:20 [INFO]: Initializing sample data in memory... {"service":"zarya-backend"}
+2025-08-26 11:52:20 [INFO]: Initialized 3 merchants and 1 admins {"service":"zarya-backend"}
+2025-08-26 11:52:20 [INFO]: In-memory database initialized with sample data {"service":"zarya-backend"}
+2025-08-26 11:52:20 [INFO]: Notification services initialized {"service":"zarya-backend"}
+2025-08-26 11:52:20 [INFO]: Notification service initialized successfully {"service":"zarya-backend"}
+2025-08-26 11:52:20 [INFO]: Cron jobs initialized successfully {"service":"zarya-backend"}
+2025-08-26 11:52:20 [INFO]: 🚀 Zarya Backend Server running on port 3000 {"service":"zarya-backend"}
+2025-08-26 11:52:20 [INFO]: 📊 Environment: development {"service":"zarya-backend"}
+2025-08-26 11:52:20 [INFO]: 🔗 Health check: http://localhost:3000/health {"service":"zarya-backend"}
+2025-08-26 11:52:20 [INFO]: 📚 API Documentation: http://localhost:3000/api/v1/docs {"service":"zarya-backend"}
+2025-08-26 11:52:30 [WARN]: Security Event {"service":"zarya-backend","event":"Admin login successful","email":"admin@zarya.com","adminId":"admin_1"}
+2025-08-26 11:52:30 [INFO]: ::1 - - [26/Aug/2025:06:22:30 +0000] "POST /api/v1/auth/admin/login HTTP/1.1" 200 513 "-" "curl/8.7.1" {"service":"zarya-backend"}
+2025-08-26 11:52:57 [INFO]: ::1 - - [26/Aug/2025:06:22:57 +0000] "OPTIONS /health HTTP/1.1" 204 0 "http://localhost:51320/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36" {"service":"zarya-backend"}
+2025-08-26 11:53:15 [INFO]: ::1 - - [26/Aug/2025:06:23:15 +0000] "OPTIONS /api/v1/auth/admin/login HTTP/1.1" 204 0 "http://localhost:51320/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36" {"service":"zarya-backend"}
+2025-08-26 11:53:21 [INFO]: ::1 - - [26/Aug/2025:06:23:21 +0000] "OPTIONS /api/v1/auth/admin/login HTTP/1.1" 204 0 "http://localhost:51320/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36" {"service":"zarya-backend"}
+2025-08-26 11:53:29 [INFO]: ::1 - - [26/Aug/2025:06:23:29 +0000] "OPTIONS /api/v1/auth/admin/login HTTP/1.1" 204 0 "http://localhost:51320/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36" {"service":"zarya-backend"}
+2025-08-26 11:53:35 [INFO]: ::1 - - [26/Aug/2025:06:23:35 +0000] "OPTIONS /api/v1/auth/admin/login HTTP/1.1" 204 0 "http://localhost:51320/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36" {"service":"zarya-backend"}
+2025-08-26 11:53:44 [INFO]: ::1 - - [26/Aug/2025:06:23:44 +0000] "OPTIONS /api/v1/auth/admin/login HTTP/1.1" 204 0 "http://localhost:51320/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36" {"service":"zarya-backend"}
+2025-08-26 11:54:01 [INFO]: ::1 - - [26/Aug/2025:06:24:01 +0000] "OPTIONS /api/v1/auth/merchant/login HTTP/1.1" 204 0 "http://localhost:51320/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36" {"service":"zarya-backend"}
+2025-08-26 11:54:07 [INFO]: ::1 - - [26/Aug/2025:06:24:07 +0000] "OPTIONS /api/v1/auth/merchant/login HTTP/1.1" 204 0 "http://localhost:51320/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36" {"service":"zarya-backend"}
+2025-08-26 11:54:13 [INFO]: ::1 - - [26/Aug/2025:06:24:13 +0000] "OPTIONS /api/v1/auth/merchant/login HTTP/1.1" 204 0 "http://localhost:51320/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36" {"service":"zarya-backend"}
+2025-08-26 11:54:18 [INFO]: ::1 - - [26/Aug/2025:06:24:18 +0000] "OPTIONS /api/v1/auth/merchant/login HTTP/1.1" 204 0 "http://localhost:51320/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36" {"service":"zarya-backend"}
+2025-08-26 11:54:41 [INFO]: ::1 - - [26/Aug/2025:06:24:41 +0000] "OPTIONS /api/v1/auth/merchant/login HTTP/1.1" 204 0 "http://localhost:51320/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36" {"service":"zarya-backend"}
+2025-08-26 11:54:53 [INFO]: ::1 - - [26/Aug/2025:06:24:53 +0000] "OPTIONS /api/v1/auth/merchant/login HTTP/1.1" 204 0 "http://localhost:51320/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36" {"service":"zarya-backend"}
+2025-08-26 11:55:29 [INFO]: ::1 - - [26/Aug/2025:06:25:29 +0000] "OPTIONS /api/v1/auth/admin/login HTTP/1.1" 204 0 "http://localhost:51320/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36" {"service":"zarya-backend"}
+2025-08-26 11:57:37 [INFO]: ::1 - - [26/Aug/2025:06:27:37 +0000] "GET /health HTTP/1.1" 200 105 "-" "curl/8.7.1" {"service":"zarya-backend"}
+2025-08-26 11:57:59 [INFO]: Received SIGTERM. Starting graceful shutdown... {"service":"zarya-backend"}
+2025-08-26 11:58:01 [INFO]: Notification services initialized {"service":"zarya-backend"}
+2025-08-26 11:58:01 [INFO]: Scheduled cron job: subscription-expiry-check with schedule: 0 9 * * * {"service":"zarya-backend"}
+2025-08-26 11:58:01 [INFO]: Scheduled cron job: appointment-reminders with schedule: 0 * * * * {"service":"zarya-backend"}
+2025-08-26 11:58:01 [INFO]: Scheduled cron job: weekly-analytics with schedule: 0 8 * * 1 {"service":"zarya-backend"}
+2025-08-26 11:58:01 [INFO]: Scheduled cron job: daily-backup with schedule: 0 2 * * * {"service":"zarya-backend"}
+2025-08-26 11:58:01 [INFO]: Scheduled cron job: monthly-renewal-reminders with schedule: 0 10 1 * * {"service":"zarya-backend"}
+2025-08-26 11:58:01 [INFO]: Scheduled cron job: cleanup-notifications with schedule: 0 3 * * * {"service":"zarya-backend"}
+2025-08-26 11:58:01 [INFO]: Scheduled cron job: health-check with schedule: */30 * * * * {"service":"zarya-backend"}
+2025-08-26 11:58:01 [INFO]: Cron jobs initialized successfully {"service":"zarya-backend"}
+2025-08-26 11:58:01 [INFO]: Firebase initialized successfully {"service":"zarya-backend"}
+2025-08-26 11:58:01 [INFO]: Firebase initialized successfully {"service":"zarya-backend"}
+2025-08-26 11:58:01 [INFO]: Cloudinary initialized successfully {"service":"zarya-backend"}
+2025-08-26 11:58:01 [INFO]: Cloudinary initialized successfully {"service":"zarya-backend"}
+2025-08-26 11:58:01 [INFO]: Initializing sample data in memory... {"service":"zarya-backend"}
+2025-08-26 11:58:01 [INFO]: Initialized 3 merchants and 1 admins {"service":"zarya-backend"}
+2025-08-26 11:58:01 [INFO]: In-memory database initialized with sample data {"service":"zarya-backend"}
+2025-08-26 11:58:01 [INFO]: Notification services initialized {"service":"zarya-backend"}
+2025-08-26 11:58:01 [INFO]: Notification service initialized successfully {"service":"zarya-backend"}
+2025-08-26 11:58:01 [INFO]: Cron jobs initialized successfully {"service":"zarya-backend"}
+2025-08-26 11:58:01 [INFO]: 🚀 Zarya Backend Server running on port 3000 {"service":"zarya-backend"}
+2025-08-26 11:58:01 [INFO]: 📊 Environment: development {"service":"zarya-backend"}
+2025-08-26 11:58:01 [INFO]: 🔗 Health check: http://localhost:3000/health {"service":"zarya-backend"}
+2025-08-26 11:58:01 [INFO]: 📚 API Documentation: http://localhost:3000/api/v1/docs {"service":"zarya-backend"}
+2025-08-26 11:58:09 [INFO]: ::1 - - [26/Aug/2025:06:28:09 +0000] "GET /health HTTP/1.1" 200 103 "-" "curl/8.7.1" {"service":"zarya-backend"}
+2025-08-26 11:58:23 [WARN]: Security Event {"service":"zarya-backend","event":"Admin login successful","email":"admin@zarya.com","adminId":"admin_1"}
+2025-08-26 11:58:23 [INFO]: ::1 - - [26/Aug/2025:06:28:23 +0000] "POST /api/v1/auth/admin/login HTTP/1.1" 200 513 "-" "curl/8.7.1" {"service":"zarya-backend"}
+2025-08-26 11:58:53 [INFO]: ::1 - - [26/Aug/2025:06:28:53 +0000] "OPTIONS /api/v1/auth/admin/login HTTP/1.1" 204 0 "http://localhost:51519/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36" {"service":"zarya-backend"}
+2025-08-26 11:58:54 [INFO]: ::1 - - [26/Aug/2025:06:28:54 +0000] "OPTIONS /api/v1/auth/admin/login HTTP/1.1" 204 0 "http://localhost:51519/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36" {"service":"zarya-backend"}
+2025-08-26 11:58:55 [INFO]: ::1 - - [26/Aug/2025:06:28:55 +0000] "OPTIONS /api/v1/auth/admin/login HTTP/1.1" 204 0 "http://localhost:51519/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36" {"service":"zarya-backend"}
+2025-08-26 11:58:58 [INFO]: ::1 - - [26/Aug/2025:06:28:58 +0000] "OPTIONS /api/v1/auth/admin/login HTTP/1.1" 204 0 "http://localhost:51519/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36" {"service":"zarya-backend"}
+2025-08-26 11:59:07 [INFO]: ::1 - - [26/Aug/2025:06:29:07 +0000] "GET /health HTTP/1.1" 200 104 "-" "curl/8.7.1" {"service":"zarya-backend"}
+2025-08-26 11:59:18 [INFO]: ::1 - - [26/Aug/2025:06:29:18 +0000] "OPTIONS /api/v1/auth/admin/login HTTP/1.1" 204 0 "http://localhost:51519/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36" {"service":"zarya-backend"}
+2025-08-26 11:59:37 [INFO]: Received SIGTERM. Starting graceful shutdown... {"service":"zarya-backend"}
+2025-08-26 11:59:39 [INFO]: Notification services initialized {"service":"zarya-backend"}
+2025-08-26 11:59:39 [INFO]: Scheduled cron job: subscription-expiry-check with schedule: 0 9 * * * {"service":"zarya-backend"}
+2025-08-26 11:59:39 [INFO]: Scheduled cron job: appointment-reminders with schedule: 0 * * * * {"service":"zarya-backend"}
+2025-08-26 11:59:39 [INFO]: Scheduled cron job: weekly-analytics with schedule: 0 8 * * 1 {"service":"zarya-backend"}
+2025-08-26 11:59:39 [INFO]: Scheduled cron job: daily-backup with schedule: 0 2 * * * {"service":"zarya-backend"}
+2025-08-26 11:59:39 [INFO]: Scheduled cron job: monthly-renewal-reminders with schedule: 0 10 1 * * {"service":"zarya-backend"}
+2025-08-26 11:59:39 [INFO]: Scheduled cron job: cleanup-notifications with schedule: 0 3 * * * {"service":"zarya-backend"}
+2025-08-26 11:59:39 [INFO]: Scheduled cron job: health-check with schedule: */30 * * * * {"service":"zarya-backend"}
+2025-08-26 11:59:39 [INFO]: Cron jobs initialized successfully {"service":"zarya-backend"}
+2025-08-26 11:59:39 [INFO]: Firebase initialized successfully {"service":"zarya-backend"}
+2025-08-26 11:59:39 [INFO]: Firebase initialized successfully {"service":"zarya-backend"}
+2025-08-26 11:59:39 [INFO]: Cloudinary initialized successfully {"service":"zarya-backend"}
+2025-08-26 11:59:39 [INFO]: Cloudinary initialized successfully {"service":"zarya-backend"}
+2025-08-26 11:59:39 [INFO]: Initializing sample data in memory... {"service":"zarya-backend"}
+2025-08-26 11:59:40 [INFO]: Initialized 3 merchants and 1 admins {"service":"zarya-backend"}
+2025-08-26 11:59:40 [INFO]: In-memory database initialized with sample data {"service":"zarya-backend"}
+2025-08-26 11:59:40 [INFO]: Notification services initialized {"service":"zarya-backend"}
+2025-08-26 11:59:40 [INFO]: Notification service initialized successfully {"service":"zarya-backend"}
+2025-08-26 11:59:40 [INFO]: Cron jobs initialized successfully {"service":"zarya-backend"}
+2025-08-26 11:59:40 [INFO]: 🚀 Zarya Backend Server running on port 3000 {"service":"zarya-backend"}
+2025-08-26 11:59:40 [INFO]: 📊 Environment: development {"service":"zarya-backend"}
+2025-08-26 11:59:40 [INFO]: 🔗 Health check: http://localhost:3000/health {"service":"zarya-backend"}
+2025-08-26 11:59:40 [INFO]: 📚 API Documentation: http://localhost:3000/api/v1/docs {"service":"zarya-backend"}
+2025-08-26 12:00:00 [INFO]: Starting cron job: health-check {"service":"zarya-backend"}
+2025-08-26 12:00:00 [INFO]: Completed cron job: health-check {"service":"zarya-backend"}
+2025-08-26 12:00:02 [ERROR]: Application Error {"service":"zarya-backend","unhealthyServices":["sms"]}
+2025-08-26 12:00:02 [INFO]: ::1 - - [26/Aug/2025:06:30:02 +0000] "GET /health HTTP/1.1" 200 104 "-" "curl/8.7.1" {"service":"zarya-backend"}
+2025-08-26 12:00:09 [WARN]: Security Event {"service":"zarya-backend","event":"Admin login successful","email":"admin@zarya.com","adminId":"admin_1"}
+2025-08-26 12:00:09 [INFO]: ::1 - - [26/Aug/2025:06:30:09 +0000] "POST /api/v1/auth/admin/login HTTP/1.1" 200 513 "-" "curl/8.7.1" {"service":"zarya-backend"}
+2025-08-26 12:01:17 [INFO]: ::1 - - [26/Aug/2025:06:31:17 +0000] "GET /health HTTP/1.1" 200 104 "-" "curl/8.7.1" {"service":"zarya-backend"}
+2025-08-26 12:01:26 [INFO]: ::1 - - [26/Aug/2025:06:31:26 +0000] "GET /health HTTP/1.1" 200 105 "-" "curl/8.7.1" {"service":"zarya-backend"}
+2025-08-26 12:01:46 [INFO]: Received SIGTERM. Starting graceful shutdown... {"service":"zarya-backend"}
+2025-08-26 12:01:49 [INFO]: Notification services initialized {"service":"zarya-backend"}
+2025-08-26 12:01:49 [INFO]: Scheduled cron job: subscription-expiry-check with schedule: 0 9 * * * {"service":"zarya-backend"}
+2025-08-26 12:01:49 [INFO]: Scheduled cron job: appointment-reminders with schedule: 0 * * * * {"service":"zarya-backend"}
+2025-08-26 12:01:49 [INFO]: Scheduled cron job: weekly-analytics with schedule: 0 8 * * 1 {"service":"zarya-backend"}
+2025-08-26 12:01:49 [INFO]: Scheduled cron job: daily-backup with schedule: 0 2 * * * {"service":"zarya-backend"}
+2025-08-26 12:01:49 [INFO]: Scheduled cron job: monthly-renewal-reminders with schedule: 0 10 1 * * {"service":"zarya-backend"}
+2025-08-26 12:01:49 [INFO]: Scheduled cron job: cleanup-notifications with schedule: 0 3 * * * {"service":"zarya-backend"}
+2025-08-26 12:01:49 [INFO]: Scheduled cron job: health-check with schedule: */30 * * * * {"service":"zarya-backend"}
+2025-08-26 12:01:49 [INFO]: Cron jobs initialized successfully {"service":"zarya-backend"}
+2025-08-26 12:01:49 [INFO]: Firebase initialized successfully {"service":"zarya-backend"}
+2025-08-26 12:01:49 [INFO]: Firebase initialized successfully {"service":"zarya-backend"}
+2025-08-26 12:01:49 [INFO]: Cloudinary initialized successfully {"service":"zarya-backend"}
+2025-08-26 12:01:49 [INFO]: Cloudinary initialized successfully {"service":"zarya-backend"}
+2025-08-26 12:01:49 [INFO]: Initializing sample data in memory... {"service":"zarya-backend"}
+2025-08-26 12:01:49 [INFO]: Initialized 3 merchants and 1 admins {"service":"zarya-backend"}
+2025-08-26 12:01:49 [INFO]: In-memory database initialized with sample data {"service":"zarya-backend"}
+2025-08-26 12:01:49 [INFO]: Notification services initialized {"service":"zarya-backend"}
+2025-08-26 12:01:49 [INFO]: Notification service initialized successfully {"service":"zarya-backend"}
+2025-08-26 12:01:49 [INFO]: Cron jobs initialized successfully {"service":"zarya-backend"}
+2025-08-26 12:01:49 [INFO]: 🚀 Zarya Backend Server running on port 3000 {"service":"zarya-backend"}
+2025-08-26 12:01:49 [INFO]: 📊 Environment: development {"service":"zarya-backend"}
+2025-08-26 12:01:49 [INFO]: 🔗 Health check: http://localhost:3000/health {"service":"zarya-backend"}
+2025-08-26 12:01:49 [INFO]: 📚 API Documentation: http://localhost:3000/api/v1/docs {"service":"zarya-backend"}
+2025-08-26 12:01:57 [INFO]: ::1 - - [26/Aug/2025:06:31:57 +0000] "GET /health HTTP/1.1" 200 103 "-" "curl/8.7.1" {"service":"zarya-backend"}
+2025-08-26 12:02:06 [WARN]: Security Event {"service":"zarya-backend","event":"Admin login successful","email":"admin@zarya.com","adminId":"admin_1"}
+2025-08-26 12:02:06 [INFO]: ::1 - - [26/Aug/2025:06:32:06 +0000] "POST /api/v1/auth/admin/login HTTP/1.1" 200 513 "-" "curl/8.7.1" {"service":"zarya-backend"}
+2025-08-26 12:02:49 [WARN]: Security Event {"service":"zarya-backend","event":"Admin login successful","email":"admin@zarya.com","adminId":"admin_1"}
+2025-08-26 12:02:49 [INFO]: ::1 - - [26/Aug/2025:06:32:49 +0000] "POST /api/v1/auth/admin/login HTTP/1.1" 200 554 "http://localhost:51597/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36" {"service":"zarya-backend"}
+2025-08-26 12:02:49 [INFO]: ::1 - - [26/Aug/2025:06:32:49 +0000] "GET /api/v1/subscriptions?page=1&limit=10 HTTP/1.1" 401 26 "http://localhost:51597/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36" {"service":"zarya-backend"}
+2025-08-26 12:02:49 [INFO]: ::1 - - [26/Aug/2025:06:32:49 +0000] "GET /api/v1/admin/dashboard HTTP/1.1" 401 26 "http://localhost:51597/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36" {"service":"zarya-backend"}
+2025-08-26 12:02:50 [INFO]: ::1 - - [26/Aug/2025:06:32:50 +0000] "GET /api/v1/merchants?page=1&limit=10 HTTP/1.1" 401 26 "http://localhost:51597/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36" {"service":"zarya-backend"}
+2025-08-26 12:02:50 [INFO]: ::1 - - [26/Aug/2025:06:32:50 +0000] "GET /api/v1/analytics/overview? HTTP/1.1" 401 26 "http://localhost:51597/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36" {"service":"zarya-backend"}
+2025-08-26 12:03:45 [INFO]: Firebase Operation {"service":"zarya-backend","operation":"create","collection":"merchants","documentId":"cq8UGUsC3bm7DKyObWgh"}
+2025-08-26 12:03:45 [INFO]: Audit Log {"service":"zarya-backend","action":"merchant_created","userId":"system","resource":"merchants","merchantId":"cq8UGUsC3bm7DKyObWgh"}
+2025-08-26 12:03:45 [INFO]: ::1 - - [26/Aug/2025:06:33:45 +0000] "POST /api/v1/merchants HTTP/1.1" 201 360 "http://localhost:51597/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36" {"service":"zarya-backend"}
+2025-08-26 12:04:20 [WARN]: Security Event {"service":"zarya-backend","event":"Failed login attempt - merchant not found","email":"teamsubhu@gmail.com"}
+2025-08-26 12:04:20 [INFO]: ::1 - - [26/Aug/2025:06:34:20 +0000] "POST /api/v1/auth/merchant/login HTTP/1.1" 401 31 "http://localhost:51597/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36" {"service":"zarya-backend"}
+2025-08-26 12:04:26 [WARN]: Security Event {"service":"zarya-backend","event":"Failed login attempt - merchant not found","email":"teamsubhu@gmail.com"}
+2025-08-26 12:04:26 [INFO]: ::1 - - [26/Aug/2025:06:34:26 +0000] "POST /api/v1/auth/merchant/login HTTP/1.1" 401 31 "http://localhost:51597/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36" {"service":"zarya-backend"}
+2025-08-26 12:07:41 [INFO]: Received SIGTERM. Starting graceful shutdown... {"service":"zarya-backend"}
+2025-08-26 12:07:43 [INFO]: Notification services initialized {"service":"zarya-backend"}
+2025-08-26 12:07:43 [INFO]: Scheduled cron job: subscription-expiry-check with schedule: 0 9 * * * {"service":"zarya-backend"}
+2025-08-26 12:07:43 [INFO]: Scheduled cron job: appointment-reminders with schedule: 0 * * * * {"service":"zarya-backend"}
+2025-08-26 12:07:43 [INFO]: Scheduled cron job: weekly-analytics with schedule: 0 8 * * 1 {"service":"zarya-backend"}
+2025-08-26 12:07:43 [INFO]: Scheduled cron job: daily-backup with schedule: 0 2 * * * {"service":"zarya-backend"}
+2025-08-26 12:07:43 [INFO]: Scheduled cron job: monthly-renewal-reminders with schedule: 0 10 1 * * {"service":"zarya-backend"}
+2025-08-26 12:07:43 [INFO]: Scheduled cron job: cleanup-notifications with schedule: 0 3 * * * {"service":"zarya-backend"}
+2025-08-26 12:07:43 [INFO]: Scheduled cron job: health-check with schedule: */30 * * * * {"service":"zarya-backend"}
+2025-08-26 12:07:43 [INFO]: Cron jobs initialized successfully {"service":"zarya-backend"}
+2025-08-26 12:07:43 [INFO]: Firebase initialized successfully {"service":"zarya-backend"}
+2025-08-26 12:07:43 [INFO]: Firebase initialized successfully {"service":"zarya-backend"}
+2025-08-26 12:07:43 [INFO]: Cloudinary initialized successfully {"service":"zarya-backend"}
+2025-08-26 12:07:43 [INFO]: Cloudinary initialized successfully {"service":"zarya-backend"}
+2025-08-26 12:07:43 [INFO]: Initializing sample data in memory... {"service":"zarya-backend"}
+2025-08-26 12:07:43 [INFO]: Initialized 3 merchants and 1 admins {"service":"zarya-backend"}
+2025-08-26 12:07:43 [INFO]: In-memory database initialized with sample data {"service":"zarya-backend"}
+2025-08-26 12:07:43 [INFO]: Notification services initialized {"service":"zarya-backend"}
+2025-08-26 12:07:43 [INFO]: Notification service initialized successfully {"service":"zarya-backend"}
+2025-08-26 12:07:43 [INFO]: Cron jobs initialized successfully {"service":"zarya-backend"}
+2025-08-26 12:07:43 [INFO]: 🚀 Zarya Backend Server running on port 3000 {"service":"zarya-backend"}
+2025-08-26 12:07:43 [INFO]: 📊 Environment: development {"service":"zarya-backend"}
+2025-08-26 12:07:43 [INFO]: 🔗 Health check: http://localhost:3000/health {"service":"zarya-backend"}
+2025-08-26 12:07:43 [INFO]: 📚 API Documentation: http://localhost:3000/api/v1/docs {"service":"zarya-backend"}
+2025-08-26 12:07:51 [INFO]: ::1 - - [26/Aug/2025:06:37:51 +0000] "GET /health HTTP/1.1" 200 103 "-" "curl/8.7.1" {"service":"zarya-backend"}
+2025-08-26 12:08:02 [INFO]: Created merchant {"service":"zarya-backend","id":"merchant_1756190282426"}
+2025-08-26 12:08:02 [INFO]: Audit Log {"service":"zarya-backend","action":"merchant_created","userId":"system","resource":"merchants","merchantId":"merchant_1756190282426"}
+2025-08-26 12:08:02 [INFO]: ::1 - - [26/Aug/2025:06:38:02 +0000] "POST /api/v1/merchants HTTP/1.1" 201 404 "-" "curl/8.7.1" {"service":"zarya-backend"}
+2025-08-26 12:08:09 [WARN]: Security Event {"service":"zarya-backend","event":"Merchant login successful","email":"test@example.com","merchantId":"merchant_1756190282426"}
+2025-08-26 12:08:09 [INFO]: ::1 - - [26/Aug/2025:06:38:09 +0000] "POST /api/v1/auth/merchant/login HTTP/1.1" 200 698 "-" "curl/8.7.1" {"service":"zarya-backend"}
+2025-08-26 12:08:16 [WARN]: Security Event {"service":"zarya-backend","event":"Admin login successful","email":"admin@zarya.com","adminId":"admin_1"}
+2025-08-26 12:08:16 [INFO]: ::1 - - [26/Aug/2025:06:38:16 +0000] "POST /api/v1/auth/admin/login HTTP/1.1" 200 513 "-" "curl/8.7.1" {"service":"zarya-backend"}
+2025-08-26 12:08:30 [INFO]: ::1 - - [26/Aug/2025:06:38:30 +0000] "GET /api/v1/merchants HTTP/1.1" 401 26 "-" "curl/8.7.1" {"service":"zarya-backend"}
+2025-08-26 12:09:15 [INFO]: Received SIGTERM. Starting graceful shutdown... {"service":"zarya-backend"}
+2025-08-26 12:09:17 [INFO]: Notification services initialized {"service":"zarya-backend"}
+2025-08-26 12:09:17 [INFO]: Scheduled cron job: subscription-expiry-check with schedule: 0 9 * * * {"service":"zarya-backend"}
+2025-08-26 12:09:17 [INFO]: Scheduled cron job: appointment-reminders with schedule: 0 * * * * {"service":"zarya-backend"}
+2025-08-26 12:09:17 [INFO]: Scheduled cron job: weekly-analytics with schedule: 0 8 * * 1 {"service":"zarya-backend"}
+2025-08-26 12:09:17 [INFO]: Scheduled cron job: daily-backup with schedule: 0 2 * * * {"service":"zarya-backend"}
+2025-08-26 12:09:17 [INFO]: Scheduled cron job: monthly-renewal-reminders with schedule: 0 10 1 * * {"service":"zarya-backend"}
+2025-08-26 12:09:17 [INFO]: Scheduled cron job: cleanup-notifications with schedule: 0 3 * * * {"service":"zarya-backend"}
+2025-08-26 12:09:17 [INFO]: Scheduled cron job: health-check with schedule: */30 * * * * {"service":"zarya-backend"}
+2025-08-26 12:09:17 [INFO]: Cron jobs initialized successfully {"service":"zarya-backend"}
+2025-08-26 12:09:17 [INFO]: Firebase initialized successfully {"service":"zarya-backend"}
+2025-08-26 12:09:17 [INFO]: Firebase initialized successfully {"service":"zarya-backend"}
+2025-08-26 12:09:17 [INFO]: Cloudinary initialized successfully {"service":"zarya-backend"}
+2025-08-26 12:09:17 [INFO]: Cloudinary initialized successfully {"service":"zarya-backend"}
+2025-08-26 12:09:17 [INFO]: Initializing sample data in memory... {"service":"zarya-backend"}
+2025-08-26 12:09:17 [INFO]: Initialized 3 merchants and 1 admins {"service":"zarya-backend"}
+2025-08-26 12:09:17 [INFO]: In-memory database initialized with sample data {"service":"zarya-backend"}
+2025-08-26 12:09:17 [INFO]: Notification services initialized {"service":"zarya-backend"}
+2025-08-26 12:09:17 [INFO]: Notification service initialized successfully {"service":"zarya-backend"}
+2025-08-26 12:09:17 [INFO]: Cron jobs initialized successfully {"service":"zarya-backend"}
+2025-08-26 12:09:17 [INFO]: 🚀 Zarya Backend Server running on port 3000 {"service":"zarya-backend"}
+2025-08-26 12:09:17 [INFO]: 📊 Environment: development {"service":"zarya-backend"}
+2025-08-26 12:09:17 [INFO]: 🔗 Health check: http://localhost:3000/health {"service":"zarya-backend"}
+2025-08-26 12:09:17 [INFO]: 📚 API Documentation: http://localhost:3000/api/v1/docs {"service":"zarya-backend"}
+2025-08-26 12:09:29 [WARN]: Security Event {"service":"zarya-backend","event":"Admin login successful","email":"admin@zarya.com","adminId":"admin_1"}
+2025-08-26 12:09:29 [INFO]: ::1 - - [26/Aug/2025:06:39:29 +0000] "POST /api/v1/auth/admin/login HTTP/1.1" 200 513 "-" "curl/8.7.1" {"service":"zarya-backend"}
+2025-08-26 12:09:44 [INFO]: Read merchants {"service":"zarya-backend","count":3}
+2025-08-26 12:09:44 [INFO]: ::1 - - [26/Aug/2025:06:39:44 +0000] "GET /api/v1/merchants HTTP/1.1" 200 1227 "-" "curl/8.7.1" {"service":"zarya-backend"}
+2025-08-26 12:11:19 [INFO]: ::1 - - [26/Aug/2025:06:41:19 +0000] "GET /health HTTP/1.1" 200 105 "-" "curl/8.7.1" {"service":"zarya-backend"}
+2025-08-26 12:11:26 [WARN]: Security Event {"service":"zarya-backend","event":"Failed login attempt - merchant not found","email":"teamsubhu@gmail.com"}
+2025-08-26 12:11:26 [INFO]: ::1 - - [26/Aug/2025:06:41:26 +0000] "POST /api/v1/auth/merchant/login HTTP/1.1" 401 31 "http://localhost:51597/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36" {"service":"zarya-backend"}
+2025-08-26 12:11:36 [WARN]: Security Event {"service":"zarya-backend","event":"Admin login successful","email":"admin@zarya.com","adminId":"admin_1"}
+2025-08-26 12:11:36 [INFO]: ::1 - - [26/Aug/2025:06:41:36 +0000] "POST /api/v1/auth/admin/login HTTP/1.1" 200 554 "http://localhost:51597/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36" {"service":"zarya-backend"}
+2025-08-26 12:11:36 [INFO]: Read merchants {"service":"zarya-backend","count":3}
+2025-08-26 12:11:36 [INFO]: ::1 - - [26/Aug/2025:06:41:36 +0000] "GET /api/v1/merchants?page=1&limit=10 HTTP/1.1" 200 - "http://localhost:51597/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36" {"service":"zarya-backend"}
+2025-08-26 12:11:40 [INFO]: ::1 - - [26/Aug/2025:06:41:40 +0000] "GET /api/v1/admin/dashboard HTTP/1.1" 200 192 "http://localhost:51597/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36" {"service":"zarya-backend"}
+2025-08-26 12:11:40 [INFO]: Firebase Operation {"service":"zarya-backend","operation":"read","collection":"subscriptions","documentId":"multiple","count":0}
+2025-08-26 12:11:40 [INFO]: ::1 - - [26/Aug/2025:06:41:40 +0000] "GET /api/v1/subscriptions?page=1&limit=10 HTTP/1.1" 200 81 "http://localhost:51597/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36" {"service":"zarya-backend"}
+2025-08-26 12:11:40 [INFO]: ::1 - - [26/Aug/2025:06:41:40 +0000] "GET /api/v1/analytics/overview? HTTP/1.1" 200 239 "http://localhost:51597/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36" {"service":"zarya-backend"}
+2025-08-26 12:12:24 [INFO]: Created merchant {"service":"zarya-backend","id":"merchant_1756190544935"}
+2025-08-26 12:12:24 [INFO]: Audit Log {"service":"zarya-backend","action":"merchant_created","userId":"system","resource":"merchants","merchantId":"merchant_1756190544935"}
+2025-08-26 12:12:24 [INFO]: ::1 - - [26/Aug/2025:06:42:24 +0000] "POST /api/v1/merchants HTTP/1.1" 201 447 "http://localhost:51597/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36" {"service":"zarya-backend"}
+2025-08-26 12:12:50 [INFO]: ::1 - - [26/Aug/2025:06:42:50 +0000] "GET /health HTTP/1.1" 200 105 "-" "curl/8.7.1" {"service":"zarya-backend"}
+2025-08-26 12:13:37 [INFO]: ::1 - - [26/Aug/2025:06:43:37 +0000] "GET /health HTTP/1.1" 200 105 "-" "curl/8.7.1" {"service":"zarya-backend"}
+2025-08-26 12:13:45 [WARN]: Security Event {"service":"zarya-backend","event":"Admin login successful","email":"admin@zarya.com","adminId":"admin_1"}
+2025-08-26 12:13:45 [INFO]: ::1 - - [26/Aug/2025:06:43:45 +0000] "POST /api/v1/auth/admin/login HTTP/1.1" 200 554 "http://localhost:52052/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36" {"service":"zarya-backend"}
+2025-08-26 12:13:46 [INFO]: Read merchants {"service":"zarya-backend","count":4}
+2025-08-26 12:13:46 [INFO]: ::1 - - [26/Aug/2025:06:43:46 +0000] "GET /api/v1/merchants?page=1&limit=10 HTTP/1.1" 200 - "http://localhost:52052/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36" {"service":"zarya-backend"}
+2025-08-26 12:13:49 [INFO]: Firebase Operation {"service":"zarya-backend","operation":"read","collection":"subscriptions","documentId":"multiple","count":0}
+2025-08-26 12:13:49 [INFO]: ::1 - - [26/Aug/2025:06:43:49 +0000] "GET /api/v1/subscriptions?page=1&limit=10 HTTP/1.1" 200 81 "http://localhost:52052/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36" {"service":"zarya-backend"}
+2025-08-26 12:13:49 [INFO]: ::1 - - [26/Aug/2025:06:43:49 +0000] "GET /api/v1/analytics/overview? HTTP/1.1" 200 239 "http://localhost:52052/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36" {"service":"zarya-backend"}
+2025-08-26 12:13:49 [INFO]: ::1 - - [26/Aug/2025:06:43:49 +0000] "GET /api/v1/admin/dashboard HTTP/1.1" 200 192 "http://localhost:52052/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36" {"service":"zarya-backend"}
+2025-08-26 12:15:18 [INFO]: ::1 - - [26/Aug/2025:06:45:18 +0000] "POST /api/v1/merchants HTTP/1.1" 409 51 "http://localhost:52052/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36" {"service":"zarya-backend"}
+2025-08-26 12:15:53 [WARN]: Security Event {"service":"zarya-backend","event":"Merchant login successful","email":"teamsubhu@gmail.com","merchantId":"merchant_1756190544935"}
+2025-08-26 12:15:53 [INFO]: ::1 - - [26/Aug/2025:06:45:53 +0000] "POST /api/v1/auth/merchant/login HTTP/1.1" 200 731 "http://localhost:52052/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36" {"service":"zarya-backend"}
+2025-08-26 12:15:53 [INFO]: Read merchant {"service":"zarya-backend","id":"merchant_1756190544935"}
+2025-08-26 12:15:53 [INFO]: ::1 - - [26/Aug/2025:06:45:53 +0000] "GET /api/v1/merchants/merchant_1756190544935 HTTP/1.1" 200 520 "http://localhost:52052/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36" {"service":"zarya-backend"}
+2025-08-26 12:15:56 [WARN]: Security Event {"service":"zarya-backend","event":"Merchant login successful","email":"teamsubhu@gmail.com","merchantId":"merchant_1756190544935"}
+2025-08-26 12:15:56 [INFO]: ::1 - - [26/Aug/2025:06:45:56 +0000] "POST /api/v1/auth/merchant/login HTTP/1.1" 200 772 "http://localhost:52052/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36" {"service":"zarya-backend"}
+2025-08-26 12:15:56 [INFO]: Read merchant {"service":"zarya-backend","id":"merchant_1756190544935"}
+2025-08-26 12:15:56 [INFO]: ::1 - - [26/Aug/2025:06:45:56 +0000] "GET /api/v1/merchants/merchant_1756190544935 HTTP/1.1" 200 520 "http://localhost:52052/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36" {"service":"zarya-backend"}
+2025-08-26 12:16:00 [WARN]: Security Event {"service":"zarya-backend","event":"Merchant login successful","email":"teamsubhu@gmail.com","merchantId":"merchant_1756190544935"}
+2025-08-26 12:16:00 [INFO]: ::1 - - [26/Aug/2025:06:46:00 +0000] "POST /api/v1/auth/merchant/login HTTP/1.1" 200 772 "http://localhost:52052/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36" {"service":"zarya-backend"}
+2025-08-26 12:16:00 [INFO]: Read merchant {"service":"zarya-backend","id":"merchant_1756190544935"}
+2025-08-26 12:16:00 [INFO]: ::1 - - [26/Aug/2025:06:46:00 +0000] "GET /api/v1/merchants/merchant_1756190544935 HTTP/1.1" 200 520 "http://localhost:52052/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36" {"service":"zarya-backend"}
+2025-08-26 12:16:04 [WARN]: Security Event {"service":"zarya-backend","event":"Admin login successful","email":"admin@zarya.com","adminId":"admin_1"}
+2025-08-26 12:16:04 [INFO]: ::1 - - [26/Aug/2025:06:46:04 +0000] "POST /api/v1/auth/admin/login HTTP/1.1" 200 554 "-" "curl/8.7.1" {"service":"zarya-backend"}
+2025-08-26 12:16:17 [WARN]: Security Event {"service":"zarya-backend","event":"Merchant login successful","email":"teamsubhu@gmail.com","merchantId":"merchant_1756190544935"}
+2025-08-26 12:16:17 [INFO]: ::1 - - [26/Aug/2025:06:46:17 +0000] "POST /api/v1/auth/merchant/login HTTP/1.1" 200 772 "http://localhost:52052/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36" {"service":"zarya-backend"}
+2025-08-26 12:16:17 [INFO]: Read merchant {"service":"zarya-backend","id":"merchant_1756190544935"}
+2025-08-26 12:16:17 [INFO]: ::1 - - [26/Aug/2025:06:46:17 +0000] "GET /api/v1/merchants/merchant_1756190544935 HTTP/1.1" 200 520 "http://localhost:52052/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36" {"service":"zarya-backend"}
+2025-08-26 12:16:18 [WARN]: Security Event {"service":"zarya-backend","event":"Merchant login successful","email":"teamsubhu@gmail.com","merchantId":"merchant_1756190544935"}
+2025-08-26 12:16:18 [INFO]: ::1 - - [26/Aug/2025:06:46:18 +0000] "POST /api/v1/auth/merchant/login HTTP/1.1" 200 772 "http://localhost:52052/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36" {"service":"zarya-backend"}
+2025-08-26 12:16:18 [INFO]: Read merchant {"service":"zarya-backend","id":"merchant_1756190544935"}
+2025-08-26 12:16:18 [INFO]: ::1 - - [26/Aug/2025:06:46:18 +0000] "GET /api/v1/merchants/merchant_1756190544935 HTTP/1.1" 200 520 "http://localhost:52052/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36" {"service":"zarya-backend"}
+2025-08-26 12:16:20 [WARN]: Security Event {"service":"zarya-backend","event":"Merchant login successful","email":"teamsubhu@gmail.com","merchantId":"merchant_1756190544935"}
+2025-08-26 12:16:20 [INFO]: ::1 - - [26/Aug/2025:06:46:20 +0000] "POST /api/v1/auth/merchant/login HTTP/1.1" 200 772 "http://localhost:52052/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36" {"service":"zarya-backend"}
+2025-08-26 12:16:20 [INFO]: Read merchant {"service":"zarya-backend","id":"merchant_1756190544935"}
+2025-08-26 12:16:20 [INFO]: ::1 - - [26/Aug/2025:06:46:20 +0000] "GET /api/v1/merchants/merchant_1756190544935 HTTP/1.1" 200 520 "http://localhost:52052/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36" {"service":"zarya-backend"}
+2025-08-26 12:16:20 [WARN]: Security Event {"service":"zarya-backend","event":"Merchant login successful","email":"teamsubhu@gmail.com","merchantId":"merchant_1756190544935"}
+2025-08-26 12:16:20 [INFO]: ::1 - - [26/Aug/2025:06:46:20 +0000] "POST /api/v1/auth/merchant/login HTTP/1.1" 200 772 "http://localhost:52052/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36" {"service":"zarya-backend"}
+2025-08-26 12:16:20 [INFO]: Read merchant {"service":"zarya-backend","id":"merchant_1756190544935"}
+2025-08-26 12:16:20 [INFO]: ::1 - - [26/Aug/2025:06:46:20 +0000] "GET /api/v1/merchants/merchant_1756190544935 HTTP/1.1" 200 520 "http://localhost:52052/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36" {"service":"zarya-backend"}
+2025-08-26 12:16:20 [WARN]: Security Event {"service":"zarya-backend","event":"Merchant login successful","email":"teamsubhu@gmail.com","merchantId":"merchant_1756190544935"}
+2025-08-26 12:16:20 [INFO]: ::1 - - [26/Aug/2025:06:46:20 +0000] "POST /api/v1/auth/merchant/login HTTP/1.1" 200 772 "http://localhost:52052/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36" {"service":"zarya-backend"}
+2025-08-26 12:16:20 [INFO]: Read merchant {"service":"zarya-backend","id":"merchant_1756190544935"}
+2025-08-26 12:16:20 [INFO]: ::1 - - [26/Aug/2025:06:46:20 +0000] "GET /api/v1/merchants/merchant_1756190544935 HTTP/1.1" 200 520 "http://localhost:52052/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36" {"service":"zarya-backend"}
+2025-08-26 12:16:20 [WARN]: Security Event {"service":"zarya-backend","event":"Merchant login successful","email":"teamsubhu@gmail.com","merchantId":"merchant_1756190544935"}
+2025-08-26 12:16:20 [INFO]: ::1 - - [26/Aug/2025:06:46:20 +0000] "POST /api/v1/auth/merchant/login HTTP/1.1" 200 772 "http://localhost:52052/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36" {"service":"zarya-backend"}
+2025-08-26 12:16:20 [INFO]: Read merchant {"service":"zarya-backend","id":"merchant_1756190544935"}
+2025-08-26 12:16:20 [INFO]: ::1 - - [26/Aug/2025:06:46:20 +0000] "GET /api/v1/merchants/merchant_1756190544935 HTTP/1.1" 200 520 "http://localhost:52052/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36" {"service":"zarya-backend"}
+2025-08-26 12:16:20 [WARN]: Security Event {"service":"zarya-backend","event":"Merchant login successful","email":"teamsubhu@gmail.com","merchantId":"merchant_1756190544935"}
+2025-08-26 12:16:20 [INFO]: ::1 - - [26/Aug/2025:06:46:20 +0000] "POST /api/v1/auth/merchant/login HTTP/1.1" 200 772 "http://localhost:52052/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36" {"service":"zarya-backend"}
+2025-08-26 12:16:20 [INFO]: Read merchant {"service":"zarya-backend","id":"merchant_1756190544935"}
+2025-08-26 12:16:20 [INFO]: ::1 - - [26/Aug/2025:06:46:20 +0000] "GET /api/v1/merchants/merchant_1756190544935 HTTP/1.1" 200 520 "http://localhost:52052/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36" {"service":"zarya-backend"}
+2025-08-26 12:16:21 [WARN]: Security Event {"service":"zarya-backend","event":"Merchant login successful","email":"teamsubhu@gmail.com","merchantId":"merchant_1756190544935"}
+2025-08-26 12:16:21 [INFO]: ::1 - - [26/Aug/2025:06:46:21 +0000] "POST /api/v1/auth/merchant/login HTTP/1.1" 200 772 "http://localhost:52052/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36" {"service":"zarya-backend"}
+2025-08-26 12:16:21 [INFO]: Read merchant {"service":"zarya-backend","id":"merchant_1756190544935"}
+2025-08-26 12:16:21 [INFO]: ::1 - - [26/Aug/2025:06:46:21 +0000] "GET /api/v1/merchants/merchant_1756190544935 HTTP/1.1" 200 520 "http://localhost:52052/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36" {"service":"zarya-backend"}
+2025-08-26 12:16:21 [WARN]: Security Event {"service":"zarya-backend","event":"Merchant login successful","email":"teamsubhu@gmail.com","merchantId":"merchant_1756190544935"}
+2025-08-26 12:16:21 [INFO]: ::1 - - [26/Aug/2025:06:46:21 +0000] "POST /api/v1/auth/merchant/login HTTP/1.1" 200 772 "http://localhost:52052/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36" {"service":"zarya-backend"}
+2025-08-26 12:16:21 [INFO]: Read merchant {"service":"zarya-backend","id":"merchant_1756190544935"}
+2025-08-26 12:16:21 [INFO]: ::1 - - [26/Aug/2025:06:46:21 +0000] "GET /api/v1/merchants/merchant_1756190544935 HTTP/1.1" 200 520 "http://localhost:52052/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36" {"service":"zarya-backend"}
+2025-08-26 12:16:21 [WARN]: Security Event {"service":"zarya-backend","event":"Merchant login successful","email":"teamsubhu@gmail.com","merchantId":"merchant_1756190544935"}
+2025-08-26 12:16:21 [INFO]: ::1 - - [26/Aug/2025:06:46:21 +0000] "POST /api/v1/auth/merchant/login HTTP/1.1" 200 772 "http://localhost:52052/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36" {"service":"zarya-backend"}
+2025-08-26 12:16:21 [INFO]: Read merchant {"service":"zarya-backend","id":"merchant_1756190544935"}
+2025-08-26 12:16:21 [INFO]: ::1 - - [26/Aug/2025:06:46:21 +0000] "GET /api/v1/merchants/merchant_1756190544935 HTTP/1.1" 200 520 "http://localhost:52052/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36" {"service":"zarya-backend"}
+2025-08-26 12:16:34 [WARN]: Security Event {"service":"zarya-backend","event":"Admin login successful","email":"admin@zarya.com","adminId":"admin_1"}
+2025-08-26 12:16:34 [INFO]: ::1 - - [26/Aug/2025:06:46:34 +0000] "POST /api/v1/auth/admin/login HTTP/1.1" 200 554 "http://localhost:52052/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36" {"service":"zarya-backend"}
+2025-08-26 12:16:34 [INFO]: Read merchants {"service":"zarya-backend","count":4}
+2025-08-26 12:16:34 [INFO]: ::1 - - [26/Aug/2025:06:46:34 +0000] "GET /api/v1/merchants?page=1&limit=10 HTTP/1.1" 200 - "http://localhost:52052/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36" {"service":"zarya-backend"}
+2025-08-26 12:16:37 [INFO]: Firebase Operation {"service":"zarya-backend","operation":"read","collection":"subscriptions","documentId":"multiple","count":0}
+2025-08-26 12:16:37 [INFO]: ::1 - - [26/Aug/2025:06:46:37 +0000] "GET /api/v1/subscriptions?page=1&limit=10 HTTP/1.1" 304 - "http://localhost:52052/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36" {"service":"zarya-backend"}
+2025-08-26 12:16:37 [INFO]: ::1 - - [26/Aug/2025:06:46:37 +0000] "GET /api/v1/admin/dashboard HTTP/1.1" 304 - "http://localhost:52052/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36" {"service":"zarya-backend"}
+2025-08-26 12:16:37 [INFO]: ::1 - - [26/Aug/2025:06:46:37 +0000] "GET /api/v1/analytics/overview? HTTP/1.1" 304 - "http://localhost:52052/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36" {"service":"zarya-backend"}
+2025-08-26 12:18:03 [INFO]: Created merchant {"service":"zarya-backend","id":"merchant_1756190883622"}
+2025-08-26 12:18:03 [INFO]: Audit Log {"service":"zarya-backend","action":"merchant_created","userId":"system","resource":"merchants","merchantId":"merchant_1756190883622"}
+2025-08-26 12:18:03 [INFO]: ::1 - - [26/Aug/2025:06:48:03 +0000] "POST /api/v1/merchants HTTP/1.1" 201 423 "-" "curl/8.7.1" {"service":"zarya-backend"}
+2025-08-26 12:18:11 [WARN]: Security Event {"service":"zarya-backend","event":"Merchant login successful","email":"newtest@example.com","merchantId":"merchant_1756190883622"}
+2025-08-26 12:18:11 [INFO]: ::1 - - [26/Aug/2025:06:48:11 +0000] "POST /api/v1/auth/merchant/login HTTP/1.1" 200 726 "-" "curl/8.7.1" {"service":"zarya-backend"}
+2025-08-26 12:20:27 [WARN]: Security Event {"service":"zarya-backend","event":"Merchant login successful","email":"teamsubhu@gmail.com","merchantId":"merchant_1756190544935"}
+2025-08-26 12:20:27 [INFO]: ::1 - - [26/Aug/2025:06:50:27 +0000] "POST /api/v1/auth/merchant/login HTTP/1.1" 200 772 "http://localhost:52052/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36" {"service":"zarya-backend"}
+2025-08-26 12:20:27 [INFO]: Read merchant {"service":"zarya-backend","id":"merchant_1756190544935"}
+2025-08-26 12:20:27 [INFO]: ::1 - - [26/Aug/2025:06:50:27 +0000] "GET /api/v1/merchants/merchant_1756190544935 HTTP/1.1" 200 520 "http://localhost:52052/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36" {"service":"zarya-backend"}
+2025-08-26 12:22:45 [INFO]: ::1 - - [26/Aug/2025:06:52:45 +0000] "GET /health HTTP/1.1" 200 105 "-" "curl/8.7.1" {"service":"zarya-backend"}
+2025-08-26 12:24:37 [INFO]: Read merchants {"service":"zarya-backend","count":5}
+2025-08-26 12:24:37 [INFO]: ::1 - - [26/Aug/2025:06:54:37 +0000] "GET /api/v1/merchants HTTP/1.1" 200 2049 "-" "curl/8.7.1" {"service":"zarya-backend"}
+2025-08-26 12:24:58 [WARN]: Security Event {"service":"zarya-backend","event":"Merchant login successful","email":"teamsubhu@gmail.com","merchantId":"merchant_1756190544935"}
+2025-08-26 12:24:58 [INFO]: ::1 - - [26/Aug/2025:06:54:58 +0000] "POST /api/v1/auth/merchant/login HTTP/1.1" 200 772 "http://localhost:52442/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36" {"service":"zarya-backend"}
+2025-08-26 12:24:58 [INFO]: Read merchant {"service":"zarya-backend","id":"merchant_1756190544935"}
+2025-08-26 12:24:58 [INFO]: ::1 - - [26/Aug/2025:06:54:58 +0000] "GET /api/v1/merchants/merchant_1756190544935 HTTP/1.1" 200 520 "http://localhost:52442/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36" {"service":"zarya-backend"}
+2025-08-26 12:25:02 [WARN]: Security Event {"service":"zarya-backend","event":"Merchant login successful","email":"teamsubhu@gmail.com","merchantId":"merchant_1756190544935"}
+2025-08-26 12:25:02 [INFO]: ::1 - - [26/Aug/2025:06:55:02 +0000] "POST /api/v1/auth/merchant/login HTTP/1.1" 200 772 "http://localhost:52442/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36" {"service":"zarya-backend"}
+2025-08-26 12:25:02 [INFO]: Read merchant {"service":"zarya-backend","id":"merchant_1756190544935"}
+2025-08-26 12:25:02 [INFO]: ::1 - - [26/Aug/2025:06:55:02 +0000] "GET /api/v1/merchants/merchant_1756190544935 HTTP/1.1" 200 520 "http://localhost:52442/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36" {"service":"zarya-backend"}
+2025-08-26 12:25:03 [WARN]: Security Event {"service":"zarya-backend","event":"Merchant login successful","email":"teamsubhu@gmail.com","merchantId":"merchant_1756190544935"}
+2025-08-26 12:25:03 [INFO]: ::1 - - [26/Aug/2025:06:55:03 +0000] "POST /api/v1/auth/merchant/login HTTP/1.1" 200 772 "http://localhost:52442/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36" {"service":"zarya-backend"}
+2025-08-26 12:25:03 [INFO]: Read merchant {"service":"zarya-backend","id":"merchant_1756190544935"}
+2025-08-26 12:25:03 [INFO]: ::1 - - [26/Aug/2025:06:55:03 +0000] "GET /api/v1/merchants/merchant_1756190544935 HTTP/1.1" 200 520 "http://localhost:52442/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36" {"service":"zarya-backend"}
+2025-08-26 12:25:21 [WARN]: Security Event {"service":"zarya-backend","event":"Failed login attempt - invalid password","email":"teamsubhu@gmail.com","merchantId":"merchant_1756190544935"}
+2025-08-26 12:25:21 [INFO]: ::1 - - [26/Aug/2025:06:55:21 +0000] "POST /api/v1/auth/merchant/login HTTP/1.1" 401 31 "http://localhost:52442/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36" {"service":"zarya-backend"}
+2025-08-26 12:25:30 [WARN]: Security Event {"service":"zarya-backend","event":"Failed login attempt - invalid password","email":"teamsubhu@gmail.com","merchantId":"merchant_1756190544935"}
+2025-08-26 12:25:30 [INFO]: ::1 - - [26/Aug/2025:06:55:30 +0000] "POST /api/v1/auth/merchant/login HTTP/1.1" 401 31 "-" "curl/8.7.1" {"service":"zarya-backend"}
+2025-08-26 12:26:18 [WARN]: Security Event {"service":"zarya-backend","event":"Merchant login successful","email":"teamsubhu@gmail.com","merchantId":"merchant_1756190544935"}
+2025-08-26 12:26:18 [INFO]: ::1 - - [26/Aug/2025:06:56:18 +0000] "POST /api/v1/auth/merchant/login HTTP/1.1" 200 772 "-" "curl/8.7.1" {"service":"zarya-backend"}
+2025-08-26 12:26:41 [WARN]: Security Event {"service":"zarya-backend","event":"Failed login attempt - invalid password","email":"teamsubhu@gmail.com","merchantId":"merchant_1756190544935"}
+2025-08-26 12:26:41 [INFO]: ::1 - - [26/Aug/2025:06:56:41 +0000] "POST /api/v1/auth/merchant/login HTTP/1.1" 401 31 "http://localhost:52442/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36" {"service":"zarya-backend"}
+2025-08-26 12:26:48 [WARN]: Security Event {"service":"zarya-backend","event":"Merchant login successful","email":"teamsubhu@gmail.com","merchantId":"merchant_1756190544935"}
+2025-08-26 12:26:48 [INFO]: ::1 - - [26/Aug/2025:06:56:48 +0000] "POST /api/v1/auth/merchant/login HTTP/1.1" 200 772 "http://localhost:52442/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36" {"service":"zarya-backend"}
+2025-08-26 12:26:48 [INFO]: Read merchant {"service":"zarya-backend","id":"merchant_1756190544935"}
+2025-08-26 12:26:48 [INFO]: ::1 - - [26/Aug/2025:06:56:48 +0000] "GET /api/v1/merchants/merchant_1756190544935 HTTP/1.1" 200 520 "http://localhost:52442/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36" {"service":"zarya-backend"}
+2025-08-26 12:27:07 [WARN]: Security Event {"service":"zarya-backend","event":"Merchant login successful","email":"teamsubhu@gmail.com","merchantId":"merchant_1756190544935"}
+2025-08-26 12:27:07 [INFO]: ::1 - - [26/Aug/2025:06:57:07 +0000] "POST /api/v1/auth/merchant/login HTTP/1.1" 200 772 "http://localhost:52442/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36" {"service":"zarya-backend"}
+2025-08-26 12:27:07 [INFO]: Read merchant {"service":"zarya-backend","id":"merchant_1756190544935"}
+2025-08-26 12:27:07 [INFO]: ::1 - - [26/Aug/2025:06:57:07 +0000] "GET /api/v1/merchants/merchant_1756190544935 HTTP/1.1" 200 520 "http://localhost:52442/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36" {"service":"zarya-backend"}
+2025-08-26 12:27:25 [WARN]: Security Event {"service":"zarya-backend","event":"Failed login attempt - invalid password","email":"teamsubhu@gmail.com","merchantId":"merchant_1756190544935"}
+2025-08-26 12:27:25 [INFO]: ::1 - - [26/Aug/2025:06:57:25 +0000] "POST /api/v1/auth/merchant/login HTTP/1.1" 401 31 "http://localhost:52442/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36" {"service":"zarya-backend"}
+2025-08-26 12:28:04 [WARN]: Security Event {"service":"zarya-backend","event":"Merchant login successful","email":"michael@techsolutions.com","merchantId":"merchant_2"}
+2025-08-26 12:28:04 [INFO]: ::1 - - [26/Aug/2025:06:58:04 +0000] "POST /api/v1/auth/merchant/login HTTP/1.1" 200 734 "http://localhost:52442/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36" {"service":"zarya-backend"}
+2025-08-26 12:28:04 [INFO]: Read merchant {"service":"zarya-backend","id":"merchant_2"}
+2025-08-26 12:28:04 [INFO]: ::1 - - [26/Aug/2025:06:58:04 +0000] "GET /api/v1/merchants/merchant_2 HTTP/1.1" 200 511 "http://localhost:52442/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36" {"service":"zarya-backend"}
+2025-08-26 12:28:33 [INFO]: ::1 - - [26/Aug/2025:06:58:33 +0000] "GET /health HTTP/1.1" 200 106 "-" "curl/8.7.1" {"service":"zarya-backend"}
+2025-08-26 12:28:40 [INFO]: ::1 - - [26/Aug/2025:06:58:40 +0000] "GET /health HTTP/1.1" 200 106 "-" "curl/8.7.1" {"service":"zarya-backend"}
+2025-08-26 12:29:36 [INFO]: ::1 - - [26/Aug/2025:06:59:36 +0000] "GET /health HTTP/1.1" 200 106 "-" "curl/8.7.1" {"service":"zarya-backend"}
+2025-08-26 12:29:44 [WARN]: Security Event {"service":"zarya-backend","event":"Failed login attempt - invalid password","email":"teamsubhu@gmail.com","merchantId":"merchant_1756190544935"}
+2025-08-26 12:29:44 [INFO]: ::1 - - [26/Aug/2025:06:59:44 +0000] "POST /api/v1/auth/merchant/login HTTP/1.1" 401 31 "-" "curl/8.7.1" {"service":"zarya-backend"}
+2025-08-26 12:29:55 [WARN]: Security Event {"service":"zarya-backend","event":"Merchant login successful","email":"teamsubhu@gmail.com","merchantId":"merchant_1756190544935"}
+2025-08-26 12:29:55 [INFO]: ::1 - - [26/Aug/2025:06:59:55 +0000] "POST /api/v1/auth/merchant/login HTTP/1.1" 200 772 "-" "curl/8.7.1" {"service":"zarya-backend"}
+2025-08-26 12:30:00 [INFO]: Starting cron job: appointment-reminders {"service":"zarya-backend"}
+2025-08-26 12:30:00 [INFO]: Completed cron job: appointment-reminders {"service":"zarya-backend"}
+2025-08-26 12:30:00 [INFO]: Starting cron job: health-check {"service":"zarya-backend"}
+2025-08-26 12:30:00 [INFO]: Completed cron job: health-check {"service":"zarya-backend"}
+2025-08-26 12:30:02 [ERROR]: Application Error 9 FAILED_PRECONDITION: The query requires an index. You can create it here: https://console.firebase.google.com/v1/r/project/zarya-merchant-app/firestore/indexes?create_composite=Cldwcm9qZWN0cy96YXJ5YS1tZXJjaGFudC1hcHAvZGF0YWJhc2VzLyhkZWZhdWx0KS9jb2xsZWN0aW9uR3JvdXBzL2FwcG9pbnRtZW50cy9pbmRleGVzL18QARoKCgZzdGF0dXMQARoICgRkYXRlEAEaDAoIX19uYW1lX18QAQ {"service":"zarya-backend","context":"sendAppointmentReminders"}
+Error: 9 FAILED_PRECONDITION: The query requires an index. You can create it here: https://console.firebase.google.com/v1/r/project/zarya-merchant-app/firestore/indexes?create_composite=Cldwcm9qZWN0cy96YXJ5YS1tZXJjaGFudC1hcHAvZGF0YWJhc2VzLyhkZWZhdWx0KS9jb2xsZWN0aW9uR3JvdXBzL2FwcG9pbnRtZW50cy9pbmRleGVzL18QARoKCgZzdGF0dXMQARoICgRkYXRlEAEaDAoIX19uYW1lX18QAQ
+    at callErrorFromStatus (/Users/srs/Desktop/zarya/zarya_backend/node_modules/@grpc/grpc-js/build/src/call.js:32:19)
+    at Object.onReceiveStatus (/Users/srs/Desktop/zarya/zarya_backend/node_modules/@grpc/grpc-js/build/src/client.js:359:73)
+    at Object.onReceiveStatus (/Users/srs/Desktop/zarya/zarya_backend/node_modules/@grpc/grpc-js/build/src/client-interceptors.js:324:181)
+    at /Users/srs/Desktop/zarya/zarya_backend/node_modules/@grpc/grpc-js/build/src/resolving-call.js:135:78
+    at process.processTicksAndRejections (node:internal/process/task_queues:85:11)
+for call at
+    at ServiceClientImpl.makeServerStreamRequest (/Users/srs/Desktop/zarya/zarya_backend/node_modules/@grpc/grpc-js/build/src/client.js:342:32)
+    at ServiceClientImpl.<anonymous> (/Users/srs/Desktop/zarya/zarya_backend/node_modules/@grpc/grpc-js/build/src/make-client.js:105:19)
+    at /Users/srs/Desktop/zarya/zarya_backend/node_modules/@google-cloud/firestore/build/src/v1/firestore_client.js:242:33
+    at /Users/srs/Desktop/zarya/zarya_backend/node_modules/google-gax/build/src/streamingCalls/streamingApiCaller.js:38:28
+    at /Users/srs/Desktop/zarya/zarya_backend/node_modules/google-gax/build/src/normalCalls/timeout.js:44:16
+    at Object.request (/Users/srs/Desktop/zarya/zarya_backend/node_modules/google-gax/build/src/streamingCalls/streaming.js:234:40)
+    at makeRequest (/Users/srs/Desktop/zarya/zarya_backend/node_modules/retry-request/index.js:159:28)
+    at retryRequest (/Users/srs/Desktop/zarya/zarya_backend/node_modules/retry-request/index.js:119:5)
+    at StreamProxy.setStream (/Users/srs/Desktop/zarya/zarya_backend/node_modules/google-gax/build/src/streamingCalls/streaming.js:225:37)
+    at StreamingApiCaller.call (/Users/srs/Desktop/zarya/zarya_backend/node_modules/google-gax/build/src/streamingCalls/streamingApiCaller.js:54:16)
+Caused by: Error
+    at QueryUtil._getResponse (/Users/srs/Desktop/zarya/zarya_backend/node_modules/@google-cloud/firestore/build/src/reference/query-util.js:44:23)
+    at Query._getResponse (/Users/srs/Desktop/zarya/zarya_backend/node_modules/@google-cloud/firestore/build/src/reference/query.js:784:32)
+    at Query._get (/Users/srs/Desktop/zarya/zarya_backend/node_modules/@google-cloud/firestore/build/src/reference/query.js:777:35)
+    at /Users/srs/Desktop/zarya/zarya_backend/node_modules/@google-cloud/firestore/build/src/reference/query.js:745:43
+    at /Users/srs/Desktop/zarya/zarya_backend/node_modules/@google-cloud/firestore/build/src/telemetry/enabled-trace-util.js:110:30
+    at NoopContextManager.with (/Users/srs/Desktop/zarya/zarya_backend/node_modules/@opentelemetry/api/build/src/context/NoopContextManager.js:25:19)
+    at ContextAPI.with (/Users/srs/Desktop/zarya/zarya_backend/node_modules/@opentelemetry/api/build/src/api/context.js:60:46)
+    at NoopTracer.startActiveSpan (/Users/srs/Desktop/zarya/zarya_backend/node_modules/@opentelemetry/api/build/src/trace/NoopTracer.js:65:31)
+    at ProxyTracer.startActiveSpan (/Users/srs/Desktop/zarya/zarya_backend/node_modules/@opentelemetry/api/build/src/trace/ProxyTracer.js:36:24)
+    at EnabledTraceUtil.startActiveSpan (/Users/srs/Desktop/zarya/zarya_backend/node_modules/@google-cloud/firestore/build/src/telemetry/enabled-trace-util.js:102:28)
+2025-08-26 12:30:03 [ERROR]: Application Error {"service":"zarya-backend","unhealthyServices":["sms"]}
+2025-08-26 12:30:04 [WARN]: Security Event {"service":"zarya-backend","event":"Admin login successful","email":"admin@zarya.com","adminId":"admin_1"}
+2025-08-26 12:30:04 [INFO]: ::1 - - [26/Aug/2025:07:00:04 +0000] "POST /api/v1/auth/admin/login HTTP/1.1" 200 554 "-" "curl/8.7.1" {"service":"zarya-backend"}
+2025-08-26 12:32:06 [WARN]: Security Event {"service":"zarya-backend","event":"Merchant login successful","email":"teamsubhu@gmail.com","merchantId":"merchant_1756190544935"}
+2025-08-26 12:32:06 [INFO]: ::1 - - [26/Aug/2025:07:02:06 +0000] "POST /api/v1/auth/merchant/login HTTP/1.1" 200 772 "http://localhost:8080/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36" {"service":"zarya-backend"}
+2025-08-26 12:32:06 [INFO]: Read merchant {"service":"zarya-backend","id":"merchant_1756190544935"}
+2025-08-26 12:32:06 [INFO]: ::1 - - [26/Aug/2025:07:02:06 +0000] "GET /api/v1/merchants/merchant_1756190544935 HTTP/1.1" 200 520 "http://localhost:8080/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36" {"service":"zarya-backend"}
+2025-08-26 12:50:02 [INFO]: ::1 - - [26/Aug/2025:07:20:02 +0000] "GET /health HTTP/1.1" 200 106 "-" "curl/8.7.1" {"service":"zarya-backend"}
+2025-08-26 12:50:11 [WARN]: Security Event {"service":"zarya-backend","event":"Admin login successful","email":"admin@zarya.com","adminId":"admin_1"}
+2025-08-26 12:50:11 [INFO]: ::1 - - [26/Aug/2025:07:20:11 +0000] "POST /api/v1/auth/admin/login HTTP/1.1" 200 554 "-" "curl/8.7.1" {"service":"zarya-backend"}
+2025-08-26 12:50:33 [INFO]: Created merchant {"service":"zarya-backend","id":"merchant_1756192833971"}
+2025-08-26 12:50:33 [INFO]: Audit Log {"service":"zarya-backend","action":"merchant_created","userId":"system","resource":"merchants","merchantId":"merchant_1756192833971"}
+2025-08-26 12:50:33 [INFO]: ::1 - - [26/Aug/2025:07:20:33 +0000] "POST /api/v1/merchants HTTP/1.1" 201 404 "-" "curl/8.7.1" {"service":"zarya-backend"}
+2025-08-26 12:50:45 [WARN]: Security Event {"service":"zarya-backend","event":"Merchant login successful","email":"test@example.com","merchantId":"merchant_1756192833971"}
+2025-08-26 12:50:45 [INFO]: ::1 - - [26/Aug/2025:07:20:45 +0000] "POST /api/v1/auth/merchant/login HTTP/1.1" 200 698 "-" "curl/8.7.1" {"service":"zarya-backend"}
+2025-08-26 12:52:50 [INFO]: Firebase initialized successfully {"service":"zarya-backend"}
+2025-08-26 12:53:15 [INFO]: Notification services initialized {"service":"zarya-backend"}
+2025-08-26 12:53:15 [INFO]: Scheduled cron job: subscription-expiry-check with schedule: 0 9 * * * {"service":"zarya-backend"}
+2025-08-26 12:53:15 [INFO]: Scheduled cron job: appointment-reminders with schedule: 0 * * * * {"service":"zarya-backend"}
+2025-08-26 12:53:15 [INFO]: Scheduled cron job: weekly-analytics with schedule: 0 8 * * 1 {"service":"zarya-backend"}
+2025-08-26 12:53:15 [INFO]: Scheduled cron job: daily-backup with schedule: 0 2 * * * {"service":"zarya-backend"}
+2025-08-26 12:53:15 [INFO]: Scheduled cron job: monthly-renewal-reminders with schedule: 0 10 1 * * {"service":"zarya-backend"}
+2025-08-26 12:53:15 [INFO]: Scheduled cron job: cleanup-notifications with schedule: 0 3 * * * {"service":"zarya-backend"}
+2025-08-26 12:53:15 [INFO]: Scheduled cron job: health-check with schedule: */30 * * * * {"service":"zarya-backend"}
+2025-08-26 12:53:15 [INFO]: Cron jobs initialized successfully {"service":"zarya-backend"}
+2025-08-26 12:53:16 [INFO]: Firebase initialized successfully {"service":"zarya-backend"}
+2025-08-26 12:53:16 [INFO]: Firebase initialized successfully {"service":"zarya-backend"}
+2025-08-26 12:53:16 [INFO]: Initializing default data in Firebase... {"service":"zarya-backend"}
+2025-08-26 12:53:16 [INFO]: Default data initialization completed {"service":"zarya-backend"}
+2025-08-26 12:53:16 [INFO]: Default data initialized successfully {"service":"zarya-backend"}
+2025-08-26 12:53:16 [INFO]: Cloudinary initialized successfully {"service":"zarya-backend"}
+2025-08-26 12:53:16 [INFO]: Cloudinary initialized successfully {"service":"zarya-backend"}
+2025-08-26 12:53:16 [INFO]: Notification services initialized {"service":"zarya-backend"}
+2025-08-26 12:53:16 [INFO]: Notification service initialized successfully {"service":"zarya-backend"}
+2025-08-26 12:53:16 [INFO]: Scheduled cron job: subscription-expiry-check with schedule: 0 9 * * * {"service":"zarya-backend"}
+2025-08-26 12:53:16 [INFO]: Scheduled cron job: appointment-reminders with schedule: 0 * * * * {"service":"zarya-backend"}
+2025-08-26 12:53:16 [INFO]: Scheduled cron job: weekly-analytics with schedule: 0 8 * * 1 {"service":"zarya-backend"}
+2025-08-26 12:53:16 [INFO]: Scheduled cron job: daily-backup with schedule: 0 2 * * * {"service":"zarya-backend"}
+2025-08-26 12:53:16 [INFO]: Scheduled cron job: monthly-renewal-reminders with schedule: 0 10 1 * * {"service":"zarya-backend"}
+2025-08-26 12:53:16 [INFO]: Scheduled cron job: cleanup-notifications with schedule: 0 3 * * * {"service":"zarya-backend"}
+2025-08-26 12:53:16 [INFO]: Scheduled cron job: health-check with schedule: */30 * * * * {"service":"zarya-backend"}
+2025-08-26 12:53:16 [INFO]: Cron jobs initialized successfully {"service":"zarya-backend"}
+2025-08-26 12:53:16 [INFO]: Cron jobs initialized successfully {"service":"zarya-backend"}
+2025-08-26 12:53:16 [INFO]: 🚀 Zarya Backend Server running on port 3000 {"service":"zarya-backend"}
+2025-08-26 12:53:16 [INFO]: 📊 Environment: development {"service":"zarya-backend"}
+2025-08-26 12:53:16 [INFO]: 🔗 Health check: http://localhost:3000/health {"service":"zarya-backend"}
+2025-08-26 12:53:16 [INFO]: 📚 API Documentation: http://localhost:3000/api/v1/docs {"service":"zarya-backend"}
+2025-08-26 13:00:00 [INFO]: Starting cron job: health-check {"service":"zarya-backend"}
+2025-08-26 13:00:00 [INFO]: Completed cron job: health-check {"service":"zarya-backend"}
+2025-08-26 13:00:00 [INFO]: Starting cron job: health-check {"service":"zarya-backend"}
+2025-08-26 13:00:00 [INFO]: Completed cron job: health-check {"service":"zarya-backend"}
+2025-08-26 13:00:02 [ERROR]: Application Error {"service":"zarya-backend","unhealthyServices":["sms"]}
+2025-08-26 13:00:03 [ERROR]: Application Error {"service":"zarya-backend","unhealthyServices":["sms"]}
+2025-08-26 13:02:08 [WARN]: Security Event {"service":"zarya-backend","event":"Failed admin login attempt - invalid password","email":"admin@zarya.com","adminId":"rz39SL36u6qMpKfsuPgZ"}
+2025-08-26 13:02:08 [INFO]: ::1 - - [26/Aug/2025:07:32:08 +0000] "POST /api/v1/auth/admin/login HTTP/1.1" 401 31 "http://localhost:8080/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36" {"service":"zarya-backend"}
+2025-08-26 13:02:19 [WARN]: Security Event {"service":"zarya-backend","event":"Admin login successful","email":"admin@zarya.com","adminId":"rz39SL36u6qMpKfsuPgZ"}
+2025-08-26 13:02:19 [INFO]: ::1 - - [26/Aug/2025:07:32:19 +0000] "POST /api/v1/auth/admin/login HTTP/1.1" 200 764 "http://localhost:8080/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36" {"service":"zarya-backend"}
+2025-08-26 13:03:05 [INFO]: ::1 - - [26/Aug/2025:07:33:05 +0000] "POST /api/v1/merchants HTTP/1.1" 409 51 "http://localhost:8080/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36" {"service":"zarya-backend"}
+2025-08-26 13:03:42 [WARN]: Security Event {"service":"zarya-backend","event":"Failed login attempt - inactive merchant","email":"teamsubhu@gmail.com","merchantId":"cq8UGUsC3bm7DKyObWgh"}
+2025-08-26 13:03:42 [INFO]: ::1 - - [26/Aug/2025:07:33:42 +0000] "POST /api/v1/auth/merchant/login HTTP/1.1" 401 59 "http://localhost:8080/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36" {"service":"zarya-backend"}
+2025-08-26 13:03:44 [WARN]: Security Event {"service":"zarya-backend","event":"Failed login attempt - inactive merchant","email":"teamsubhu@gmail.com","merchantId":"cq8UGUsC3bm7DKyObWgh"}
+2025-08-26 13:03:44 [INFO]: ::1 - - [26/Aug/2025:07:33:44 +0000] "POST /api/v1/auth/merchant/login HTTP/1.1" 401 59 "http://localhost:8080/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36" {"service":"zarya-backend"}
+2025-08-26 13:03:52 [WARN]: Security Event {"service":"zarya-backend","event":"Failed login attempt - inactive merchant","email":"teamsubhu@gmail.com","merchantId":"cq8UGUsC3bm7DKyObWgh"}
+2025-08-26 13:03:52 [INFO]: ::1 - - [26/Aug/2025:07:33:52 +0000] "POST /api/v1/auth/merchant/login HTTP/1.1" 401 59 "http://localhost:8080/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36" {"service":"zarya-backend"}
+2025-08-26 13:05:00 [INFO]: ::1 - - [26/Aug/2025:07:35:00 +0000] "GET /api/v1/merchants HTTP/1.1" 401 33 "-" "curl/8.7.1" {"service":"zarya-backend"}
+2025-08-26 13:05:09 [WARN]: Security Event {"service":"zarya-backend","event":"Failed admin login attempt - invalid password","email":"admin@zarya.com","adminId":"rz39SL36u6qMpKfsuPgZ"}
+2025-08-26 13:05:09 [INFO]: ::1 - - [26/Aug/2025:07:35:09 +0000] "POST /api/v1/auth/admin/login HTTP/1.1" 401 31 "-" "curl/8.7.1" {"service":"zarya-backend"}
+2025-08-26 13:05:16 [INFO]: ::1 - - [26/Aug/2025:07:35:16 +0000] "GET /health HTTP/1.1" 200 120 "-" "curl/8.7.1" {"service":"zarya-backend"}
+2025-08-26 13:06:07 [WARN]: Security Event {"service":"zarya-backend","event":"Failed login attempt - merchant not found","email":"beauty@salon.com"}
+2025-08-26 13:06:07 [INFO]: ::1 - - [26/Aug/2025:07:36:07 +0000] "POST /api/v1/auth/merchant/login HTTP/1.1" 401 31 "-" "curl/8.7.1" {"service":"zarya-backend"}
+2025-08-26 13:06:25 [WARN]: Security Event {"service":"zarya-backend","event":"Merchant login successful","email":"sarah@beautysalonpro.com","merchantId":"JwikSqpSYpwr8jcbwK9g"}
+2025-08-26 13:06:25 [INFO]: ::1 - - [26/Aug/2025:07:36:25 +0000] "POST /api/v1/auth/merchant/login HTTP/1.1" 200 1533 "-" "curl/8.7.1" {"service":"zarya-backend"}
+2025-08-26 13:07:10 [WARN]: Security Event {"service":"zarya-backend","event":"Merchant login successful","email":"sarah@beautysalonpro.com","merchantId":"JwikSqpSYpwr8jcbwK9g"}
+2025-08-26 13:07:10 [INFO]: ::1 - - [26/Aug/2025:07:37:10 +0000] "POST /api/v1/auth/merchant/login HTTP/1.1" 200 - "http://localhost:8080/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36" {"service":"zarya-backend"}
+2025-08-26 13:07:15 [WARN]: Security Event {"service":"zarya-backend","event":"Merchant login successful","email":"sarah@beautysalonpro.com","merchantId":"JwikSqpSYpwr8jcbwK9g"}
+2025-08-26 13:07:15 [INFO]: ::1 - - [26/Aug/2025:07:37:15 +0000] "POST /api/v1/auth/merchant/login HTTP/1.1" 200 - "http://localhost:8080/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36" {"service":"zarya-backend"}
+2025-08-26 13:07:31 [WARN]: Security Event {"service":"zarya-backend","event":"Merchant login successful","email":"emma@fitnessfirst.com","merchantId":"5xpADlCMdXhJxdsUjXyy"}
+2025-08-26 13:07:31 [INFO]: ::1 - - [26/Aug/2025:07:37:31 +0000] "POST /api/v1/auth/merchant/login HTTP/1.1" 200 - "http://localhost:8080/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36" {"service":"zarya-backend"}
+2025-08-26 13:07:56 [INFO]: ::1 - - [26/Aug/2025:07:37:56 +0000] "GET / HTTP/1.1" 404 53 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36" {"service":"zarya-backend"}
+2025-08-26 13:07:56 [INFO]: ::1 - - [26/Aug/2025:07:37:56 +0000] "GET /favicon.ico HTTP/1.1" 404 64 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36" {"service":"zarya-backend"}
+2025-08-26 13:08:00 [INFO]: ::1 - - [26/Aug/2025:07:38:00 +0000] "GET / HTTP/1.1" 404 53 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36" {"service":"zarya-backend"}
+2025-08-26 13:08:35 [WARN]: Security Event {"service":"zarya-backend","event":"Merchant login successful","email":"sarah@beautysalonpro.com","merchantId":"JwikSqpSYpwr8jcbwK9g"}
+2025-08-26 13:08:35 [INFO]: ::1 - - [26/Aug/2025:07:38:35 +0000] "POST /api/v1/auth/merchant/login HTTP/1.1" 200 1596 "-" "curl/8.7.1" {"service":"zarya-backend"}
+2025-08-26 13:09:44 [WARN]: Security Event {"service":"zarya-backend","event":"Merchant login successful","email":"sarah@beautysalonpro.com","merchantId":"JwikSqpSYpwr8jcbwK9g"}
+2025-08-26 13:09:44 [INFO]: ::1 - - [26/Aug/2025:07:39:44 +0000] "POST /api/v1/auth/merchant/login HTTP/1.1" 200 1596 "-" "curl/8.7.1" {"service":"zarya-backend"}
+2025-08-26 13:09:49 [INFO]: Received SIGTERM. Starting graceful shutdown... {"service":"zarya-backend"}
+2025-08-26 13:10:23 [INFO]: Notification services initialized {"service":"zarya-backend"}
+2025-08-26 13:10:23 [INFO]: Scheduled cron job: subscription-expiry-check with schedule: 0 9 * * * {"service":"zarya-backend"}
+2025-08-26 13:10:23 [INFO]: Scheduled cron job: appointment-reminders with schedule: 0 * * * * {"service":"zarya-backend"}
+2025-08-26 13:10:23 [INFO]: Scheduled cron job: weekly-analytics with schedule: 0 8 * * 1 {"service":"zarya-backend"}
+2025-08-26 13:10:23 [INFO]: Scheduled cron job: daily-backup with schedule: 0 2 * * * {"service":"zarya-backend"}
+2025-08-26 13:10:23 [INFO]: Scheduled cron job: monthly-renewal-reminders with schedule: 0 10 1 * * {"service":"zarya-backend"}
+2025-08-26 13:10:23 [INFO]: Scheduled cron job: cleanup-notifications with schedule: 0 3 * * * {"service":"zarya-backend"}
+2025-08-26 13:10:23 [INFO]: Scheduled cron job: health-check with schedule: */30 * * * * {"service":"zarya-backend"}
+2025-08-26 13:10:23 [INFO]: Cron jobs initialized successfully {"service":"zarya-backend"}
+2025-08-26 13:10:23 [INFO]: Firebase initialized successfully {"service":"zarya-backend"}
+2025-08-26 13:10:23 [INFO]: Firebase initialized successfully {"service":"zarya-backend"}
+2025-08-26 13:10:23 [INFO]: Initializing default data in Firebase... {"service":"zarya-backend"}
+2025-08-26 13:10:23 [INFO]: Default data initialization completed {"service":"zarya-backend"}
+2025-08-26 13:10:23 [INFO]: Default data initialized successfully {"service":"zarya-backend"}
+2025-08-26 13:10:23 [INFO]: Cloudinary initialized successfully {"service":"zarya-backend"}
+2025-08-26 13:10:23 [INFO]: Cloudinary initialized successfully {"service":"zarya-backend"}
+2025-08-26 13:10:23 [INFO]: Notification services initialized {"service":"zarya-backend"}
+2025-08-26 13:10:23 [INFO]: Notification service initialized successfully {"service":"zarya-backend"}
+2025-08-26 13:10:23 [INFO]: Scheduled cron job: subscription-expiry-check with schedule: 0 9 * * * {"service":"zarya-backend"}
+2025-08-26 13:10:23 [INFO]: Scheduled cron job: appointment-reminders with schedule: 0 * * * * {"service":"zarya-backend"}
+2025-08-26 13:10:23 [INFO]: Scheduled cron job: weekly-analytics with schedule: 0 8 * * 1 {"service":"zarya-backend"}
+2025-08-26 13:10:23 [INFO]: Scheduled cron job: daily-backup with schedule: 0 2 * * * {"service":"zarya-backend"}
+2025-08-26 13:10:23 [INFO]: Scheduled cron job: monthly-renewal-reminders with schedule: 0 10 1 * * {"service":"zarya-backend"}
+2025-08-26 13:10:23 [INFO]: Scheduled cron job: cleanup-notifications with schedule: 0 3 * * * {"service":"zarya-backend"}
+2025-08-26 13:10:23 [INFO]: Scheduled cron job: health-check with schedule: */30 * * * * {"service":"zarya-backend"}
+2025-08-26 13:10:23 [INFO]: Cron jobs initialized successfully {"service":"zarya-backend"}
+2025-08-26 13:10:23 [INFO]: Cron jobs initialized successfully {"service":"zarya-backend"}
+2025-08-26 13:10:23 [INFO]: 🚀 Zarya Backend Server running on port 3000 {"service":"zarya-backend"}
+2025-08-26 13:10:23 [INFO]: 📊 Environment: development {"service":"zarya-backend"}
+2025-08-26 13:10:23 [INFO]: 🔗 Health check: http://localhost:3000/health {"service":"zarya-backend"}
+2025-08-26 13:10:23 [INFO]: 📚 API Documentation: http://localhost:3000/api/v1/docs {"service":"zarya-backend"}
+2025-08-26 13:29:45 [INFO]: Received SIGINT. Starting graceful shutdown... {"service":"zarya-backend"}
+2025-08-26 13:30:02 [INFO]: Notification services initialized {"service":"zarya-backend"}
+2025-08-26 13:30:02 [INFO]: Scheduled cron job: subscription-expiry-check with schedule: 0 9 * * * {"service":"zarya-backend"}
+2025-08-26 13:30:02 [INFO]: Scheduled cron job: appointment-reminders with schedule: 0 * * * * {"service":"zarya-backend"}
+2025-08-26 13:30:02 [INFO]: Scheduled cron job: weekly-analytics with schedule: 0 8 * * 1 {"service":"zarya-backend"}
+2025-08-26 13:30:02 [INFO]: Scheduled cron job: daily-backup with schedule: 0 2 * * * {"service":"zarya-backend"}
+2025-08-26 13:30:02 [INFO]: Scheduled cron job: monthly-renewal-reminders with schedule: 0 10 1 * * {"service":"zarya-backend"}
+2025-08-26 13:30:02 [INFO]: Scheduled cron job: cleanup-notifications with schedule: 0 3 * * * {"service":"zarya-backend"}
+2025-08-26 13:30:02 [INFO]: Scheduled cron job: health-check with schedule: */30 * * * * {"service":"zarya-backend"}
+2025-08-26 13:30:02 [INFO]: Cron jobs initialized successfully {"service":"zarya-backend"}
+2025-08-26 13:30:02 [INFO]: Firebase initialized successfully {"service":"zarya-backend"}
+2025-08-26 13:30:02 [INFO]: Firebase initialized successfully {"service":"zarya-backend"}
+2025-08-26 13:30:02 [INFO]: Initializing default data in Firebase... {"service":"zarya-backend"}
+2025-08-26 13:30:04 [INFO]: Default data initialization completed {"service":"zarya-backend"}
+2025-08-26 13:30:04 [INFO]: Default data initialized successfully {"service":"zarya-backend"}
+2025-08-26 13:30:04 [INFO]: Cloudinary initialized successfully {"service":"zarya-backend"}
+2025-08-26 13:30:04 [INFO]: Cloudinary initialized successfully {"service":"zarya-backend"}
+2025-08-26 13:30:04 [INFO]: Notification services initialized {"service":"zarya-backend"}
+2025-08-26 13:30:04 [INFO]: Notification service initialized successfully {"service":"zarya-backend"}
+2025-08-26 13:30:04 [INFO]: Scheduled cron job: subscription-expiry-check with schedule: 0 9 * * * {"service":"zarya-backend"}
+2025-08-26 13:30:04 [INFO]: Scheduled cron job: appointment-reminders with schedule: 0 * * * * {"service":"zarya-backend"}
+2025-08-26 13:30:04 [INFO]: Scheduled cron job: weekly-analytics with schedule: 0 8 * * 1 {"service":"zarya-backend"}
+2025-08-26 13:30:04 [INFO]: Scheduled cron job: daily-backup with schedule: 0 2 * * * {"service":"zarya-backend"}
+2025-08-26 13:30:04 [INFO]: Scheduled cron job: monthly-renewal-reminders with schedule: 0 10 1 * * {"service":"zarya-backend"}
+2025-08-26 13:30:04 [INFO]: Scheduled cron job: cleanup-notifications with schedule: 0 3 * * * {"service":"zarya-backend"}
+2025-08-26 13:30:04 [INFO]: Scheduled cron job: health-check with schedule: */30 * * * * {"service":"zarya-backend"}
+2025-08-26 13:30:04 [INFO]: Cron jobs initialized successfully {"service":"zarya-backend"}
+2025-08-26 13:30:04 [INFO]: Cron jobs initialized successfully {"service":"zarya-backend"}
+2025-08-26 13:30:04 [INFO]: 🚀 Zarya Backend Server running on port 3000 {"service":"zarya-backend"}
+2025-08-26 13:30:04 [INFO]: 📊 Environment: development {"service":"zarya-backend"}
+2025-08-26 13:30:04 [INFO]: 🔗 Health check: http://localhost:3000/health {"service":"zarya-backend"}
+2025-08-26 13:30:04 [INFO]: 📚 API Documentation: http://localhost:3000/api/v1/docs {"service":"zarya-backend"}
+2025-08-26 13:37:27 [INFO]: Received SIGINT. Starting graceful shutdown... {"service":"zarya-backend"}
+2025-08-26 13:44:09 [INFO]: Notification services initialized {"service":"zarya-backend"}
+2025-08-26 13:44:09 [INFO]: Scheduled cron job: subscription-expiry-check with schedule: 0 9 * * * {"service":"zarya-backend"}
+2025-08-26 13:44:09 [INFO]: Scheduled cron job: appointment-reminders with schedule: 0 * * * * {"service":"zarya-backend"}
+2025-08-26 13:44:09 [INFO]: Scheduled cron job: weekly-analytics with schedule: 0 8 * * 1 {"service":"zarya-backend"}
+2025-08-26 13:44:09 [INFO]: Scheduled cron job: daily-backup with schedule: 0 2 * * * {"service":"zarya-backend"}
+2025-08-26 13:44:09 [INFO]: Scheduled cron job: monthly-renewal-reminders with schedule: 0 10 1 * * {"service":"zarya-backend"}
+2025-08-26 13:44:09 [INFO]: Scheduled cron job: cleanup-notifications with schedule: 0 3 * * * {"service":"zarya-backend"}
+2025-08-26 13:44:09 [INFO]: Scheduled cron job: health-check with schedule: */30 * * * * {"service":"zarya-backend"}
+2025-08-26 13:44:09 [INFO]: Cron jobs initialized successfully {"service":"zarya-backend"}
+2025-08-26 13:44:09 [INFO]: Firebase initialized successfully {"service":"zarya-backend"}
+2025-08-26 13:44:09 [INFO]: Firebase initialized successfully {"service":"zarya-backend"}
+2025-08-26 13:44:09 [INFO]: Initializing default data in Firebase... {"service":"zarya-backend"}
+2025-08-26 13:44:11 [INFO]: Default data initialization completed {"service":"zarya-backend"}
+2025-08-26 13:44:11 [INFO]: Default data initialized successfully {"service":"zarya-backend"}
+2025-08-26 13:44:11 [INFO]: Cloudinary initialized successfully {"service":"zarya-backend"}
+2025-08-26 13:44:11 [INFO]: Cloudinary initialized successfully {"service":"zarya-backend"}
+2025-08-26 13:44:11 [INFO]: Notification services initialized {"service":"zarya-backend"}
+2025-08-26 13:44:11 [INFO]: Notification service initialized successfully {"service":"zarya-backend"}
+2025-08-26 13:44:11 [INFO]: Scheduled cron job: subscription-expiry-check with schedule: 0 9 * * * {"service":"zarya-backend"}
+2025-08-26 13:44:11 [INFO]: Scheduled cron job: appointment-reminders with schedule: 0 * * * * {"service":"zarya-backend"}
+2025-08-26 13:44:11 [INFO]: Scheduled cron job: weekly-analytics with schedule: 0 8 * * 1 {"service":"zarya-backend"}
+2025-08-26 13:44:11 [INFO]: Scheduled cron job: daily-backup with schedule: 0 2 * * * {"service":"zarya-backend"}
+2025-08-26 13:44:11 [INFO]: Scheduled cron job: monthly-renewal-reminders with schedule: 0 10 1 * * {"service":"zarya-backend"}
+2025-08-26 13:44:11 [INFO]: Scheduled cron job: cleanup-notifications with schedule: 0 3 * * * {"service":"zarya-backend"}
+2025-08-26 13:44:11 [INFO]: Scheduled cron job: health-check with schedule: */30 * * * * {"service":"zarya-backend"}
+2025-08-26 13:44:11 [INFO]: Cron jobs initialized successfully {"service":"zarya-backend"}
+2025-08-26 13:44:11 [INFO]: Cron jobs initialized successfully {"service":"zarya-backend"}
+2025-08-26 13:44:11 [INFO]: 🚀 Zarya Backend Server running on port 3000 {"service":"zarya-backend"}
+2025-08-26 13:44:11 [INFO]: 📊 Environment: development {"service":"zarya-backend"}
+2025-08-26 13:44:11 [INFO]: 🔗 Health check: http://localhost:3000/health {"service":"zarya-backend"}
+2025-08-26 13:44:11 [INFO]: 📚 API Documentation: http://localhost:3000/api/v1/docs {"service":"zarya-backend"}
+2025-08-26 13:45:42 [INFO]: Received SIGINT. Starting graceful shutdown... {"service":"zarya-backend"}
+2025-08-26 13:45:58 [INFO]: Notification services initialized {"service":"zarya-backend"}
+2025-08-26 13:45:58 [INFO]: Scheduled cron job: subscription-expiry-check with schedule: 0 9 * * * {"service":"zarya-backend"}
+2025-08-26 13:45:58 [INFO]: Scheduled cron job: appointment-reminders with schedule: 0 * * * * {"service":"zarya-backend"}
+2025-08-26 13:45:58 [INFO]: Scheduled cron job: weekly-analytics with schedule: 0 8 * * 1 {"service":"zarya-backend"}
+2025-08-26 13:45:58 [INFO]: Scheduled cron job: daily-backup with schedule: 0 2 * * * {"service":"zarya-backend"}
+2025-08-26 13:45:58 [INFO]: Scheduled cron job: monthly-renewal-reminders with schedule: 0 10 1 * * {"service":"zarya-backend"}
+2025-08-26 13:45:58 [INFO]: Scheduled cron job: cleanup-notifications with schedule: 0 3 * * * {"service":"zarya-backend"}
+2025-08-26 13:45:58 [INFO]: Scheduled cron job: health-check with schedule: */30 * * * * {"service":"zarya-backend"}
+2025-08-26 13:45:58 [INFO]: Cron jobs initialized successfully {"service":"zarya-backend"}
+2025-08-26 13:45:58 [INFO]: Firebase initialized successfully {"service":"zarya-backend"}
+2025-08-26 13:45:58 [INFO]: Firebase initialized successfully {"service":"zarya-backend"}
+2025-08-26 13:45:58 [INFO]: Initializing default data in Firebase... {"service":"zarya-backend"}
+2025-08-26 13:45:58 [INFO]: Default data initialization completed {"service":"zarya-backend"}
+2025-08-26 13:45:58 [INFO]: Default data initialized successfully {"service":"zarya-backend"}
+2025-08-26 13:45:58 [INFO]: Cloudinary initialized successfully {"service":"zarya-backend"}
+2025-08-26 13:45:58 [INFO]: Cloudinary initialized successfully {"service":"zarya-backend"}
+2025-08-26 13:45:58 [INFO]: Notification services initialized {"service":"zarya-backend"}
+2025-08-26 13:45:58 [INFO]: Notification service initialized successfully {"service":"zarya-backend"}
+2025-08-26 13:45:58 [INFO]: Scheduled cron job: subscription-expiry-check with schedule: 0 9 * * * {"service":"zarya-backend"}
+2025-08-26 13:45:58 [INFO]: Scheduled cron job: appointment-reminders with schedule: 0 * * * * {"service":"zarya-backend"}
+2025-08-26 13:45:58 [INFO]: Scheduled cron job: weekly-analytics with schedule: 0 8 * * 1 {"service":"zarya-backend"}
+2025-08-26 13:45:58 [INFO]: Scheduled cron job: daily-backup with schedule: 0 2 * * * {"service":"zarya-backend"}
+2025-08-26 13:45:58 [INFO]: Scheduled cron job: monthly-renewal-reminders with schedule: 0 10 1 * * {"service":"zarya-backend"}
+2025-08-26 13:45:58 [INFO]: Scheduled cron job: cleanup-notifications with schedule: 0 3 * * * {"service":"zarya-backend"}
+2025-08-26 13:45:58 [INFO]: Scheduled cron job: health-check with schedule: */30 * * * * {"service":"zarya-backend"}
+2025-08-26 13:45:58 [INFO]: Cron jobs initialized successfully {"service":"zarya-backend"}
+2025-08-26 13:45:58 [INFO]: Cron jobs initialized successfully {"service":"zarya-backend"}
+2025-08-26 13:45:58 [INFO]: 🚀 Zarya Backend Server running on port 3000 {"service":"zarya-backend"}
+2025-08-26 13:45:58 [INFO]: 📊 Environment: development {"service":"zarya-backend"}
+2025-08-26 13:45:58 [INFO]: 🔗 Health check: http://localhost:3000/health {"service":"zarya-backend"}
+2025-08-26 13:45:58 [INFO]: 📚 API Documentation: http://localhost:3000/api/v1/docs {"service":"zarya-backend"}
+2025-08-26 13:46:45 [INFO]: Received SIGINT. Starting graceful shutdown... {"service":"zarya-backend"}
+2025-08-26 13:46:53 [INFO]: Notification services initialized {"service":"zarya-backend"}
+2025-08-26 13:46:53 [INFO]: Scheduled cron job: subscription-expiry-check with schedule: 0 9 * * * {"service":"zarya-backend"}
+2025-08-26 13:46:53 [INFO]: Scheduled cron job: appointment-reminders with schedule: 0 * * * * {"service":"zarya-backend"}
+2025-08-26 13:46:53 [INFO]: Scheduled cron job: weekly-analytics with schedule: 0 8 * * 1 {"service":"zarya-backend"}
+2025-08-26 13:46:53 [INFO]: Scheduled cron job: daily-backup with schedule: 0 2 * * * {"service":"zarya-backend"}
+2025-08-26 13:46:53 [INFO]: Scheduled cron job: monthly-renewal-reminders with schedule: 0 10 1 * * {"service":"zarya-backend"}
+2025-08-26 13:46:53 [INFO]: Scheduled cron job: cleanup-notifications with schedule: 0 3 * * * {"service":"zarya-backend"}
+2025-08-26 13:46:53 [INFO]: Scheduled cron job: health-check with schedule: */30 * * * * {"service":"zarya-backend"}
+2025-08-26 13:46:53 [INFO]: Cron jobs initialized successfully {"service":"zarya-backend"}
+2025-08-26 13:46:53 [INFO]: Firebase initialized successfully {"service":"zarya-backend"}
+2025-08-26 13:46:53 [INFO]: Firebase initialized successfully {"service":"zarya-backend"}
+2025-08-26 13:46:53 [INFO]: Initializing default data in Firebase... {"service":"zarya-backend"}
+2025-08-26 13:46:54 [INFO]: Default data initialization completed {"service":"zarya-backend"}
+2025-08-26 13:46:54 [INFO]: Default data initialized successfully {"service":"zarya-backend"}
+2025-08-26 13:46:54 [INFO]: Cloudinary initialized successfully {"service":"zarya-backend"}
+2025-08-26 13:46:54 [INFO]: Cloudinary initialized successfully {"service":"zarya-backend"}
+2025-08-26 13:46:54 [INFO]: Notification services initialized {"service":"zarya-backend"}
+2025-08-26 13:46:54 [INFO]: Notification service initialized successfully {"service":"zarya-backend"}
+2025-08-26 13:46:54 [INFO]: Scheduled cron job: subscription-expiry-check with schedule: 0 9 * * * {"service":"zarya-backend"}
+2025-08-26 13:46:54 [INFO]: Scheduled cron job: appointment-reminders with schedule: 0 * * * * {"service":"zarya-backend"}
+2025-08-26 13:46:54 [INFO]: Scheduled cron job: weekly-analytics with schedule: 0 8 * * 1 {"service":"zarya-backend"}
+2025-08-26 13:46:54 [INFO]: Scheduled cron job: daily-backup with schedule: 0 2 * * * {"service":"zarya-backend"}
+2025-08-26 13:46:54 [INFO]: Scheduled cron job: monthly-renewal-reminders with schedule: 0 10 1 * * {"service":"zarya-backend"}
+2025-08-26 13:46:54 [INFO]: Scheduled cron job: cleanup-notifications with schedule: 0 3 * * * {"service":"zarya-backend"}
+2025-08-26 13:46:54 [INFO]: Scheduled cron job: health-check with schedule: */30 * * * * {"service":"zarya-backend"}
+2025-08-26 13:46:54 [INFO]: Cron jobs initialized successfully {"service":"zarya-backend"}
+2025-08-26 13:46:54 [INFO]: Cron jobs initialized successfully {"service":"zarya-backend"}
+2025-08-26 13:46:54 [INFO]: 🚀 Zarya Backend Server running on port 3000 {"service":"zarya-backend"}
+2025-08-26 13:46:54 [INFO]: 📊 Environment: development {"service":"zarya-backend"}
+2025-08-26 13:46:54 [INFO]: 🔗 Health check: http://localhost:3000/health {"service":"zarya-backend"}
+2025-08-26 13:46:54 [INFO]: 📚 API Documentation: http://localhost:3000/api/v1/docs {"service":"zarya-backend"}
+2025-08-26 13:47:07 [INFO]: ::1 - - [26/Aug/2025:08:17:07 +0000] "GET /health HTTP/1.1" 200 122 "-" "curl/8.7.1" {"service":"zarya-backend"}
+2025-08-26 13:47:16 [WARN]: Security Event {"service":"zarya-backend","event":"Merchant login successful","email":"sarah@beautysalonpro.com","merchantId":"JwikSqpSYpwr8jcbwK9g"}
+2025-08-26 13:47:16 [INFO]: ::1 - - [26/Aug/2025:08:17:16 +0000] "POST /api/v1/auth/merchant/login HTTP/1.1" 200 1313 "-" "curl/8.7.1" {"service":"zarya-backend"}
+2025-08-26 13:55:04 [WARN]: Security Event {"service":"zarya-backend","event":"Merchant login successful","email":"sarah@beautysalonpro.com","merchantId":"JwikSqpSYpwr8jcbwK9g"}
+2025-08-26 13:55:04 [INFO]: ::1 - - [26/Aug/2025:08:25:04 +0000] "POST /api/v1/auth/merchant/login HTTP/1.1" 200 - "http://localhost:55464/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36" {"service":"zarya-backend"}
+2025-08-26 13:55:12 [WARN]: Security Event {"service":"zarya-backend","event":"Merchant login successful","email":"sarah@beautysalonpro.com","merchantId":"JwikSqpSYpwr8jcbwK9g"}
+2025-08-26 13:55:12 [INFO]: ::1 - - [26/Aug/2025:08:25:12 +0000] "POST /api/v1/auth/merchant/login HTTP/1.1" 200 - "http://localhost:55464/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36" {"service":"zarya-backend"}
+2025-08-26 13:55:16 [WARN]: Security Event {"service":"zarya-backend","event":"Failed admin login attempt - invalid password","email":"admin@zarya.com","adminId":"rz39SL36u6qMpKfsuPgZ"}
+2025-08-26 13:55:16 [INFO]: ::1 - - [26/Aug/2025:08:25:16 +0000] "POST /api/v1/auth/admin/login HTTP/1.1" 401 31 "http://localhost:55464/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36" {"service":"zarya-backend"}
+2025-08-26 13:55:27 [WARN]: Security Event {"service":"zarya-backend","event":"Admin login successful","email":"admin@zarya.com","adminId":"rz39SL36u6qMpKfsuPgZ"}
+2025-08-26 13:55:27 [INFO]: ::1 - - [26/Aug/2025:08:25:27 +0000] "POST /api/v1/auth/admin/login HTTP/1.1" 200 659 "http://localhost:55464/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36" {"service":"zarya-backend"}
+2025-08-26 14:00:00 [INFO]: Starting cron job: health-check {"service":"zarya-backend"}
+2025-08-26 14:00:00 [INFO]: Completed cron job: health-check {"service":"zarya-backend"}
+2025-08-26 14:00:00 [INFO]: Starting cron job: health-check {"service":"zarya-backend"}
+2025-08-26 14:00:00 [INFO]: Completed cron job: health-check {"service":"zarya-backend"}
+2025-08-26 14:00:02 [ERROR]: Application Error {"service":"zarya-backend","unhealthyServices":["sms"]}
+2025-08-26 14:00:02 [ERROR]: Application Error {"service":"zarya-backend","unhealthyServices":["sms"]}
+2025-08-26 14:30:00 [INFO]: Starting cron job: subscription-expiry-check {"service":"zarya-backend"}
+2025-08-26 14:30:00 [INFO]: Completed cron job: subscription-expiry-check {"service":"zarya-backend"}
+2025-08-26 14:30:00 [INFO]: Starting cron job: appointment-reminders {"service":"zarya-backend"}
+2025-08-26 14:30:00 [INFO]: Completed cron job: appointment-reminders {"service":"zarya-backend"}
+2025-08-26 14:30:00 [INFO]: Starting cron job: health-check {"service":"zarya-backend"}
+2025-08-26 14:30:00 [INFO]: Completed cron job: health-check {"service":"zarya-backend"}
+2025-08-26 14:30:00 [INFO]: Starting cron job: subscription-expiry-check {"service":"zarya-backend"}
+2025-08-26 14:30:00 [INFO]: Completed cron job: subscription-expiry-check {"service":"zarya-backend"}
+2025-08-26 14:30:00 [INFO]: Starting cron job: appointment-reminders {"service":"zarya-backend"}
+2025-08-26 14:30:00 [INFO]: Completed cron job: appointment-reminders {"service":"zarya-backend"}
+2025-08-26 14:30:00 [INFO]: Starting cron job: health-check {"service":"zarya-backend"}
+2025-08-26 14:30:00 [INFO]: Completed cron job: health-check {"service":"zarya-backend"}
+2025-08-26 14:30:01 [ERROR]: Application Error 9 FAILED_PRECONDITION: The query requires an index. You can create it here: https://console.firebase.google.com/v1/r/project/zarya-merchant-app/firestore/indexes?create_composite=Clhwcm9qZWN0cy96YXJ5YS1tZXJjaGFudC1hcHAvZGF0YWJhc2VzLyhkZWZhdWx0KS9jb2xsZWN0aW9uR3JvdXBzL3N1YnNjcmlwdGlvbnMvaW5kZXhlcy9fEAEaCgoGc3RhdHVzEAEaDgoKZXhwaXJ5RGF0ZRABGgwKCF9fbmFtZV9fEAE {"service":"zarya-backend","context":"checkSubscriptionExpiry"}
+Error: 9 FAILED_PRECONDITION: The query requires an index. You can create it here: https://console.firebase.google.com/v1/r/project/zarya-merchant-app/firestore/indexes?create_composite=Clhwcm9qZWN0cy96YXJ5YS1tZXJjaGFudC1hcHAvZGF0YWJhc2VzLyhkZWZhdWx0KS9jb2xsZWN0aW9uR3JvdXBzL3N1YnNjcmlwdGlvbnMvaW5kZXhlcy9fEAEaCgoGc3RhdHVzEAEaDgoKZXhwaXJ5RGF0ZRABGgwKCF9fbmFtZV9fEAE
+    at callErrorFromStatus (/Users/srs/Desktop/zarya/zarya_backend/node_modules/@grpc/grpc-js/build/src/call.js:32:19)
+    at Object.onReceiveStatus (/Users/srs/Desktop/zarya/zarya_backend/node_modules/@grpc/grpc-js/build/src/client.js:359:73)
+    at Object.onReceiveStatus (/Users/srs/Desktop/zarya/zarya_backend/node_modules/@grpc/grpc-js/build/src/client-interceptors.js:324:181)
+    at /Users/srs/Desktop/zarya/zarya_backend/node_modules/@grpc/grpc-js/build/src/resolving-call.js:135:78
+    at process.processTicksAndRejections (node:internal/process/task_queues:85:11)
+for call at
+    at ServiceClientImpl.makeServerStreamRequest (/Users/srs/Desktop/zarya/zarya_backend/node_modules/@grpc/grpc-js/build/src/client.js:342:32)
+    at ServiceClientImpl.<anonymous> (/Users/srs/Desktop/zarya/zarya_backend/node_modules/@grpc/grpc-js/build/src/make-client.js:105:19)
+    at /Users/srs/Desktop/zarya/zarya_backend/node_modules/@google-cloud/firestore/build/src/v1/firestore_client.js:242:33
+    at /Users/srs/Desktop/zarya/zarya_backend/node_modules/google-gax/build/src/streamingCalls/streamingApiCaller.js:38:28
+    at /Users/srs/Desktop/zarya/zarya_backend/node_modules/google-gax/build/src/normalCalls/timeout.js:44:16
+    at Object.request (/Users/srs/Desktop/zarya/zarya_backend/node_modules/google-gax/build/src/streamingCalls/streaming.js:234:40)
+    at makeRequest (/Users/srs/Desktop/zarya/zarya_backend/node_modules/retry-request/index.js:159:28)
+    at retryRequest (/Users/srs/Desktop/zarya/zarya_backend/node_modules/retry-request/index.js:119:5)
+    at StreamProxy.setStream (/Users/srs/Desktop/zarya/zarya_backend/node_modules/google-gax/build/src/streamingCalls/streaming.js:225:37)
+    at StreamingApiCaller.call (/Users/srs/Desktop/zarya/zarya_backend/node_modules/google-gax/build/src/streamingCalls/streamingApiCaller.js:54:16)
+Caused by: Error
+    at QueryUtil._getResponse (/Users/srs/Desktop/zarya/zarya_backend/node_modules/@google-cloud/firestore/build/src/reference/query-util.js:44:23)
+    at Query._getResponse (/Users/srs/Desktop/zarya/zarya_backend/node_modules/@google-cloud/firestore/build/src/reference/query.js:784:32)
+    at Query._get (/Users/srs/Desktop/zarya/zarya_backend/node_modules/@google-cloud/firestore/build/src/reference/query.js:777:35)
+    at /Users/srs/Desktop/zarya/zarya_backend/node_modules/@google-cloud/firestore/build/src/reference/query.js:745:43
+    at /Users/srs/Desktop/zarya/zarya_backend/node_modules/@google-cloud/firestore/build/src/telemetry/enabled-trace-util.js:110:30
+    at NoopContextManager.with (/Users/srs/Desktop/zarya/zarya_backend/node_modules/@opentelemetry/api/build/src/context/NoopContextManager.js:25:19)
+    at ContextAPI.with (/Users/srs/Desktop/zarya/zarya_backend/node_modules/@opentelemetry/api/build/src/api/context.js:60:46)
+    at NoopTracer.startActiveSpan (/Users/srs/Desktop/zarya/zarya_backend/node_modules/@opentelemetry/api/build/src/trace/NoopTracer.js:65:31)
+    at ProxyTracer.startActiveSpan (/Users/srs/Desktop/zarya/zarya_backend/node_modules/@opentelemetry/api/build/src/trace/ProxyTracer.js:36:24)
+    at EnabledTraceUtil.startActiveSpan (/Users/srs/Desktop/zarya/zarya_backend/node_modules/@google-cloud/firestore/build/src/telemetry/enabled-trace-util.js:102:28)
+2025-08-26 14:30:01 [ERROR]: Application Error 9 FAILED_PRECONDITION: The query requires an index. You can create it here: https://console.firebase.google.com/v1/r/project/zarya-merchant-app/firestore/indexes?create_composite=Clhwcm9qZWN0cy96YXJ5YS1tZXJjaGFudC1hcHAvZGF0YWJhc2VzLyhkZWZhdWx0KS9jb2xsZWN0aW9uR3JvdXBzL3N1YnNjcmlwdGlvbnMvaW5kZXhlcy9fEAEaCgoGc3RhdHVzEAEaDgoKZXhwaXJ5RGF0ZRABGgwKCF9fbmFtZV9fEAE {"service":"zarya-backend","context":"checkSubscriptionExpiry"}
+Error: 9 FAILED_PRECONDITION: The query requires an index. You can create it here: https://console.firebase.google.com/v1/r/project/zarya-merchant-app/firestore/indexes?create_composite=Clhwcm9qZWN0cy96YXJ5YS1tZXJjaGFudC1hcHAvZGF0YWJhc2VzLyhkZWZhdWx0KS9jb2xsZWN0aW9uR3JvdXBzL3N1YnNjcmlwdGlvbnMvaW5kZXhlcy9fEAEaCgoGc3RhdHVzEAEaDgoKZXhwaXJ5RGF0ZRABGgwKCF9fbmFtZV9fEAE
+    at callErrorFromStatus (/Users/srs/Desktop/zarya/zarya_backend/node_modules/@grpc/grpc-js/build/src/call.js:32:19)
+    at Object.onReceiveStatus (/Users/srs/Desktop/zarya/zarya_backend/node_modules/@grpc/grpc-js/build/src/client.js:359:73)
+    at Object.onReceiveStatus (/Users/srs/Desktop/zarya/zarya_backend/node_modules/@grpc/grpc-js/build/src/client-interceptors.js:324:181)
+    at /Users/srs/Desktop/zarya/zarya_backend/node_modules/@grpc/grpc-js/build/src/resolving-call.js:135:78
+    at process.processTicksAndRejections (node:internal/process/task_queues:85:11)
+for call at
+    at ServiceClientImpl.makeServerStreamRequest (/Users/srs/Desktop/zarya/zarya_backend/node_modules/@grpc/grpc-js/build/src/client.js:342:32)
+    at ServiceClientImpl.<anonymous> (/Users/srs/Desktop/zarya/zarya_backend/node_modules/@grpc/grpc-js/build/src/make-client.js:105:19)
+    at /Users/srs/Desktop/zarya/zarya_backend/node_modules/@google-cloud/firestore/build/src/v1/firestore_client.js:242:33
+    at /Users/srs/Desktop/zarya/zarya_backend/node_modules/google-gax/build/src/streamingCalls/streamingApiCaller.js:38:28
+    at /Users/srs/Desktop/zarya/zarya_backend/node_modules/google-gax/build/src/normalCalls/timeout.js:44:16
+    at Object.request (/Users/srs/Desktop/zarya/zarya_backend/node_modules/google-gax/build/src/streamingCalls/streaming.js:234:40)
+    at makeRequest (/Users/srs/Desktop/zarya/zarya_backend/node_modules/retry-request/index.js:159:28)
+    at retryRequest (/Users/srs/Desktop/zarya/zarya_backend/node_modules/retry-request/index.js:119:5)
+    at StreamProxy.setStream (/Users/srs/Desktop/zarya/zarya_backend/node_modules/google-gax/build/src/streamingCalls/streaming.js:225:37)
+    at StreamingApiCaller.call (/Users/srs/Desktop/zarya/zarya_backend/node_modules/google-gax/build/src/streamingCalls/streamingApiCaller.js:54:16)
+Caused by: Error
+    at QueryUtil._getResponse (/Users/srs/Desktop/zarya/zarya_backend/node_modules/@google-cloud/firestore/build/src/reference/query-util.js:44:23)
+    at Query._getResponse (/Users/srs/Desktop/zarya/zarya_backend/node_modules/@google-cloud/firestore/build/src/reference/query.js:784:32)
+    at Query._get (/Users/srs/Desktop/zarya/zarya_backend/node_modules/@google-cloud/firestore/build/src/reference/query.js:777:35)
+    at /Users/srs/Desktop/zarya/zarya_backend/node_modules/@google-cloud/firestore/build/src/reference/query.js:745:43
+    at /Users/srs/Desktop/zarya/zarya_backend/node_modules/@google-cloud/firestore/build/src/telemetry/enabled-trace-util.js:110:30
+    at NoopContextManager.with (/Users/srs/Desktop/zarya/zarya_backend/node_modules/@opentelemetry/api/build/src/context/NoopContextManager.js:25:19)
+    at ContextAPI.with (/Users/srs/Desktop/zarya/zarya_backend/node_modules/@opentelemetry/api/build/src/api/context.js:60:46)
+    at NoopTracer.startActiveSpan (/Users/srs/Desktop/zarya/zarya_backend/node_modules/@opentelemetry/api/build/src/trace/NoopTracer.js:65:31)
+    at ProxyTracer.startActiveSpan (/Users/srs/Desktop/zarya/zarya_backend/node_modules/@opentelemetry/api/build/src/trace/ProxyTracer.js:36:24)
+    at EnabledTraceUtil.startActiveSpan (/Users/srs/Desktop/zarya/zarya_backend/node_modules/@google-cloud/firestore/build/src/telemetry/enabled-trace-util.js:102:28)
+2025-08-26 14:30:02 [ERROR]: Application Error 9 FAILED_PRECONDITION: The query requires an index. You can create it here: https://console.firebase.google.com/v1/r/project/zarya-merchant-app/firestore/indexes?create_composite=Cldwcm9qZWN0cy96YXJ5YS1tZXJjaGFudC1hcHAvZGF0YWJhc2VzLyhkZWZhdWx0KS9jb2xsZWN0aW9uR3JvdXBzL2FwcG9pbnRtZW50cy9pbmRleGVzL18QARoKCgZzdGF0dXMQARoICgRkYXRlEAEaDAoIX19uYW1lX18QAQ {"service":"zarya-backend","context":"sendAppointmentReminders"}
+Error: 9 FAILED_PRECONDITION: The query requires an index. You can create it here: https://console.firebase.google.com/v1/r/project/zarya-merchant-app/firestore/indexes?create_composite=Cldwcm9qZWN0cy96YXJ5YS1tZXJjaGFudC1hcHAvZGF0YWJhc2VzLyhkZWZhdWx0KS9jb2xsZWN0aW9uR3JvdXBzL2FwcG9pbnRtZW50cy9pbmRleGVzL18QARoKCgZzdGF0dXMQARoICgRkYXRlEAEaDAoIX19uYW1lX18QAQ
+    at callErrorFromStatus (/Users/srs/Desktop/zarya/zarya_backend/node_modules/@grpc/grpc-js/build/src/call.js:32:19)
+    at Object.onReceiveStatus (/Users/srs/Desktop/zarya/zarya_backend/node_modules/@grpc/grpc-js/build/src/client.js:359:73)
+    at Object.onReceiveStatus (/Users/srs/Desktop/zarya/zarya_backend/node_modules/@grpc/grpc-js/build/src/client-interceptors.js:324:181)
+    at /Users/srs/Desktop/zarya/zarya_backend/node_modules/@grpc/grpc-js/build/src/resolving-call.js:135:78
+    at process.processTicksAndRejections (node:internal/process/task_queues:85:11)
+for call at
+    at ServiceClientImpl.makeServerStreamRequest (/Users/srs/Desktop/zarya/zarya_backend/node_modules/@grpc/grpc-js/build/src/client.js:342:32)
+    at ServiceClientImpl.<anonymous> (/Users/srs/Desktop/zarya/zarya_backend/node_modules/@grpc/grpc-js/build/src/make-client.js:105:19)
+    at /Users/srs/Desktop/zarya/zarya_backend/node_modules/@google-cloud/firestore/build/src/v1/firestore_client.js:242:33
+    at /Users/srs/Desktop/zarya/zarya_backend/node_modules/google-gax/build/src/streamingCalls/streamingApiCaller.js:38:28
+    at /Users/srs/Desktop/zarya/zarya_backend/node_modules/google-gax/build/src/normalCalls/timeout.js:44:16
+    at Object.request (/Users/srs/Desktop/zarya/zarya_backend/node_modules/google-gax/build/src/streamingCalls/streaming.js:234:40)
+    at makeRequest (/Users/srs/Desktop/zarya/zarya_backend/node_modules/retry-request/index.js:159:28)
+    at retryRequest (/Users/srs/Desktop/zarya/zarya_backend/node_modules/retry-request/index.js:119:5)
+    at StreamProxy.setStream (/Users/srs/Desktop/zarya/zarya_backend/node_modules/google-gax/build/src/streamingCalls/streaming.js:225:37)
+    at StreamingApiCaller.call (/Users/srs/Desktop/zarya/zarya_backend/node_modules/google-gax/build/src/streamingCalls/streamingApiCaller.js:54:16)
+Caused by: Error
+    at QueryUtil._getResponse (/Users/srs/Desktop/zarya/zarya_backend/node_modules/@google-cloud/firestore/build/src/reference/query-util.js:44:23)
+    at Query._getResponse (/Users/srs/Desktop/zarya/zarya_backend/node_modules/@google-cloud/firestore/build/src/reference/query.js:784:32)
+    at Query._get (/Users/srs/Desktop/zarya/zarya_backend/node_modules/@google-cloud/firestore/build/src/reference/query.js:777:35)
+    at /Users/srs/Desktop/zarya/zarya_backend/node_modules/@google-cloud/firestore/build/src/reference/query.js:745:43
+    at /Users/srs/Desktop/zarya/zarya_backend/node_modules/@google-cloud/firestore/build/src/telemetry/enabled-trace-util.js:110:30
+    at NoopContextManager.with (/Users/srs/Desktop/zarya/zarya_backend/node_modules/@opentelemetry/api/build/src/context/NoopContextManager.js:25:19)
+    at ContextAPI.with (/Users/srs/Desktop/zarya/zarya_backend/node_modules/@opentelemetry/api/build/src/api/context.js:60:46)
+    at NoopTracer.startActiveSpan (/Users/srs/Desktop/zarya/zarya_backend/node_modules/@opentelemetry/api/build/src/trace/NoopTracer.js:65:31)
+    at ProxyTracer.startActiveSpan (/Users/srs/Desktop/zarya/zarya_backend/node_modules/@opentelemetry/api/build/src/trace/ProxyTracer.js:36:24)
+    at EnabledTraceUtil.startActiveSpan (/Users/srs/Desktop/zarya/zarya_backend/node_modules/@google-cloud/firestore/build/src/telemetry/enabled-trace-util.js:102:28)
+2025-08-26 14:30:02 [ERROR]: Application Error 9 FAILED_PRECONDITION: The query requires an index. You can create it here: https://console.firebase.google.com/v1/r/project/zarya-merchant-app/firestore/indexes?create_composite=Cldwcm9qZWN0cy96YXJ5YS1tZXJjaGFudC1hcHAvZGF0YWJhc2VzLyhkZWZhdWx0KS9jb2xsZWN0aW9uR3JvdXBzL2FwcG9pbnRtZW50cy9pbmRleGVzL18QARoKCgZzdGF0dXMQARoICgRkYXRlEAEaDAoIX19uYW1lX18QAQ {"service":"zarya-backend","context":"sendAppointmentReminders"}
+Error: 9 FAILED_PRECONDITION: The query requires an index. You can create it here: https://console.firebase.google.com/v1/r/project/zarya-merchant-app/firestore/indexes?create_composite=Cldwcm9qZWN0cy96YXJ5YS1tZXJjaGFudC1hcHAvZGF0YWJhc2VzLyhkZWZhdWx0KS9jb2xsZWN0aW9uR3JvdXBzL2FwcG9pbnRtZW50cy9pbmRleGVzL18QARoKCgZzdGF0dXMQARoICgRkYXRlEAEaDAoIX19uYW1lX18QAQ
+    at callErrorFromStatus (/Users/srs/Desktop/zarya/zarya_backend/node_modules/@grpc/grpc-js/build/src/call.js:32:19)
+    at Object.onReceiveStatus (/Users/srs/Desktop/zarya/zarya_backend/node_modules/@grpc/grpc-js/build/src/client.js:359:73)
+    at Object.onReceiveStatus (/Users/srs/Desktop/zarya/zarya_backend/node_modules/@grpc/grpc-js/build/src/client-interceptors.js:324:181)
+    at /Users/srs/Desktop/zarya/zarya_backend/node_modules/@grpc/grpc-js/build/src/resolving-call.js:135:78
+    at process.processTicksAndRejections (node:internal/process/task_queues:85:11)
+for call at
+    at ServiceClientImpl.makeServerStreamRequest (/Users/srs/Desktop/zarya/zarya_backend/node_modules/@grpc/grpc-js/build/src/client.js:342:32)
+    at ServiceClientImpl.<anonymous> (/Users/srs/Desktop/zarya/zarya_backend/node_modules/@grpc/grpc-js/build/src/make-client.js:105:19)
+    at /Users/srs/Desktop/zarya/zarya_backend/node_modules/@google-cloud/firestore/build/src/v1/firestore_client.js:242:33
+    at /Users/srs/Desktop/zarya/zarya_backend/node_modules/google-gax/build/src/streamingCalls/streamingApiCaller.js:38:28
+    at /Users/srs/Desktop/zarya/zarya_backend/node_modules/google-gax/build/src/normalCalls/timeout.js:44:16
+    at Object.request (/Users/srs/Desktop/zarya/zarya_backend/node_modules/google-gax/build/src/streamingCalls/streaming.js:234:40)
+    at makeRequest (/Users/srs/Desktop/zarya/zarya_backend/node_modules/retry-request/index.js:159:28)
+    at retryRequest (/Users/srs/Desktop/zarya/zarya_backend/node_modules/retry-request/index.js:119:5)
+    at StreamProxy.setStream (/Users/srs/Desktop/zarya/zarya_backend/node_modules/google-gax/build/src/streamingCalls/streaming.js:225:37)
+    at StreamingApiCaller.call (/Users/srs/Desktop/zarya/zarya_backend/node_modules/google-gax/build/src/streamingCalls/streamingApiCaller.js:54:16)
+Caused by: Error
+    at QueryUtil._getResponse (/Users/srs/Desktop/zarya/zarya_backend/node_modules/@google-cloud/firestore/build/src/reference/query-util.js:44:23)
+    at Query._getResponse (/Users/srs/Desktop/zarya/zarya_backend/node_modules/@google-cloud/firestore/build/src/reference/query.js:784:32)
+    at Query._get (/Users/srs/Desktop/zarya/zarya_backend/node_modules/@google-cloud/firestore/build/src/reference/query.js:777:35)
+    at /Users/srs/Desktop/zarya/zarya_backend/node_modules/@google-cloud/firestore/build/src/reference/query.js:745:43
+    at /Users/srs/Desktop/zarya/zarya_backend/node_modules/@google-cloud/firestore/build/src/telemetry/enabled-trace-util.js:110:30
+    at NoopContextManager.with (/Users/srs/Desktop/zarya/zarya_backend/node_modules/@opentelemetry/api/build/src/context/NoopContextManager.js:25:19)
+    at ContextAPI.with (/Users/srs/Desktop/zarya/zarya_backend/node_modules/@opentelemetry/api/build/src/api/context.js:60:46)
+    at NoopTracer.startActiveSpan (/Users/srs/Desktop/zarya/zarya_backend/node_modules/@opentelemetry/api/build/src/trace/NoopTracer.js:65:31)
+    at ProxyTracer.startActiveSpan (/Users/srs/Desktop/zarya/zarya_backend/node_modules/@opentelemetry/api/build/src/trace/ProxyTracer.js:36:24)
+    at EnabledTraceUtil.startActiveSpan (/Users/srs/Desktop/zarya/zarya_backend/node_modules/@google-cloud/firestore/build/src/telemetry/enabled-trace-util.js:102:28)
+2025-08-26 14:30:02 [ERROR]: Application Error {"service":"zarya-backend","unhealthyServices":["sms"]}
+2025-08-26 14:30:03 [ERROR]: Application Error {"service":"zarya-backend","unhealthyServices":["sms"]}

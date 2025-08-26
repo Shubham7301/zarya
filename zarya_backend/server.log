@@ -1,0 +1,182 @@
+
+> zarya-backend@1.0.0 start
+> node src/server.js
+
+2025-08-26 13:46:53 [[32minfo[39m]: Notification services initialized {"service":"zarya-backend"}
+2025-08-26 13:46:53 [[32minfo[39m]: Scheduled cron job: subscription-expiry-check with schedule: 0 9 * * * {"service":"zarya-backend"}
+2025-08-26 13:46:53 [[32minfo[39m]: Scheduled cron job: appointment-reminders with schedule: 0 * * * * {"service":"zarya-backend"}
+2025-08-26 13:46:53 [[32minfo[39m]: Scheduled cron job: weekly-analytics with schedule: 0 8 * * 1 {"service":"zarya-backend"}
+2025-08-26 13:46:53 [[32minfo[39m]: Scheduled cron job: daily-backup with schedule: 0 2 * * * {"service":"zarya-backend"}
+2025-08-26 13:46:53 [[32minfo[39m]: Scheduled cron job: monthly-renewal-reminders with schedule: 0 10 1 * * {"service":"zarya-backend"}
+2025-08-26 13:46:53 [[32minfo[39m]: Scheduled cron job: cleanup-notifications with schedule: 0 3 * * * {"service":"zarya-backend"}
+2025-08-26 13:46:53 [[32minfo[39m]: Scheduled cron job: health-check with schedule: */30 * * * * {"service":"zarya-backend"}
+2025-08-26 13:46:53 [[32minfo[39m]: Cron jobs initialized successfully {"service":"zarya-backend"}
+2025-08-26 13:46:53 [[32minfo[39m]: Firebase initialized successfully {"service":"zarya-backend"}
+2025-08-26 13:46:53 [[32minfo[39m]: Firebase initialized successfully {"service":"zarya-backend"}
+2025-08-26 13:46:53 [[32minfo[39m]: Initializing default data in Firebase... {"service":"zarya-backend"}
+2025-08-26 13:46:54 [[32minfo[39m]: Default data initialization completed {"service":"zarya-backend"}
+2025-08-26 13:46:54 [[32minfo[39m]: Default data initialized successfully {"service":"zarya-backend"}
+2025-08-26 13:46:54 [[32minfo[39m]: Cloudinary initialized successfully {"service":"zarya-backend"}
+2025-08-26 13:46:54 [[32minfo[39m]: Cloudinary initialized successfully {"service":"zarya-backend"}
+2025-08-26 13:46:54 [[32minfo[39m]: Notification services initialized {"service":"zarya-backend"}
+2025-08-26 13:46:54 [[32minfo[39m]: Notification service initialized successfully {"service":"zarya-backend"}
+2025-08-26 13:46:54 [[32minfo[39m]: Scheduled cron job: subscription-expiry-check with schedule: 0 9 * * * {"service":"zarya-backend"}
+2025-08-26 13:46:54 [[32minfo[39m]: Scheduled cron job: appointment-reminders with schedule: 0 * * * * {"service":"zarya-backend"}
+2025-08-26 13:46:54 [[32minfo[39m]: Scheduled cron job: weekly-analytics with schedule: 0 8 * * 1 {"service":"zarya-backend"}
+2025-08-26 13:46:54 [[32minfo[39m]: Scheduled cron job: daily-backup with schedule: 0 2 * * * {"service":"zarya-backend"}
+2025-08-26 13:46:54 [[32minfo[39m]: Scheduled cron job: monthly-renewal-reminders with schedule: 0 10 1 * * {"service":"zarya-backend"}
+2025-08-26 13:46:54 [[32minfo[39m]: Scheduled cron job: cleanup-notifications with schedule: 0 3 * * * {"service":"zarya-backend"}
+2025-08-26 13:46:54 [[32minfo[39m]: Scheduled cron job: health-check with schedule: */30 * * * * {"service":"zarya-backend"}
+2025-08-26 13:46:54 [[32minfo[39m]: Cron jobs initialized successfully {"service":"zarya-backend"}
+2025-08-26 13:46:54 [[32minfo[39m]: Cron jobs initialized successfully {"service":"zarya-backend"}
+2025-08-26 13:46:54 [[32minfo[39m]: 🚀 Zarya Backend Server running on port 3000 {"service":"zarya-backend"}
+2025-08-26 13:46:54 [[32minfo[39m]: 📊 Environment: development {"service":"zarya-backend"}
+2025-08-26 13:46:54 [[32minfo[39m]: 🔗 Health check: http://localhost:3000/health {"service":"zarya-backend"}
+2025-08-26 13:46:54 [[32minfo[39m]: 📚 API Documentation: http://localhost:3000/api/v1/docs {"service":"zarya-backend"}
+2025-08-26 13:47:07 [[32minfo[39m]: ::1 - - [26/Aug/2025:08:17:07 +0000] "GET /health HTTP/1.1" 200 122 "-" "curl/8.7.1" {"service":"zarya-backend"}
+2025-08-26 13:47:16 [[33mwarn[39m]: Security Event {"service":"zarya-backend","event":"Merchant login successful","email":"sarah@beautysalonpro.com","merchantId":"JwikSqpSYpwr8jcbwK9g"}
+2025-08-26 13:47:16 [[32minfo[39m]: ::1 - - [26/Aug/2025:08:17:16 +0000] "POST /api/v1/auth/merchant/login HTTP/1.1" 200 1313 "-" "curl/8.7.1" {"service":"zarya-backend"}
+2025-08-26 13:55:04 [[33mwarn[39m]: Security Event {"service":"zarya-backend","event":"Merchant login successful","email":"sarah@beautysalonpro.com","merchantId":"JwikSqpSYpwr8jcbwK9g"}
+2025-08-26 13:55:04 [[32minfo[39m]: ::1 - - [26/Aug/2025:08:25:04 +0000] "POST /api/v1/auth/merchant/login HTTP/1.1" 200 - "http://localhost:55464/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36" {"service":"zarya-backend"}
+2025-08-26 13:55:12 [[33mwarn[39m]: Security Event {"service":"zarya-backend","event":"Merchant login successful","email":"sarah@beautysalonpro.com","merchantId":"JwikSqpSYpwr8jcbwK9g"}
+2025-08-26 13:55:12 [[32minfo[39m]: ::1 - - [26/Aug/2025:08:25:12 +0000] "POST /api/v1/auth/merchant/login HTTP/1.1" 200 - "http://localhost:55464/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36" {"service":"zarya-backend"}
+2025-08-26 13:55:16 [[33mwarn[39m]: Security Event {"service":"zarya-backend","event":"Failed admin login attempt - invalid password","email":"admin@zarya.com","adminId":"rz39SL36u6qMpKfsuPgZ"}
+2025-08-26 13:55:16 [[32minfo[39m]: ::1 - - [26/Aug/2025:08:25:16 +0000] "POST /api/v1/auth/admin/login HTTP/1.1" 401 31 "http://localhost:55464/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36" {"service":"zarya-backend"}
+2025-08-26 13:55:27 [[33mwarn[39m]: Security Event {"service":"zarya-backend","event":"Admin login successful","email":"admin@zarya.com","adminId":"rz39SL36u6qMpKfsuPgZ"}
+2025-08-26 13:55:27 [[32minfo[39m]: ::1 - - [26/Aug/2025:08:25:27 +0000] "POST /api/v1/auth/admin/login HTTP/1.1" 200 659 "http://localhost:55464/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36" {"service":"zarya-backend"}
+2025-08-26 14:00:00 [[32minfo[39m]: Starting cron job: health-check {"service":"zarya-backend"}
+2025-08-26 14:00:00 [[32minfo[39m]: Completed cron job: health-check {"service":"zarya-backend"}
+2025-08-26 14:00:00 [[32minfo[39m]: Starting cron job: health-check {"service":"zarya-backend"}
+2025-08-26 14:00:00 [[32minfo[39m]: Completed cron job: health-check {"service":"zarya-backend"}
+2025-08-26 14:00:02 [[31merror[39m]: Application Error {"service":"zarya-backend","unhealthyServices":["sms"]}
+2025-08-26 14:00:02 [[31merror[39m]: Application Error {"service":"zarya-backend","unhealthyServices":["sms"]}
+2025-08-26 14:30:00 [[32minfo[39m]: Starting cron job: subscription-expiry-check {"service":"zarya-backend"}
+2025-08-26 14:30:00 [[32minfo[39m]: Completed cron job: subscription-expiry-check {"service":"zarya-backend"}
+2025-08-26 14:30:00 [[32minfo[39m]: Starting cron job: appointment-reminders {"service":"zarya-backend"}
+2025-08-26 14:30:00 [[32minfo[39m]: Completed cron job: appointment-reminders {"service":"zarya-backend"}
+2025-08-26 14:30:00 [[32minfo[39m]: Starting cron job: health-check {"service":"zarya-backend"}
+2025-08-26 14:30:00 [[32minfo[39m]: Completed cron job: health-check {"service":"zarya-backend"}
+2025-08-26 14:30:00 [[32minfo[39m]: Starting cron job: subscription-expiry-check {"service":"zarya-backend"}
+2025-08-26 14:30:00 [[32minfo[39m]: Completed cron job: subscription-expiry-check {"service":"zarya-backend"}
+2025-08-26 14:30:00 [[32minfo[39m]: Starting cron job: appointment-reminders {"service":"zarya-backend"}
+2025-08-26 14:30:00 [[32minfo[39m]: Completed cron job: appointment-reminders {"service":"zarya-backend"}
+2025-08-26 14:30:00 [[32minfo[39m]: Starting cron job: health-check {"service":"zarya-backend"}
+2025-08-26 14:30:00 [[32minfo[39m]: Completed cron job: health-check {"service":"zarya-backend"}
+2025-08-26 14:30:01 [[31merror[39m]: Application Error 9 FAILED_PRECONDITION: The query requires an index. You can create it here: https://console.firebase.google.com/v1/r/project/zarya-merchant-app/firestore/indexes?create_composite=Clhwcm9qZWN0cy96YXJ5YS1tZXJjaGFudC1hcHAvZGF0YWJhc2VzLyhkZWZhdWx0KS9jb2xsZWN0aW9uR3JvdXBzL3N1YnNjcmlwdGlvbnMvaW5kZXhlcy9fEAEaCgoGc3RhdHVzEAEaDgoKZXhwaXJ5RGF0ZRABGgwKCF9fbmFtZV9fEAE {"service":"zarya-backend","context":"checkSubscriptionExpiry"}
+Error: 9 FAILED_PRECONDITION: The query requires an index. You can create it here: https://console.firebase.google.com/v1/r/project/zarya-merchant-app/firestore/indexes?create_composite=Clhwcm9qZWN0cy96YXJ5YS1tZXJjaGFudC1hcHAvZGF0YWJhc2VzLyhkZWZhdWx0KS9jb2xsZWN0aW9uR3JvdXBzL3N1YnNjcmlwdGlvbnMvaW5kZXhlcy9fEAEaCgoGc3RhdHVzEAEaDgoKZXhwaXJ5RGF0ZRABGgwKCF9fbmFtZV9fEAE
+    at callErrorFromStatus (/Users/srs/Desktop/zarya/zarya_backend/node_modules/@grpc/grpc-js/build/src/call.js:32:19)
+    at Object.onReceiveStatus (/Users/srs/Desktop/zarya/zarya_backend/node_modules/@grpc/grpc-js/build/src/client.js:359:73)
+    at Object.onReceiveStatus (/Users/srs/Desktop/zarya/zarya_backend/node_modules/@grpc/grpc-js/build/src/client-interceptors.js:324:181)
+    at /Users/srs/Desktop/zarya/zarya_backend/node_modules/@grpc/grpc-js/build/src/resolving-call.js:135:78
+    at process.processTicksAndRejections (node:internal/process/task_queues:85:11)
+for call at
+    at ServiceClientImpl.makeServerStreamRequest (/Users/srs/Desktop/zarya/zarya_backend/node_modules/@grpc/grpc-js/build/src/client.js:342:32)
+    at ServiceClientImpl.<anonymous> (/Users/srs/Desktop/zarya/zarya_backend/node_modules/@grpc/grpc-js/build/src/make-client.js:105:19)
+    at /Users/srs/Desktop/zarya/zarya_backend/node_modules/@google-cloud/firestore/build/src/v1/firestore_client.js:242:33
+    at /Users/srs/Desktop/zarya/zarya_backend/node_modules/google-gax/build/src/streamingCalls/streamingApiCaller.js:38:28
+    at /Users/srs/Desktop/zarya/zarya_backend/node_modules/google-gax/build/src/normalCalls/timeout.js:44:16
+    at Object.request (/Users/srs/Desktop/zarya/zarya_backend/node_modules/google-gax/build/src/streamingCalls/streaming.js:234:40)
+    at makeRequest (/Users/srs/Desktop/zarya/zarya_backend/node_modules/retry-request/index.js:159:28)
+    at retryRequest (/Users/srs/Desktop/zarya/zarya_backend/node_modules/retry-request/index.js:119:5)
+    at StreamProxy.setStream (/Users/srs/Desktop/zarya/zarya_backend/node_modules/google-gax/build/src/streamingCalls/streaming.js:225:37)
+    at StreamingApiCaller.call (/Users/srs/Desktop/zarya/zarya_backend/node_modules/google-gax/build/src/streamingCalls/streamingApiCaller.js:54:16)
+Caused by: Error
+    at QueryUtil._getResponse (/Users/srs/Desktop/zarya/zarya_backend/node_modules/@google-cloud/firestore/build/src/reference/query-util.js:44:23)
+    at Query._getResponse (/Users/srs/Desktop/zarya/zarya_backend/node_modules/@google-cloud/firestore/build/src/reference/query.js:784:32)
+    at Query._get (/Users/srs/Desktop/zarya/zarya_backend/node_modules/@google-cloud/firestore/build/src/reference/query.js:777:35)
+    at /Users/srs/Desktop/zarya/zarya_backend/node_modules/@google-cloud/firestore/build/src/reference/query.js:745:43
+    at /Users/srs/Desktop/zarya/zarya_backend/node_modules/@google-cloud/firestore/build/src/telemetry/enabled-trace-util.js:110:30
+    at NoopContextManager.with (/Users/srs/Desktop/zarya/zarya_backend/node_modules/@opentelemetry/api/build/src/context/NoopContextManager.js:25:19)
+    at ContextAPI.with (/Users/srs/Desktop/zarya/zarya_backend/node_modules/@opentelemetry/api/build/src/api/context.js:60:46)
+    at NoopTracer.startActiveSpan (/Users/srs/Desktop/zarya/zarya_backend/node_modules/@opentelemetry/api/build/src/trace/NoopTracer.js:65:31)
+    at ProxyTracer.startActiveSpan (/Users/srs/Desktop/zarya/zarya_backend/node_modules/@opentelemetry/api/build/src/trace/ProxyTracer.js:36:24)
+    at EnabledTraceUtil.startActiveSpan (/Users/srs/Desktop/zarya/zarya_backend/node_modules/@google-cloud/firestore/build/src/telemetry/enabled-trace-util.js:102:28)
+2025-08-26 14:30:01 [[31merror[39m]: Application Error 9 FAILED_PRECONDITION: The query requires an index. You can create it here: https://console.firebase.google.com/v1/r/project/zarya-merchant-app/firestore/indexes?create_composite=Clhwcm9qZWN0cy96YXJ5YS1tZXJjaGFudC1hcHAvZGF0YWJhc2VzLyhkZWZhdWx0KS9jb2xsZWN0aW9uR3JvdXBzL3N1YnNjcmlwdGlvbnMvaW5kZXhlcy9fEAEaCgoGc3RhdHVzEAEaDgoKZXhwaXJ5RGF0ZRABGgwKCF9fbmFtZV9fEAE {"service":"zarya-backend","context":"checkSubscriptionExpiry"}
+Error: 9 FAILED_PRECONDITION: The query requires an index. You can create it here: https://console.firebase.google.com/v1/r/project/zarya-merchant-app/firestore/indexes?create_composite=Clhwcm9qZWN0cy96YXJ5YS1tZXJjaGFudC1hcHAvZGF0YWJhc2VzLyhkZWZhdWx0KS9jb2xsZWN0aW9uR3JvdXBzL3N1YnNjcmlwdGlvbnMvaW5kZXhlcy9fEAEaCgoGc3RhdHVzEAEaDgoKZXhwaXJ5RGF0ZRABGgwKCF9fbmFtZV9fEAE
+    at callErrorFromStatus (/Users/srs/Desktop/zarya/zarya_backend/node_modules/@grpc/grpc-js/build/src/call.js:32:19)
+    at Object.onReceiveStatus (/Users/srs/Desktop/zarya/zarya_backend/node_modules/@grpc/grpc-js/build/src/client.js:359:73)
+    at Object.onReceiveStatus (/Users/srs/Desktop/zarya/zarya_backend/node_modules/@grpc/grpc-js/build/src/client-interceptors.js:324:181)
+    at /Users/srs/Desktop/zarya/zarya_backend/node_modules/@grpc/grpc-js/build/src/resolving-call.js:135:78
+    at process.processTicksAndRejections (node:internal/process/task_queues:85:11)
+for call at
+    at ServiceClientImpl.makeServerStreamRequest (/Users/srs/Desktop/zarya/zarya_backend/node_modules/@grpc/grpc-js/build/src/client.js:342:32)
+    at ServiceClientImpl.<anonymous> (/Users/srs/Desktop/zarya/zarya_backend/node_modules/@grpc/grpc-js/build/src/make-client.js:105:19)
+    at /Users/srs/Desktop/zarya/zarya_backend/node_modules/@google-cloud/firestore/build/src/v1/firestore_client.js:242:33
+    at /Users/srs/Desktop/zarya/zarya_backend/node_modules/google-gax/build/src/streamingCalls/streamingApiCaller.js:38:28
+    at /Users/srs/Desktop/zarya/zarya_backend/node_modules/google-gax/build/src/normalCalls/timeout.js:44:16
+    at Object.request (/Users/srs/Desktop/zarya/zarya_backend/node_modules/google-gax/build/src/streamingCalls/streaming.js:234:40)
+    at makeRequest (/Users/srs/Desktop/zarya/zarya_backend/node_modules/retry-request/index.js:159:28)
+    at retryRequest (/Users/srs/Desktop/zarya/zarya_backend/node_modules/retry-request/index.js:119:5)
+    at StreamProxy.setStream (/Users/srs/Desktop/zarya/zarya_backend/node_modules/google-gax/build/src/streamingCalls/streaming.js:225:37)
+    at StreamingApiCaller.call (/Users/srs/Desktop/zarya/zarya_backend/node_modules/google-gax/build/src/streamingCalls/streamingApiCaller.js:54:16)
+Caused by: Error
+    at QueryUtil._getResponse (/Users/srs/Desktop/zarya/zarya_backend/node_modules/@google-cloud/firestore/build/src/reference/query-util.js:44:23)
+    at Query._getResponse (/Users/srs/Desktop/zarya/zarya_backend/node_modules/@google-cloud/firestore/build/src/reference/query.js:784:32)
+    at Query._get (/Users/srs/Desktop/zarya/zarya_backend/node_modules/@google-cloud/firestore/build/src/reference/query.js:777:35)
+    at /Users/srs/Desktop/zarya/zarya_backend/node_modules/@google-cloud/firestore/build/src/reference/query.js:745:43
+    at /Users/srs/Desktop/zarya/zarya_backend/node_modules/@google-cloud/firestore/build/src/telemetry/enabled-trace-util.js:110:30
+    at NoopContextManager.with (/Users/srs/Desktop/zarya/zarya_backend/node_modules/@opentelemetry/api/build/src/context/NoopContextManager.js:25:19)
+    at ContextAPI.with (/Users/srs/Desktop/zarya/zarya_backend/node_modules/@opentelemetry/api/build/src/api/context.js:60:46)
+    at NoopTracer.startActiveSpan (/Users/srs/Desktop/zarya/zarya_backend/node_modules/@opentelemetry/api/build/src/trace/NoopTracer.js:65:31)
+    at ProxyTracer.startActiveSpan (/Users/srs/Desktop/zarya/zarya_backend/node_modules/@opentelemetry/api/build/src/trace/ProxyTracer.js:36:24)
+    at EnabledTraceUtil.startActiveSpan (/Users/srs/Desktop/zarya/zarya_backend/node_modules/@google-cloud/firestore/build/src/telemetry/enabled-trace-util.js:102:28)
+2025-08-26 14:30:02 [[31merror[39m]: Application Error 9 FAILED_PRECONDITION: The query requires an index. You can create it here: https://console.firebase.google.com/v1/r/project/zarya-merchant-app/firestore/indexes?create_composite=Cldwcm9qZWN0cy96YXJ5YS1tZXJjaGFudC1hcHAvZGF0YWJhc2VzLyhkZWZhdWx0KS9jb2xsZWN0aW9uR3JvdXBzL2FwcG9pbnRtZW50cy9pbmRleGVzL18QARoKCgZzdGF0dXMQARoICgRkYXRlEAEaDAoIX19uYW1lX18QAQ {"service":"zarya-backend","context":"sendAppointmentReminders"}
+Error: 9 FAILED_PRECONDITION: The query requires an index. You can create it here: https://console.firebase.google.com/v1/r/project/zarya-merchant-app/firestore/indexes?create_composite=Cldwcm9qZWN0cy96YXJ5YS1tZXJjaGFudC1hcHAvZGF0YWJhc2VzLyhkZWZhdWx0KS9jb2xsZWN0aW9uR3JvdXBzL2FwcG9pbnRtZW50cy9pbmRleGVzL18QARoKCgZzdGF0dXMQARoICgRkYXRlEAEaDAoIX19uYW1lX18QAQ
+    at callErrorFromStatus (/Users/srs/Desktop/zarya/zarya_backend/node_modules/@grpc/grpc-js/build/src/call.js:32:19)
+    at Object.onReceiveStatus (/Users/srs/Desktop/zarya/zarya_backend/node_modules/@grpc/grpc-js/build/src/client.js:359:73)
+    at Object.onReceiveStatus (/Users/srs/Desktop/zarya/zarya_backend/node_modules/@grpc/grpc-js/build/src/client-interceptors.js:324:181)
+    at /Users/srs/Desktop/zarya/zarya_backend/node_modules/@grpc/grpc-js/build/src/resolving-call.js:135:78
+    at process.processTicksAndRejections (node:internal/process/task_queues:85:11)
+for call at
+    at ServiceClientImpl.makeServerStreamRequest (/Users/srs/Desktop/zarya/zarya_backend/node_modules/@grpc/grpc-js/build/src/client.js:342:32)
+    at ServiceClientImpl.<anonymous> (/Users/srs/Desktop/zarya/zarya_backend/node_modules/@grpc/grpc-js/build/src/make-client.js:105:19)
+    at /Users/srs/Desktop/zarya/zarya_backend/node_modules/@google-cloud/firestore/build/src/v1/firestore_client.js:242:33
+    at /Users/srs/Desktop/zarya/zarya_backend/node_modules/google-gax/build/src/streamingCalls/streamingApiCaller.js:38:28
+    at /Users/srs/Desktop/zarya/zarya_backend/node_modules/google-gax/build/src/normalCalls/timeout.js:44:16
+    at Object.request (/Users/srs/Desktop/zarya/zarya_backend/node_modules/google-gax/build/src/streamingCalls/streaming.js:234:40)
+    at makeRequest (/Users/srs/Desktop/zarya/zarya_backend/node_modules/retry-request/index.js:159:28)
+    at retryRequest (/Users/srs/Desktop/zarya/zarya_backend/node_modules/retry-request/index.js:119:5)
+    at StreamProxy.setStream (/Users/srs/Desktop/zarya/zarya_backend/node_modules/google-gax/build/src/streamingCalls/streaming.js:225:37)
+    at StreamingApiCaller.call (/Users/srs/Desktop/zarya/zarya_backend/node_modules/google-gax/build/src/streamingCalls/streamingApiCaller.js:54:16)
+Caused by: Error
+    at QueryUtil._getResponse (/Users/srs/Desktop/zarya/zarya_backend/node_modules/@google-cloud/firestore/build/src/reference/query-util.js:44:23)
+    at Query._getResponse (/Users/srs/Desktop/zarya/zarya_backend/node_modules/@google-cloud/firestore/build/src/reference/query.js:784:32)
+    at Query._get (/Users/srs/Desktop/zarya/zarya_backend/node_modules/@google-cloud/firestore/build/src/reference/query.js:777:35)
+    at /Users/srs/Desktop/zarya/zarya_backend/node_modules/@google-cloud/firestore/build/src/reference/query.js:745:43
+    at /Users/srs/Desktop/zarya/zarya_backend/node_modules/@google-cloud/firestore/build/src/telemetry/enabled-trace-util.js:110:30
+    at NoopContextManager.with (/Users/srs/Desktop/zarya/zarya_backend/node_modules/@opentelemetry/api/build/src/context/NoopContextManager.js:25:19)
+    at ContextAPI.with (/Users/srs/Desktop/zarya/zarya_backend/node_modules/@opentelemetry/api/build/src/api/context.js:60:46)
+    at NoopTracer.startActiveSpan (/Users/srs/Desktop/zarya/zarya_backend/node_modules/@opentelemetry/api/build/src/trace/NoopTracer.js:65:31)
+    at ProxyTracer.startActiveSpan (/Users/srs/Desktop/zarya/zarya_backend/node_modules/@opentelemetry/api/build/src/trace/ProxyTracer.js:36:24)
+    at EnabledTraceUtil.startActiveSpan (/Users/srs/Desktop/zarya/zarya_backend/node_modules/@google-cloud/firestore/build/src/telemetry/enabled-trace-util.js:102:28)
+2025-08-26 14:30:02 [[31merror[39m]: Application Error 9 FAILED_PRECONDITION: The query requires an index. You can create it here: https://console.firebase.google.com/v1/r/project/zarya-merchant-app/firestore/indexes?create_composite=Cldwcm9qZWN0cy96YXJ5YS1tZXJjaGFudC1hcHAvZGF0YWJhc2VzLyhkZWZhdWx0KS9jb2xsZWN0aW9uR3JvdXBzL2FwcG9pbnRtZW50cy9pbmRleGVzL18QARoKCgZzdGF0dXMQARoICgRkYXRlEAEaDAoIX19uYW1lX18QAQ {"service":"zarya-backend","context":"sendAppointmentReminders"}
+Error: 9 FAILED_PRECONDITION: The query requires an index. You can create it here: https://console.firebase.google.com/v1/r/project/zarya-merchant-app/firestore/indexes?create_composite=Cldwcm9qZWN0cy96YXJ5YS1tZXJjaGFudC1hcHAvZGF0YWJhc2VzLyhkZWZhdWx0KS9jb2xsZWN0aW9uR3JvdXBzL2FwcG9pbnRtZW50cy9pbmRleGVzL18QARoKCgZzdGF0dXMQARoICgRkYXRlEAEaDAoIX19uYW1lX18QAQ
+    at callErrorFromStatus (/Users/srs/Desktop/zarya/zarya_backend/node_modules/@grpc/grpc-js/build/src/call.js:32:19)
+    at Object.onReceiveStatus (/Users/srs/Desktop/zarya/zarya_backend/node_modules/@grpc/grpc-js/build/src/client.js:359:73)
+    at Object.onReceiveStatus (/Users/srs/Desktop/zarya/zarya_backend/node_modules/@grpc/grpc-js/build/src/client-interceptors.js:324:181)
+    at /Users/srs/Desktop/zarya/zarya_backend/node_modules/@grpc/grpc-js/build/src/resolving-call.js:135:78
+    at process.processTicksAndRejections (node:internal/process/task_queues:85:11)
+for call at
+    at ServiceClientImpl.makeServerStreamRequest (/Users/srs/Desktop/zarya/zarya_backend/node_modules/@grpc/grpc-js/build/src/client.js:342:32)
+    at ServiceClientImpl.<anonymous> (/Users/srs/Desktop/zarya/zarya_backend/node_modules/@grpc/grpc-js/build/src/make-client.js:105:19)
+    at /Users/srs/Desktop/zarya/zarya_backend/node_modules/@google-cloud/firestore/build/src/v1/firestore_client.js:242:33
+    at /Users/srs/Desktop/zarya/zarya_backend/node_modules/google-gax/build/src/streamingCalls/streamingApiCaller.js:38:28
+    at /Users/srs/Desktop/zarya/zarya_backend/node_modules/google-gax/build/src/normalCalls/timeout.js:44:16
+    at Object.request (/Users/srs/Desktop/zarya/zarya_backend/node_modules/google-gax/build/src/streamingCalls/streaming.js:234:40)
+    at makeRequest (/Users/srs/Desktop/zarya/zarya_backend/node_modules/retry-request/index.js:159:28)
+    at retryRequest (/Users/srs/Desktop/zarya/zarya_backend/node_modules/retry-request/index.js:119:5)
+    at StreamProxy.setStream (/Users/srs/Desktop/zarya/zarya_backend/node_modules/google-gax/build/src/streamingCalls/streaming.js:225:37)
+    at StreamingApiCaller.call (/Users/srs/Desktop/zarya/zarya_backend/node_modules/google-gax/build/src/streamingCalls/streamingApiCaller.js:54:16)
+Caused by: Error
+    at QueryUtil._getResponse (/Users/srs/Desktop/zarya/zarya_backend/node_modules/@google-cloud/firestore/build/src/reference/query-util.js:44:23)
+    at Query._getResponse (/Users/srs/Desktop/zarya/zarya_backend/node_modules/@google-cloud/firestore/build/src/reference/query.js:784:32)
+    at Query._get (/Users/srs/Desktop/zarya/zarya_backend/node_modules/@google-cloud/firestore/build/src/reference/query.js:777:35)
+    at /Users/srs/Desktop/zarya/zarya_backend/node_modules/@google-cloud/firestore/build/src/reference/query.js:745:43
+    at /Users/srs/Desktop/zarya/zarya_backend/node_modules/@google-cloud/firestore/build/src/telemetry/enabled-trace-util.js:110:30
+    at NoopContextManager.with (/Users/srs/Desktop/zarya/zarya_backend/node_modules/@opentelemetry/api/build/src/context/NoopContextManager.js:25:19)
+    at ContextAPI.with (/Users/srs/Desktop/zarya/zarya_backend/node_modules/@opentelemetry/api/build/src/api/context.js:60:46)
+    at NoopTracer.startActiveSpan (/Users/srs/Desktop/zarya/zarya_backend/node_modules/@opentelemetry/api/build/src/trace/NoopTracer.js:65:31)
+    at ProxyTracer.startActiveSpan (/Users/srs/Desktop/zarya/zarya_backend/node_modules/@opentelemetry/api/build/src/trace/ProxyTracer.js:36:24)
+    at EnabledTraceUtil.startActiveSpan (/Users/srs/Desktop/zarya/zarya_backend/node_modules/@google-cloud/firestore/build/src/telemetry/enabled-trace-util.js:102:28)
+2025-08-26 14:30:02 [[31merror[39m]: Application Error {"service":"zarya-backend","unhealthyServices":["sms"]}
+2025-08-26 14:30:03 [[31merror[39m]: Application Error {"service":"zarya-backend","unhealthyServices":["sms"]}
