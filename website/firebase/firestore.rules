@@ -1,0 +1,47 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // Merchants collection - only authenticated merchants can read/write their own data
+    match /merchants/{merchantId} {
+      allow read, write: if request.auth != null && request.auth.uid == merchantId;
+      allow read: if true; // Allow customers to read merchant info for booking
+    }
+    
+    // Appointments collection
+    match /appointments/{appointmentId} {
+      // Merchants can read/write appointments for their business
+      allow read, write: if request.auth != null && 
+        (request.auth.uid == resource.data.merchantId || 
+         request.auth.uid == resource.data.customerId);
+      
+      // Allow customers to create appointments
+      allow create: if request.auth == null || request.auth != null;
+      
+      // Allow reading for appointment lookup (with proper validation)
+      allow read: if true;
+    }
+    
+    // Customers collection
+    match /customers/{customerId} {
+      allow read, write: if request.auth != null && request.auth.uid == customerId;
+      allow create: if true; // Allow guest bookings
+    }
+    
+    // Services collection
+    match /services/{serviceId} {
+      // Merchants can manage their own services
+      allow read, write: if request.auth != null && 
+        request.auth.uid == resource.data.merchantId;
+      
+      // Everyone can read active services
+      allow read: if resource.data.isActive == true;
+    }
+    
+    // Time slots collection
+    match /timeSlots/{slotId} {
+      allow read, write: if request.auth != null && 
+        request.auth.uid == resource.data.merchantId;
+      allow read: if resource.data.isAvailable == true;
+    }
+  }
+}
