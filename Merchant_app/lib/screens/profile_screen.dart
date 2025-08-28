@@ -8,6 +8,7 @@ import '../services/api_service.dart';
 import '../utils/app_colors.dart';
 import '../models/merchant.dart';
 import '../models/working_hours.dart';
+import '../widgets/working_hours_editor.dart';
 
 class ProfileScreen extends StatefulWidget {
   const ProfileScreen({super.key});
@@ -27,6 +28,8 @@ class _ProfileScreenState extends State<ProfileScreen> {
   File? _selectedImage;
   bool _isUploading = false;
   double _uploadProgress = 0.0;
+  List<WorkingHours> _workingHours = [];
+  bool _isEditingWorkingHours = false;
 
   @override
   void initState() {
@@ -37,6 +40,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
     _phoneController = TextEditingController(text: merchant?.phone ?? '');
     _addressController = TextEditingController(text: merchant?.address ?? '');
     _descriptionController = TextEditingController(text: merchant?.description ?? '');
+    _workingHours = List.from(merchant?.workingHours ?? WorkingHours.getDefaultWorkingHours());
   }
 
   @override
@@ -59,6 +63,43 @@ class _ProfileScreenState extends State<ProfileScreen> {
       setState(() {
         _selectedImage = image;
       });
+    }
+  }
+
+  void _onWorkingHoursChanged(List<WorkingHours> workingHours) {
+    setState(() {
+      _workingHours = workingHours;
+    });
+  }
+
+  Future<void> _saveWorkingHours() async {
+    try {
+      final authProvider = Provider.of<AuthProvider>(context, listen: false);
+      final currentMerchant = authProvider.merchant;
+      if (currentMerchant != null) {
+        final updatedMerchant = currentMerchant.copyWith(
+          workingHours: _workingHours,
+        );
+        await authProvider.updateProfile(updatedMerchant);
+        
+        if (mounted) {
+          ScaffoldMessenger.of(context).showSnackBar(
+            const SnackBar(
+              content: Text('Working hours updated successfully!'),
+              backgroundColor: AppColors.success,
+            ),
+          );
+        }
+      }
+    } catch (e) {
+      if (mounted) {
+        ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(
+            content: Text('Failed to update working hours: $e'),
+            backgroundColor: AppColors.error,
+          ),
+        );
+      }
     }
   }
 
@@ -404,16 +445,64 @@ class _ProfileScreenState extends State<ProfileScreen> {
               const SizedBox(height: 32),
 
               // Working Hours
-              const Text(
-                'Working Hours',
-                style: TextStyle(
-                  fontSize: 20,
-                  fontWeight: FontWeight.bold,
-                  color: AppColors.textPrimary,
-                ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  const Text(
+                    'Working Hours',
+                    style: TextStyle(
+                      fontSize: 20,
+                      fontWeight: FontWeight.bold,
+                      color: AppColors.textPrimary,
+                    ),
+                  ),
+                  Row(
+                    children: [
+                      if (_isEditingWorkingHours) ...[
+                        TextButton(
+                          onPressed: () {
+                            setState(() {
+                              _isEditingWorkingHours = false;
+                            });
+                          },
+                          child: const Text('Cancel'),
+                        ),
+                        const SizedBox(width: 8),
+                        ElevatedButton(
+                          onPressed: _saveWorkingHours,
+                          style: ElevatedButton.styleFrom(
+                            backgroundColor: AppColors.primary,
+                            foregroundColor: Colors.white,
+                          ),
+                          child: const Text('Save'),
+                        ),
+                      ] else ...[
+                        ElevatedButton.icon(
+                          onPressed: () {
+                            setState(() {
+                              _isEditingWorkingHours = true;
+                            });
+                          },
+                          icon: const Icon(Icons.edit, size: 18),
+                          label: const Text('Edit'),
+                          style: ElevatedButton.styleFrom(
+                            backgroundColor: AppColors.primary,
+                            foregroundColor: Colors.white,
+                          ),
+                        ),
+                      ],
+                    ],
+                  ),
+                ],
               ),
               const SizedBox(height: 16),
-              _buildWorkingHoursList(merchant?.workingHours ?? []),
+              if (_isEditingWorkingHours)
+                WorkingHoursEditor(
+                  workingHours: _workingHours,
+                  onWorkingHoursChanged: _onWorkingHoursChanged,
+                )
+              else
+                _buildWorkingHoursList(_workingHours),
             ],
           ),
         ),
@@ -424,49 +513,152 @@ class _ProfileScreenState extends State<ProfileScreen> {
   Widget _buildWorkingHoursList(List<WorkingHours> workingHours) {
     return Column(
       children: workingHours.map((hours) {
+        final isToday = _isToday(hours.day);
+        final isCurrentlyOpen = hours.isCurrentlyOpen;
+        
         return Container(
           margin: const EdgeInsets.only(bottom: 8),
-          padding: const EdgeInsets.all(12),
+          padding: const EdgeInsets.all(16),
           decoration: BoxDecoration(
-            color: Colors.white,
-            borderRadius: BorderRadius.circular(8),
-            border: Border.all(color: AppColors.border),
+            color: isToday ? AppColors.primary.withOpacity(0.05) : Colors.white,
+            borderRadius: BorderRadius.circular(12),
+            border: Border.all(
+              color: isToday ? AppColors.primary.withOpacity(0.3) : AppColors.border,
+              width: isToday ? 2 : 1,
+            ),
+            boxShadow: [
+              BoxShadow(
+                color: Colors.black.withOpacity(0.05),
+                blurRadius: 8,
+                offset: const Offset(0, 2),
+              ),
+            ],
           ),
           child: Row(
             children: [
+              // Day with today indicator
               Expanded(
                 flex: 2,
-                child: Text(
-                  hours.day,
-                  style: const TextStyle(
-                    fontWeight: FontWeight.w600,
-                    color: AppColors.textPrimary,
-                  ),
+                child: Row(
+                  children: [
+                    if (isToday)
+                      Container(
+                        width: 8,
+                        height: 8,
+                        decoration: const BoxDecoration(
+                          shape: BoxShape.circle,
+                          color: AppColors.primary,
+                        ),
+                      ),
+                    if (isToday) const SizedBox(width: 8),
+                    Expanded(
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text(
+                            hours.day,
+                            style: TextStyle(
+                              fontWeight: FontWeight.w600,
+                              fontSize: 16,
+                              color: hours.isOpen ? AppColors.textPrimary : AppColors.textSecondary,
+                            ),
+                          ),
+                          if (isToday)
+                            Text(
+                              'Today',
+                              style: TextStyle(
+                                fontSize: 12,
+                                color: AppColors.primary,
+                                fontWeight: FontWeight.w500,
+                              ),
+                            ),
+                        ],
+                      ),
+                    ),
+                  ],
                 ),
               ),
+              
+              // Time or closed status
               Expanded(
                 flex: 3,
-                child: Text(
-                  hours.isOpen
-                      ? '${hours.startTime} - ${hours.endTime}'
-                      : 'Closed',
-                  style: TextStyle(
-                    color: hours.isOpen ? AppColors.textPrimary : AppColors.textSecondary,
-                  ),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(
+                      hours.formattedTime,
+                      style: TextStyle(
+                        fontSize: 16,
+                        fontWeight: FontWeight.w500,
+                        color: hours.isOpen ? AppColors.textPrimary : AppColors.textSecondary,
+                      ),
+                    ),
+                    if (hours.isOpen && isToday && isCurrentlyOpen)
+                      Text(
+                        'Open Now',
+                        style: TextStyle(
+                          fontSize: 12,
+                          color: AppColors.success,
+                          fontWeight: FontWeight.w600,
+                        ),
+                      ),
+                  ],
                 ),
               ),
+              
+              // Status indicator
               Container(
-                width: 12,
-                height: 12,
+                width: 16,
+                height: 16,
                 decoration: BoxDecoration(
                   shape: BoxShape.circle,
-                  color: hours.isOpen ? AppColors.success : AppColors.textSecondary,
+                  color: hours.isOpen 
+                      ? (isCurrentlyOpen ? AppColors.success : AppColors.primary)
+                      : AppColors.textSecondary,
+                  border: Border.all(
+                    color: Colors.white,
+                    width: 2,
+                  ),
                 ),
+                child: hours.isOpen && isCurrentlyOpen
+                    ? const Icon(
+                        Icons.check,
+                        size: 10,
+                        color: Colors.white,
+                      )
+                    : null,
               ),
             ],
           ),
         );
       }).toList(),
     );
+  }
+
+  bool _isToday(String day) {
+    final now = DateTime.now();
+    final currentDay = _getDayName(now.weekday);
+    return currentDay == day;
+  }
+
+  String _getDayName(int weekday) {
+    switch (weekday) {
+      case DateTime.monday:
+        return 'Monday';
+      case DateTime.tuesday:
+        return 'Tuesday';
+      case DateTime.wednesday:
+        return 'Wednesday';
+      case DateTime.thursday:
+        return 'Thursday';
+      case DateTime.friday:
+        return 'Friday';
+      case DateTime.saturday:
+        return 'Saturday';
+      case DateTime.sunday:
+        return 'Sunday';
+      default:
+        return 'Monday';
+    }
   }
 }

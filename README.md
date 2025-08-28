@@ -18,10 +18,11 @@ A comprehensive appointment scheduling system for merchants with real-time synch
 
 ## 🎯 Overview
 
-Zarya is a full-stack appointment scheduling system designed for merchants to manage their appointments, services, and customer interactions. The system includes:
+Zarya is a comprehensive appointment scheduling SaaS platform designed for merchants to manage their appointments, services, and customer interactions. The system includes:
 
-- **Merchant App**: Flutter-based mobile/web application for merchants
-- **Super Admin Panel**: Web-based admin interface for system management
+- **Merchant App**: Flutter-based mobile application for merchants
+- **Super Admin App**: Flutter-based mobile application for system administrators
+- **Customer App**: Flutter-based mobile application for customers (planned)
 - **Backend API**: Node.js/Express server with Firebase and Cloudinary integration
 - **Real-time Sync**: WebSocket-based real-time data synchronization
 - **Payment Integration**: Stripe payment processing (ready for integration)
@@ -390,106 +391,9 @@ const subscriptionPlans = {
   basic: {
     name: 'Basic Plan',
     duration: 30,
-    price: 29.99,
+    price: 2500,
     features: ['All Basic Features', 'Email Support', 'Basic Analytics']
   }
   // ... more plans
 };
 ```
-
-## 🔧 Troubleshooting
-
-### Common Issues
-
-#### 1. CORS Errors
-- Check `ALLOWED_ORIGINS` environment variable
-- Verify frontend domain is included
-- Ensure CORS middleware is configured correctly
-
-#### 2. Authentication Issues
-- Verify JWT secret is set correctly
-- Check Firebase credentials
-- Ensure user exists in database
-
-#### 3. Database Connection
-- Verify Firebase project configuration
-- Check service account permissions
-- Ensure Firestore is enabled
-
-#### 4. Image Upload Issues
-- Verify Cloudinary credentials
-- Check upload limits and file types
-- Ensure upload presets are configured
-
-### Debug Commands
-
-```bash
-# Check application status
-pm2 status
-pm2 logs zarya-backend
-
-# Check environment variables
-node -e "console.log(process.env)"
-
-# Test database connection
-node -e "require('./src/config/firebase').initialize().then(() => console.log('Connected'))"
-
-# Monitor system resources
-htop
-df -h
-free -h
-```
-
-### Logs
-
-Logs are stored in the `logs/` directory:
-- `error.log` - Error logs
-- `combined.log` - All logs
-- `debug.log` - Debug logs (development only)
-
-## 🤝 Contributing
-
-1. Fork the repository
-2. Create a feature branch: `git checkout -b feature-name`
-3. Make your changes
-4. Add tests if applicable
-5. Commit your changes: `git commit -am 'Add feature'`
-6. Push to the branch: `git push origin feature-name`
-7. Submit a pull request
-
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## 📞 Support
-
-For support and questions:
-
-- **Documentation**: Check the docs folder
-- **Issues**: Create an issue on GitHub
-- **Email**: support@zarya.com
-
-## 🗺️ Roadmap
-
-- [ ] Payment integration (Stripe)
-- [ ] SMS notifications (Twilio)
-- [ ] Email notifications
-- [ ] Advanced analytics
-- [ ] Mobile app (iOS/Android)
-- [ ] Multi-language support
-- [ ] Advanced reporting
-- [ ] API rate limiting
-- [ ] Webhook support
-- [ ] Backup and recovery
-
-## 🙏 Acknowledgments
-
-- [Flutter](https://flutter.dev/) - UI framework
-- [Firebase](https://firebase.google.com/) - Backend services
-- [Cloudinary](https://cloudinary.com/) - Image management
-- [Node.js](https://nodejs.org/) - Runtime environment
-- [Express.js](https://expressjs.com/) - Web framework
-
----
-
-**Made with ❤️ by the Zarya Team**

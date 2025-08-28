@@ -6,8 +6,14 @@ enum AppointmentStatus {
   noShow,
 }
 
+enum BookingType {
+  online,
+  walkIn,
+}
+
 class Appointment {
   final String? id;
+  final String merchantId;
   final String customerId;
   final String customerName;
   final String customerPhone;
@@ -15,15 +21,19 @@ class Appointment {
   final String serviceId;
   final String serviceName;
   final double servicePrice;
+  final String? staffId; // ID of assigned staff member
+  final String? staffName; // Name of assigned staff member
   final DateTime appointmentDate;
   final String appointmentTime;
   final AppointmentStatus status;
+  final BookingType bookingType;
   final String? notes;
   final DateTime createdAt;
   final DateTime? updatedAt;
 
   Appointment({
     this.id,
+    required this.merchantId,
     required this.customerId,
     required this.customerName,
     required this.customerPhone,
@@ -31,9 +41,12 @@ class Appointment {
     required this.serviceId,
     required this.serviceName,
     required this.servicePrice,
+    this.staffId,
+    this.staffName,
     required this.appointmentDate,
     required this.appointmentTime,
     required this.status,
+    required this.bookingType,
     this.notes,
     required this.createdAt,
     this.updatedAt,
@@ -41,6 +54,7 @@ class Appointment {
 
   Map<String, dynamic> toMap() {
     return {
+      'merchantId': merchantId,
       'customerId': customerId,
       'customerName': customerName,
       'customerPhone': customerPhone,
@@ -48,9 +62,12 @@ class Appointment {
       'serviceId': serviceId,
       'serviceName': serviceName,
       'servicePrice': servicePrice,
+      'staffId': staffId,
+      'staffName': staffName,
       'appointmentDate': appointmentDate.toIso8601String(),
       'appointmentTime': appointmentTime,
       'status': status.name,
+      'bookingType': bookingType.name,
       'notes': notes,
       'createdAt': createdAt.toIso8601String(),
       'updatedAt': updatedAt?.toIso8601String(),
@@ -60,6 +77,7 @@ class Appointment {
   factory Appointment.fromMap(Map<String, dynamic> map, {String? id}) {
     return Appointment(
       id: id,
+      merchantId: map['merchantId'] ?? '',
       customerId: map['customerId'] ?? '',
       customerName: map['customerName'] ?? '',
       customerPhone: map['customerPhone'] ?? '',
@@ -67,6 +85,8 @@ class Appointment {
       serviceId: map['serviceId'] ?? '',
       serviceName: map['serviceName'] ?? '',
       servicePrice: (map['servicePrice'] ?? 0.0).toDouble(),
+      staffId: map['staffId'],
+      staffName: map['staffName'],
       appointmentDate: map['appointmentDate'] is String 
           ? DateTime.parse(map['appointmentDate'])
           : DateTime.now(),
@@ -74,6 +94,10 @@ class Appointment {
       status: AppointmentStatus.values.firstWhere(
         (e) => e.name == map['status'],
         orElse: () => AppointmentStatus.pending,
+      ),
+      bookingType: BookingType.values.firstWhere(
+        (e) => e.name == map['bookingType'],
+        orElse: () => BookingType.online,
       ),
       notes: map['notes'],
       createdAt: map['createdAt'] is String 
@@ -89,6 +113,7 @@ class Appointment {
 
   Appointment copyWith({
     String? id,
+    String? merchantId,
     String? customerId,
     String? customerName,
     String? customerPhone,
@@ -96,15 +121,21 @@ class Appointment {
     String? serviceId,
     String? serviceName,
     double? servicePrice,
+    String? staffId,
+    String? staffName,
     DateTime? appointmentDate,
     String? appointmentTime,
     AppointmentStatus? status,
+    BookingType? bookingType,
     String? notes,
     DateTime? createdAt,
     DateTime? updatedAt,
   }) {
     return Appointment(
       id: id ?? this.id,
+      merchantId: merchantId ?? this.merchantId,
+      staffId: staffId ?? this.staffId,
+      staffName: staffName ?? this.staffName,
       customerId: customerId ?? this.customerId,
       customerName: customerName ?? this.customerName,
       customerPhone: customerPhone ?? this.customerPhone,
@@ -115,6 +146,7 @@ class Appointment {
       appointmentDate: appointmentDate ?? this.appointmentDate,
       appointmentTime: appointmentTime ?? this.appointmentTime,
       status: status ?? this.status,
+      bookingType: bookingType ?? this.bookingType,
       notes: notes ?? this.notes,
       createdAt: createdAt ?? this.createdAt,
       updatedAt: updatedAt ?? this.updatedAt,
@@ -133,7 +165,7 @@ class Appointment {
 
   // Get formatted price
   String get formattedPrice {
-    return '\$${servicePrice.toStringAsFixed(2)}';
+    return '₹${servicePrice.toStringAsFixed(2)}';
   }
 
   // Check if appointment is today
@@ -184,6 +216,16 @@ class Appointment {
         return 'Cancelled';
       case AppointmentStatus.noShow:
         return 'No Show';
+    }
+  }
+
+  // Get booking type text
+  String get bookingTypeText {
+    switch (bookingType) {
+      case BookingType.online:
+        return 'Online';
+      case BookingType.walkIn:
+        return 'Walk-in';
     }
   }
 }

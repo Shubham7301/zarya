@@ -1,6 +1,7 @@
 import 'package:flutter/foundation.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import '../models/merchant.dart';
+import '../models/working_hours.dart';
 
 import '../services/api_service.dart';
 
@@ -146,7 +147,7 @@ class AuthProvider with ChangeNotifier {
       description: 'A sample business for demonstration',
       category: 'Beauty & Wellness',
       images: [],
-      workingHours: [],
+      workingHours: WorkingHours.getDefaultWorkingHours(),
       isActive: true,
       createdAt: DateTime.now(),
     );

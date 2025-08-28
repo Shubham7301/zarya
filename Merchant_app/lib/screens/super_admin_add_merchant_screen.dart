@@ -132,11 +132,11 @@ class _SuperAdminAddMerchantScreenState extends State<SuperAdminAddMerchantScree
       case SubscriptionPlan.freeTrial:
         return 0.0;
       case SubscriptionPlan.basic:
-        return 29.99;
+        return 2500.0;
       case SubscriptionPlan.premium:
-        return 59.99;
+        return 5000.0;
       case SubscriptionPlan.enterprise:
-        return 99.99;
+        return 8500.0;
     }
   }
 
@@ -463,7 +463,7 @@ class _SuperAdminAddMerchantScreenState extends State<SuperAdminAddMerchantScree
                             crossAxisAlignment: CrossAxisAlignment.end,
                             children: [
                               Text(
-                                '\$${_getPlanPrice(plan).toStringAsFixed(2)}',
+                                '\₹${_getPlanPrice(plan).toStringAsFixed(2)}',
                                 style: const TextStyle(
                                   fontSize: 20,
                                   fontWeight: FontWeight.bold,
@@ -540,7 +540,7 @@ class _SuperAdminAddMerchantScreenState extends State<SuperAdminAddMerchantScree
                                          Text(
                        _selectedPlan == SubscriptionPlan.freeTrial 
                            ? 'FREE' 
-                           : '\$${(_getPlanPrice(_selectedPlan) * _selectedDuration).toStringAsFixed(2)}',
+                           : '\₹${(_getPlanPrice(_selectedPlan) * _selectedDuration).toStringAsFixed(2)}',
                        style: TextStyle(
                          fontSize: 20,
                          fontWeight: FontWeight.bold,

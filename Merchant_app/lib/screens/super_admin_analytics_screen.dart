@@ -131,7 +131,7 @@ class _SuperAdminAnalyticsScreenState extends State<SuperAdminAnalyticsScreen>
                   ),
                   _buildMetricCard(
                     'Total Revenue',
-                    '\$${NumberFormat('#,###').format(analytics['totalRevenue'] ?? 0)}',
+                    '\₹${NumberFormat('#,###').format(analytics['totalRevenue'] ?? 0)}',
                     Icons.attach_money,
                     AppColors.success,
                   ),
@@ -749,7 +749,7 @@ class _SuperAdminAnalyticsScreenState extends State<SuperAdminAnalyticsScreen>
         ),
         const SizedBox(height: 16),
         Text(
-          'Total Revenue: \$${NumberFormat('#,###').format(data.fold<double>(0.0, (sum, item) => sum + (item['revenue'] as double)))}',
+          'Total Revenue: \₹${NumberFormat('#,###').format(data.fold<double>(0.0, (sum, item) => sum + (item['revenue'] as double)))}',
           style: const TextStyle(
             fontSize: 16,
             fontWeight: FontWeight.bold,
@@ -815,7 +815,7 @@ class _SuperAdminAnalyticsScreenState extends State<SuperAdminAnalyticsScreen>
               valueColor: AlwaysStoppedAnimation<Color>(_getCategoryColor(item['category'] as String)),
             ),
             trailing: Text(
-              '\$${NumberFormat('#,###').format(item['revenue'])}',
+              '\₹${NumberFormat('#,###').format(item['revenue'])}',
               style: const TextStyle(
                 fontSize: 16,
                 fontWeight: FontWeight.bold,
@@ -883,7 +883,7 @@ class _SuperAdminAnalyticsScreenState extends State<SuperAdminAnalyticsScreen>
               ),
             ),
             trailing: Text(
-              '\$${NumberFormat('#,###').format(item['revenue'])}',
+              '\₹${NumberFormat('#,###').format(item['revenue'])}',
               style: const TextStyle(
                 fontSize: 16,
                 fontWeight: FontWeight.bold,

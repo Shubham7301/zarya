@@ -29,9 +29,9 @@ The Super Admin module is a comprehensive management system for the Zarya Mercha
 #### Subscription Management
 - **Subscription Plans**:
   - **Free Trial**: 30-day free trial with full features ($0.00)
-  - **Basic**: $29.99/month - Basic features for small businesses
-  - **Premium**: $59.99/month - Advanced features with priority support
-  - **Enterprise**: $99.99/month - Full features with dedicated support
+  - **Basic**: ₹2,500/month - Basic features for small businesses
+  - **Premium**: ₹5,000/month - Advanced features with priority support
+  - **Enterprise**: ₹8,500/month - Full features with dedicated support
 
 - **Duration Options**:
   - 30 Days (Free Trial only)

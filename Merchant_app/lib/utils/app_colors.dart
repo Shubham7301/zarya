@@ -53,3 +53,64 @@ class AppColors {
     end: Alignment.bottomRight,
   );
 }
+
+// Optimized spacing and sizing constants
+class AppSpacing {
+  // Compact spacing values
+  static const double xs = 4.0;
+  static const double sm = 8.0;
+  static const double md = 12.0;
+  static const double lg = 16.0;
+  static const double xl = 20.0;
+  static const double xxl = 24.0;
+  
+  // Card padding
+  static const EdgeInsets cardPadding = EdgeInsets.all(12.0);
+  static const EdgeInsets cardPaddingSmall = EdgeInsets.all(8.0);
+  static const EdgeInsets cardPaddingLarge = EdgeInsets.all(16.0);
+  
+  // Section spacing
+  static const EdgeInsets sectionPadding = EdgeInsets.all(12.0);
+  static const EdgeInsets sectionPaddingLarge = EdgeInsets.all(16.0);
+  
+  // Grid spacing
+  static const double gridSpacing = 12.0;
+  static const double gridSpacingLarge = 16.0;
+  
+  // Border radius
+  static const double borderRadiusSmall = 6.0;
+  static const double borderRadiusMedium = 8.0;
+  static const double borderRadiusLarge = 10.0;
+  static const double borderRadiusXLarge = 12.0;
+  
+  // Icon sizes
+  static const double iconSizeSmall = 16.0;
+  static const double iconSizeMedium = 18.0;
+  static const double iconSizeLarge = 20.0;
+  static const double iconSizeXLarge = 24.0;
+  
+  // Font sizes
+  static const double fontSizeSmall = 12.0;
+  static const double fontSizeMedium = 14.0;
+  static const double fontSizeLarge = 16.0;
+  static const double fontSizeXLarge = 18.0;
+  static const double fontSizeXXLarge = 20.0;
+  static const double fontSizeTitle = 22.0;
+  
+  // Shadow
+  static const List<BoxShadow> cardShadow = [
+    BoxShadow(
+      color: Color(0x0A000000),
+      blurRadius: 8.0,
+      offset: Offset(0, 2),
+    ),
+  ];
+  
+  static const List<BoxShadow> cardShadowLarge = [
+    BoxShadow(
+      color: Color(0x0A000000),
+      blurRadius: 10.0,
+      offset: Offset(0, 2),
+    ),
+  ];
+}

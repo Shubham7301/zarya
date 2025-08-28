@@ -231,12 +231,8 @@ class _UnifiedLoginScreenState extends State<UnifiedLoginScreen> {
             Container(
               padding: const EdgeInsets.all(16),
               child: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  IconButton(
-                    onPressed: () => Navigator.of(context).pop(),
-                    icon: const Icon(Icons.arrow_back, color: Colors.white),
-                  ),
                   // Toggle button
                   Container(
                     decoration: BoxDecoration(
@@ -259,7 +255,6 @@ class _UnifiedLoginScreenState extends State<UnifiedLoginScreen> {
                       ],
                     ),
                   ),
-                  const SizedBox(width: 48), // Balance the back button
                 ],
               ),
             ),
@@ -276,42 +271,43 @@ class _UnifiedLoginScreenState extends State<UnifiedLoginScreen> {
                   ),
                 ),
                 child: SingleChildScrollView(
-                  padding: const EdgeInsets.all(32),
+                  padding: const EdgeInsets.all(16),
                   child: Column(
+                    mainAxisSize: MainAxisSize.min,
                     children: [
                       // Header
                       Container(
-                        width: 80,
-                        height: 80,
+                        width: 50,
+                        height: 50,
                         decoration: BoxDecoration(
                           color: AppColors.primaryColor,
-                          borderRadius: BorderRadius.circular(20),
+                          borderRadius: BorderRadius.circular(12),
                         ),
                         child: Icon(
                           _isMerchantLogin ? Icons.store : Icons.admin_panel_settings,
-                          size: 40,
+                          size: 25,
                           color: Colors.white,
                         ),
                       ),
-                      const SizedBox(height: 24),
+                      const SizedBox(height: 12),
                       
                       Text(
                         _isMerchantLogin ? 'Merchant Login' : 'Super Admin Login',
-                        style: Theme.of(context).textTheme.headlineSmall?.copyWith(
+                        style: Theme.of(context).textTheme.titleLarge?.copyWith(
                           fontWeight: FontWeight.bold,
                           color: AppColors.primaryColor,
                         ),
                       ),
-                      const SizedBox(height: 8),
+                      const SizedBox(height: 4),
                       Text(
                         _isMerchantLogin 
                           ? 'Access your business dashboard'
                           : 'Access super admin portal',
-                        style: Theme.of(context).textTheme.bodyLarge?.copyWith(
+                        style: Theme.of(context).textTheme.bodyMedium?.copyWith(
                           color: Colors.grey[600],
                         ),
                       ),
-                      const SizedBox(height: 32),
+                      const SizedBox(height: 20),
 
                       // Login Form
                       Form(
@@ -342,7 +338,7 @@ class _UnifiedLoginScreenState extends State<UnifiedLoginScreen> {
                                 return null;
                               },
                             ),
-                            const SizedBox(height: 20),
+                            const SizedBox(height: 12),
 
                             // Password Field
                             TextFormField(
@@ -378,12 +374,29 @@ class _UnifiedLoginScreenState extends State<UnifiedLoginScreen> {
                                 return null;
                               },
                             ),
-                            const SizedBox(height: 24),
+                            
+                            // Forgot Password Link
+                            Align(
+                              alignment: Alignment.centerRight,
+                              child: TextButton(
+                                onPressed: () {
+                                  Navigator.pushNamed(context, '/forgot-password');
+                                },
+                                child: const Text(
+                                  'Forgot Password?',
+                                  style: TextStyle(
+                                    color: AppColors.primary,
+                                    fontSize: 14,
+                                  ),
+                                ),
+                              ),
+                            ),
+                            const SizedBox(height: 16),
 
                             // Login Button
                             SizedBox(
                               width: double.infinity,
-                              height: 56,
+                              height: 44,
                               child: Consumer<AuthProvider>(
                                 builder: (context, authProvider, child) {
                                   return ElevatedButton(
@@ -416,7 +429,7 @@ class _UnifiedLoginScreenState extends State<UnifiedLoginScreen> {
                                 },
                               ),
                             ),
-                            const SizedBox(height: 20),
+                            const SizedBox(height: 12),
 
                             // Demo Credentials Button
                             TextButton.icon(

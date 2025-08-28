@@ -63,55 +63,65 @@ class _ServicesScreenState extends State<ServicesScreen> {
     return [
       Service(
         id: '1',
+        merchantId: '1',
         name: 'Haircut & Styling',
         description: 'Professional haircut and styling service for all hair types. Includes consultation, wash, cut, and style.',
-        price: 45.0,
+        price: 3750.0,
         duration: 60,
         category: 'hair',
+        staffIds: ['2'],
         images: ['zarya/sample/haircut-1', 'zarya/sample/haircut-2'],
         isActive: true,
         createdAt: DateTime.now().subtract(const Duration(days: 30)),
       ),
       Service(
         id: '2',
+        merchantId: '1',
         name: 'Manicure & Pedicure',
         description: 'Complete nail care service including cuticle care, nail shaping, polish application, and hand/foot massage.',
-        price: 35.0,
+        price: 3750.0,
         duration: 90,
         category: 'nails',
+        staffIds: ['3'],
         images: ['zarya/sample/manicure-1'],
         isActive: true,
         createdAt: DateTime.now().subtract(const Duration(days: 25)),
       ),
       Service(
         id: '3',
+        merchantId: '1',
         name: 'Facial Treatment',
         description: 'Rejuvenating facial treatment with premium skincare products. Includes cleansing, exfoliation, mask, and moisturizing.',
         price: 60.0,
         duration: 75,
         category: 'facial',
+        staffIds: ['3'],
         images: ['zarya/sample/facial-1', 'zarya/sample/facial-2'],
         isActive: true,
         createdAt: DateTime.now().subtract(const Duration(days: 20)),
       ),
       Service(
         id: '4',
+        merchantId: '1',
         name: 'Hair Coloring',
         description: 'Professional hair coloring service with premium products. Includes consultation, color application, and styling.',
         price: 80.0,
         duration: 120,
         category: 'hair',
+        staffIds: [],
         images: ['zarya/sample/coloring-1'],
         isActive: true,
         createdAt: DateTime.now().subtract(const Duration(days: 15)),
       ),
       Service(
         id: '5',
+        merchantId: '1',
         name: 'Massage Therapy',
         description: 'Relaxing massage therapy session. Choose from Swedish, deep tissue, or hot stone massage.',
         price: 70.0,
         duration: 60,
         category: 'massage',
+        staffIds: [],
         images: ['zarya/sample/massage-1'],
         isActive: false,
         createdAt: DateTime.now().subtract(const Duration(days: 10)),
@@ -531,7 +541,7 @@ class _ServiceCard extends StatelessWidget {
                       crossAxisAlignment: CrossAxisAlignment.end,
                       children: [
                         Text(
-                          '\$${service.price.toStringAsFixed(2)}',
+                          '\₹${service.price.toStringAsFixed(2)}',
                           style: const TextStyle(
                             fontSize: 20,
                             fontWeight: FontWeight.bold,
@@ -559,6 +569,29 @@ class _ServiceCard extends StatelessWidget {
                   maxLines: 3,
                   overflow: TextOverflow.ellipsis,
                 ),
+                
+                // Staff Assignment
+                if (service.staffIds.isNotEmpty) ...[
+                  const SizedBox(height: 8),
+                  Row(
+                    children: [
+                      Icon(
+                        Icons.people,
+                        size: 16,
+                        color: AppColors.textSecondary,
+                      ),
+                      const SizedBox(width: 8),
+                      Text(
+                        'Assigned Staff: ${service.staffIds.length} member(s)',
+                        style: const TextStyle(
+                          fontSize: 12,
+                          color: AppColors.textSecondary,
+                        ),
+                      ),
+                    ],
+                  ),
+                ],
+                
                 const SizedBox(height: 12),
                 Row(
                   children: [
@@ -718,20 +751,22 @@ class _ServiceFormScreenState extends State<ServiceFormScreen> {
     });
 
     try {
+      final authProvider = Provider.of<AuthProvider>(context, listen: false);
+      final merchantId = authProvider.merchant?.id ?? '1';
+
       final service = Service(
         id: widget.service?.id ?? DateTime.now().millisecondsSinceEpoch.toString(),
+        merchantId: merchantId,
         name: _nameController.text.trim(),
         description: _descriptionController.text.trim(),
         price: double.parse(_priceController.text),
         duration: int.parse(_durationController.text),
         category: _selectedCategory,
+        staffIds: widget.service?.staffIds ?? [],
         images: _images,
         isActive: _isActive,
         createdAt: widget.service?.createdAt ?? DateTime.now(),
       );
-
-      final authProvider = Provider.of<AuthProvider>(context, listen: false);
-      final merchantId = authProvider.merchant?.id ?? '1';
 
       if (widget.service != null) {
         // Update existing service
@@ -919,9 +954,9 @@ class _ServiceFormScreenState extends State<ServiceFormScreen> {
                     child: TextFormField(
                       controller: _priceController,
                       decoration: const InputDecoration(
-                        labelText: 'Price (\$)',
+                        labelText: 'Price (₹)',
                         border: OutlineInputBorder(),
-                        prefixText: '\$',
+                        prefixText: '₹',
                       ),
                       keyboardType: TextInputType.number,
                       validator: (value) {

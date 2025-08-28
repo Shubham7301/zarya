@@ -514,20 +514,20 @@ class _MerchantDetailsSheet extends StatelessWidget {
                   const SizedBox(height: 20),
                   Row(
                     children: [
-                                             Expanded(
-                         child: ElevatedButton.icon(
-                           onPressed: () {
-                             Navigator.push(
-                               context,
-                               MaterialPageRoute(
-                                 builder: (context) => SuperAdminSubscriptionScreen(merchant: merchant),
-                               ),
-                             );
-                           },
-                           icon: const Icon(Icons.subscriptions),
-                           label: const Text('View Subscription'),
-                         ),
-                       ),
+                      Expanded(
+                        child: ElevatedButton.icon(
+                          onPressed: () {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                builder: (context) => SuperAdminSubscriptionScreen(merchant: merchant),
+                              ),
+                            );
+                          },
+                          icon: const Icon(Icons.subscriptions),
+                          label: const Text('View Subscription'),
+                        ),
+                      ),
                       const SizedBox(width: 12),
                       Expanded(
                         child: ElevatedButton.icon(

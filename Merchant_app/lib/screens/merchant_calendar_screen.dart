@@ -88,16 +88,18 @@ class _MerchantCalendarScreenState extends State<MerchantCalendarScreen>
       if (i < timeSlots.length) {
         appointments.add(Appointment(
           id: 'apt_${date.millisecondsSinceEpoch}_$i',
+          merchantId: '1',
           customerId: 'cust_${i}',
           customerName: customers[i % customers.length],
           customerPhone: '+1-555-${(1000 + i).toString().padLeft(4, '0')}',
           customerEmail: '${customers[i % customers.length].toLowerCase().replaceAll(' ', '.')}@email.com',
           serviceId: 'service_${i}',
           serviceName: services[i % services.length],
-          servicePrice: (50.0 + (i * 25.0)).toDouble(),
+          servicePrice: (4000.0 + (i * 2000.0)).toDouble(),
           appointmentDate: date,
           appointmentTime: timeSlots[i],
           status: statuses[i % statuses.length],
+          bookingType: BookingType.online,
           notes: i % 3 == 0 ? 'Special request: ${services[i % services.length]}' : '',
           createdAt: date.subtract(Duration(days: i + 1)),
         ));
@@ -747,7 +749,7 @@ class _MerchantCalendarScreenState extends State<MerchantCalendarScreen>
                 _buildDetailRow('Date', DateFormat('EEEE, MMMM d, y').format(appointment.appointmentDate)),
                                  _buildDetailRow('Time', appointment.appointmentTime),
                  _buildDetailRow('Status', appointment.status.name.toUpperCase()),
-                 _buildDetailRow('Amount', '\$${appointment.servicePrice.toStringAsFixed(2)}'),
+                 _buildDetailRow('Amount', '₹${appointment.servicePrice.toStringAsFixed(2)}'),
                 if (appointment.notes != null && appointment.notes!.isNotEmpty)
                   _buildDetailRow('Notes', appointment.notes!),
                 _buildDetailRow('Booked On', DateFormat('MMM d, y').format(appointment.createdAt)),

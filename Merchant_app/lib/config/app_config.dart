@@ -67,19 +67,19 @@ class AppConfig {
     'basic': {
       'name': 'Basic Plan',
       'duration': 30,
-      'price': 29.99,
+      'price': 2500.0,
       'features': ['All Basic Features', 'Email Support', 'Basic Analytics'],
     },
     'premium': {
       'name': 'Premium Plan',
       'duration': 30,
-      'price': 59.99,
+      'price': 5000.0,
       'features': ['All Basic Features', 'Priority Support', 'Advanced Analytics', 'Custom Branding'],
     },
     'enterprise': {
       'name': 'Enterprise Plan',
       'duration': 30,
-      'price': 99.99,
+      'price': 8500.0,
       'features': ['All Premium Features', 'Dedicated Support', 'Custom Integrations', 'White Label'],
     },
   };

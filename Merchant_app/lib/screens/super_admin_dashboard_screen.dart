@@ -30,13 +30,35 @@ class _SuperAdminDashboardScreenState extends State<SuperAdminDashboardScreen>
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      backgroundColor: Colors.grey[50],
-      appBar: AppBar(
+    return WillPopScope(
+      onWillPop: () async {
+        final confirmed = await showDialog<bool>(
+          context: context,
+          builder: (context) => AlertDialog(
+            title: const Text('Exit App'),
+            content: const Text('Are you sure you want to exit the app?'),
+            actions: [
+              TextButton(
+                onPressed: () => Navigator.pop(context, false),
+                child: const Text('Cancel'),
+              ),
+              TextButton(
+                onPressed: () => Navigator.pop(context, true),
+                child: const Text('Exit'),
+              ),
+            ],
+          ),
+        );
+        return confirmed ?? false;
+      },
+      child: Scaffold(
+        backgroundColor: Colors.grey[50],
+        appBar: AppBar(
         title: const Text('Super Admin Dashboard'),
         backgroundColor: AppColors.primary,
         foregroundColor: Colors.white,
         elevation: 0,
+        automaticallyImplyLeading: false,
         actions: [
           IconButton(
             icon: const Icon(Icons.logout),
@@ -85,6 +107,7 @@ class _SuperAdminDashboardScreenState extends State<SuperAdminDashboardScreen>
           );
         },
       ),
+      ),
     );
   }
 
@@ -100,7 +123,7 @@ class _SuperAdminDashboardScreenState extends State<SuperAdminDashboardScreen>
     }
     
     return SingleChildScrollView(
-      padding: const EdgeInsets.all(16),
+      padding: const EdgeInsets.all(12),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
@@ -109,9 +132,9 @@ class _SuperAdminDashboardScreenState extends State<SuperAdminDashboardScreen>
             shrinkWrap: true,
             physics: const NeverScrollableScrollPhysics(),
             crossAxisCount: 2,
-            crossAxisSpacing: 16,
-            mainAxisSpacing: 16,
-            childAspectRatio: 1.5,
+            crossAxisSpacing: 12,
+            mainAxisSpacing: 12,
+            childAspectRatio: 1.8,
             children: [
               _buildStatCard(
                 'Total Merchants',
@@ -133,19 +156,19 @@ class _SuperAdminDashboardScreenState extends State<SuperAdminDashboardScreen>
               ),
               _buildStatCard(
                 'Total Revenue',
-                '\$${analytics['totalRevenue'] ?? 0}',
+                '\₹${analytics['totalRevenue'] ?? 0}',
                 Icons.attach_money,
                 Colors.purple,
               ),
             ],
           ),
           
-          const SizedBox(height: 24),
+          const SizedBox(height: 16),
           
           // Recent Activity
           Card(
             child: Padding(
-              padding: const EdgeInsets.all(16),
+              padding: const EdgeInsets.all(12),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
@@ -155,7 +178,7 @@ class _SuperAdminDashboardScreenState extends State<SuperAdminDashboardScreen>
                       fontWeight: FontWeight.bold,
                     ),
                   ),
-                  const SizedBox(height: 16),
+                  const SizedBox(height: 12),
                   ...((dashboardData['recentActivity'] as List?) ?? []).map((activity) => 
                     ListTile(
                       leading: Icon(
@@ -203,7 +226,7 @@ class _SuperAdminDashboardScreenState extends State<SuperAdminDashboardScreen>
 
   Widget _buildMerchantsTab(SuperAdminProvider provider) {
     return SingleChildScrollView(
-      padding: const EdgeInsets.all(16),
+      padding: const EdgeInsets.all(12),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
@@ -390,7 +413,7 @@ class _SuperAdminDashboardScreenState extends State<SuperAdminDashboardScreen>
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Text(merchant.businessName),
-                                          Text('\$${subscription.amount}/month'),
+                                          Text('\₹${subscription.amount}/month'),
                       Text('Status: ${subscription.status.name}'),
                   ],
                 ),
@@ -747,8 +770,30 @@ class _SuperAdminDashboardScreenState extends State<SuperAdminDashboardScreen>
     }
   }
 
-  void _handleLogout(BuildContext context) {
-    context.read<SuperAdminProvider>().logout();
-    Navigator.pushReplacementNamed(context, '/');
+
+
+  void _handleLogout(BuildContext context) async {
+    final confirmed = await showDialog<bool>(
+      context: context,
+      builder: (context) => AlertDialog(
+        title: const Text('Logout'),
+        content: const Text('Are you sure you want to logout?'),
+        actions: [
+          TextButton(
+            onPressed: () => Navigator.pop(context, false),
+            child: const Text('Cancel'),
+          ),
+          TextButton(
+            onPressed: () => Navigator.pop(context, true),
+            child: const Text('Logout'),
+          ),
+        ],
+      ),
+    );
+
+    if (confirmed == true) {
+      context.read<SuperAdminProvider>().logout();
+      Navigator.pushReplacementNamed(context, '/');
+    }
   }
 }

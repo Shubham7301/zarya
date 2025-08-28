@@ -78,20 +78,20 @@ class _AnalyticsScreenState extends State<AnalyticsScreen>
       'newCustomers': 23,
       'repeatCustomers': 66,
       'topServices': [
-        {'name': 'Haircut & Styling', 'count': 45, 'revenue': 2025.0},
-        {'name': 'Facial Treatment', 'count': 32, 'revenue': 1920.0},
-        {'name': 'Manicure & Pedicure', 'count': 28, 'revenue': 980.0},
-        {'name': 'Hair Coloring', 'count': 18, 'revenue': 1440.0},
-        {'name': 'Massage Therapy', 'count': 15, 'revenue': 1050.0},
+        {'name': 'Haircut & Styling', 'count': 45, 'revenue': 168750.0},
+        {'name': 'Facial Treatment', 'count': 32, 'revenue': 176000.0},
+        {'name': 'Manicure & Pedicure', 'count': 28, 'revenue': 70000.0},
+        {'name': 'Hair Coloring', 'count': 18, 'revenue': 126000.0},
+        {'name': 'Massage Therapy', 'count': 15, 'revenue': 78750.0},
       ],
       'revenueByDay': [
-        {'day': 'Mon', 'revenue': 1800.0},
-        {'day': 'Tue', 'revenue': 2100.0},
-        {'day': 'Wed', 'revenue': 1950.0},
-        {'day': 'Thu', 'revenue': 2200.0},
-        {'day': 'Fri', 'revenue': 2400.0},
-        {'day': 'Sat', 'revenue': 1800.0},
-        {'day': 'Sun', 'revenue': 250.0},
+        {'day': 'Mon', 'revenue': 150000.0},
+        {'day': 'Tue', 'revenue': 175000.0},
+        {'day': 'Wed', 'revenue': 162500.0},
+        {'day': 'Thu', 'revenue': 183333.0},
+        {'day': 'Fri', 'revenue': 200000.0},
+        {'day': 'Sat', 'revenue': 150000.0},
+        {'day': 'Sun', 'revenue': 20833.0},
       ],
       'appointmentsByStatus': [
         {'status': 'Completed', 'count': 142, 'color': AppColors.completed},
@@ -191,7 +191,7 @@ class _AnalyticsScreenState extends State<AnalyticsScreen>
             children: [
               _buildMetricCard(
                 'Total Revenue',
-                '\$${_stats['totalRevenue']?.toStringAsFixed(0) ?? '0'}',
+                '\₹${_stats['totalRevenue']?.toStringAsFixed(0) ?? '0'}',
                 Icons.attach_money,
                 AppColors.success,
               ),
@@ -453,7 +453,7 @@ class _AnalyticsScreenState extends State<AnalyticsScreen>
               ),
             ),
             trailing: Text(
-              '\$${service['revenue']?.toStringAsFixed(0) ?? '0'}',
+              '\₹${service['revenue']?.toStringAsFixed(0) ?? '0'}',
               style: const TextStyle(
                 fontSize: 16,
                 fontWeight: FontWeight.bold,
@@ -593,7 +593,7 @@ class _AnalyticsScreenState extends State<AnalyticsScreen>
         ),
         const SizedBox(height: 16),
         Text(
-          'Revenue: \$${data.fold<double>(0.0, (sum, item) => sum + ((item['revenue'] as double?) ?? 0.0)).toStringAsFixed(0)}',
+          'Revenue: \₹${data.fold<double>(0.0, (sum, item) => sum + ((item['revenue'] as double?) ?? 0.0)).toStringAsFixed(0)}',
           style: const TextStyle(
             fontSize: 16,
             fontWeight: FontWeight.bold,
@@ -653,7 +653,7 @@ class _AnalyticsScreenState extends State<AnalyticsScreen>
               valueColor: AlwaysStoppedAnimation<Color>(_getServiceColor(index)),
             ),
             trailing: Text(
-              '\$${revenue.toStringAsFixed(0)}',
+              '\₹${revenue.toStringAsFixed(0)}',
               style: const TextStyle(
                 fontSize: 16,
                 fontWeight: FontWeight.bold,

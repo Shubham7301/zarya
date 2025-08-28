@@ -7,6 +7,7 @@ import 'screens/dashboard_screen.dart';
 import 'screens/super_admin_dashboard_screen.dart';
 import 'screens/create_merchant_screen.dart';
 import 'screens/merchant_calendar_screen.dart';
+import 'screens/forgot_password_screen.dart';
 import 'utils/app_colors.dart';
 
 void main() {
@@ -39,6 +40,7 @@ class ZaryaMerchantApp extends StatelessWidget {
           '/super-admin-dashboard': (context) => const SuperAdminDashboardScreen(),
           '/create-merchant': (context) => const CreateMerchantScreen(),
           '/merchant-calendar': (context) => const MerchantCalendarScreen(),
+          '/forgot-password': (context) => const ForgotPasswordScreen(),
         },
       ),
     );

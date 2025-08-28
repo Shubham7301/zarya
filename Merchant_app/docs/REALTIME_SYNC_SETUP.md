@@ -118,7 +118,7 @@ CREATE TABLE subscriptions (
   start_date TIMESTAMP,
   end_date TIMESTAMP,
   amount DECIMAL(10,2),
-  currency VARCHAR(10) DEFAULT 'USD',
+  currency VARCHAR(10) DEFAULT 'INR',
   payment_method VARCHAR(100),
   transaction_id VARCHAR(255),
   notes TEXT,
